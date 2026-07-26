@@ -136,10 +136,23 @@ class _Minigame(MinigameAIUnderTest):
 class MinigameSkipPolicyTests(unittest.TestCase):
 
     def test_only_active_framework_game_accepts_votes(self):
-        self.assertTrue(
-            MinigameSkipPolicy.canRequestSkip('frameworkGame', 'play'))
-        self.assertTrue(
-            MinigameSkipPolicy.canRequestSkip('frameworkGame', 'swimming'))
+        activeStates = (
+            'play',
+            'swimming',
+            'fly',
+            'waitClientsChoices',
+            'processChoices',
+            'generatePattern',
+            'waitForResults',
+            'sendGoSignal',
+            'waitEndingPositions',
+            'processEndingPositions',
+        )
+        for gameState in activeStates:
+            self.assertTrue(
+                MinigameSkipPolicy.canRequestSkip(
+                    'frameworkGame', gameState),
+                gameState)
         for frameworkState in (
                 'frameworkWaitClientsJoin',
                 'frameworkWaitClientsReady',
@@ -147,10 +160,21 @@ class MinigameSkipPolicyTests(unittest.TestCase):
                 'frameworkCleanup'):
             self.assertFalse(
                 MinigameSkipPolicy.canRequestSkip(frameworkState, 'play'))
-        for gameState in (None, '', 'inactive', 'off', 'cleanup'):
+        for gameState in (
+                None,
+                '',
+                'inactive',
+                'off',
+                'cleanup',
+                'waitShowScores',
+                'contestOver',
+                'resetRound',
+                'scoreMatch',
+                'finalResults'):
             self.assertFalse(
                 MinigameSkipPolicy.canRequestSkip(
-                    'frameworkGame', gameState))
+                    'frameworkGame', gameState),
+                gameState)
 
     def test_solo_vote_is_immediately_unanimous(self):
         votes = set()
@@ -241,6 +265,19 @@ class MinigameSkipServerMethodTests(unittest.TestCase):
         self.assertEqual(outsider.abortCount, 0)
         self.assertTrue(outsider.air.events)
 
+    def test_production_request_exit_rejects_result_states(self):
+        for gameState in (
+                'waitShowScores',
+                'contestOver',
+                'resetRound',
+                'scoreMatch',
+                'finalResults'):
+            game = _Minigame(gameState=gameState)
+            game.requestExit()
+            self.assertEqual(game.skipVotes, set(), gameState)
+            self.assertFalse(game.explicitSkip, gameState)
+            self.assertEqual(game.abortCount, 0, gameState)
+
     def test_production_duplicate_vote_is_idempotent(self):
         game = _Minigame(participants=(1001, 1002))
         game.requestExit()
@@ -296,6 +333,7 @@ class MinigameSkipWiringTests(unittest.TestCase):
         self.assertIn(
             'setSkipVoteStatus(uint8, uint8) broadcast;', dcSource)
         self.assertIn('MinigameSkipConfirm', clientSource)
+        self.assertIn('__updateSkipMinigameAvailability', clientSource)
         self.assertIn('recordSkipVote', aiSource)
         self.assertIn("'minigame_skipped'", aiSource)
         self.assertIn('score = 0', aiSource)

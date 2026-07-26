@@ -1,15 +1,28 @@
 """Pure policy helpers for safe, unanimous trolley-minigame skipping."""
 
 
-INACTIVE_GAME_STATES = frozenset(('inactive', 'off', 'cleanup'))
+# These are the interactive states used by the 16 standard trolley games and
+# Trolley Tracks.  Result movies, score screens, reset states, and cleanup
+# states are deliberately absent so a late vote cannot race normal gameOver().
+ACTIVE_GAME_STATES = frozenset((
+    'play',
+    'swimming',
+    'fly',
+    'waitClientsChoices',
+    'processChoices',
+    'generatePattern',
+    'waitForResults',
+    'sendGoSignal',
+    'waitEndingPositions',
+    'processEndingPositions',
+))
 
 
 def canRequestSkip(frameworkStateName, gameStateName):
     """Return whether a skip vote may be accepted in the current lifecycle."""
     return (
         frameworkStateName == 'frameworkGame' and
-        bool(gameStateName) and
-        gameStateName not in INACTIVE_GAME_STATES
+        gameStateName in ACTIVE_GAME_STATES
     )
 
 

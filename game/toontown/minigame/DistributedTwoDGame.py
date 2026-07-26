@@ -92,6 +92,7 @@ class DistributedTwoDGame(DistributedMinigame):
         self.notify.debug('onstage')
         DistributedMinigame.onstage(self)
         self.scorePanels = []
+        self.remoteToonCollideMasks = {}
         self.assetMgr.onstage()
         lt = base.localAvatar
         lt.reparentTo(render)
@@ -114,6 +115,14 @@ class DistributedTwoDGame(DistributedMinigame):
         for avId in list(self.toonSDs.keys()):
             self.toonSDs[avId].exit()
 
+        for avId, collideMask in list(self.remoteToonCollideMasks.items()):
+            toon = self.getAvatar(avId)
+            if toon:
+                distCNP = toon.find('**/distAvatarCollNode*')
+                if not distCNP.isEmpty():
+                    distCNP.node().setIntoCollideMask(collideMask)
+
+        self.remoteToonCollideMasks = {}
         base.localAvatar.setTransparency(0)
         self.ignore('enterheadCollSphere-into-floor1')
         base.localAvatar.controlManager.currentControls.cTrav.removeCollider(self.headCollNP)
@@ -139,7 +148,10 @@ class DistributedTwoDGame(DistributedMinigame):
                 toon.startSmooth()
                 toon.startLookAround()
                 distCNP = toon.find('**/distAvatarCollNode*')
-                distCNP.node().setIntoCollideMask(BitMask32.allOff())
+                if not distCNP.isEmpty():
+                    self.remoteToonCollideMasks[avId] = (
+                        distCNP.node().getIntoCollideMask())
+                    distCNP.node().setIntoCollideMask(BitMask32.allOff())
                 toonSD = TwoDGameToonSD.TwoDGameToonSD(avId, self)
                 self.toonSDs[avId] = toonSD
                 toonSD.enter()
@@ -207,6 +219,8 @@ class DistributedTwoDGame(DistributedMinigame):
         self.ignore('jumpStart')
         self.ignore('enemyHit')
         self.ignore('twoDTreasureGrabbed')
+        self.ignore('enemyShot')
+        taskMgr.remove(self.UpdateLocalToonTask)
         return
 
     def enterPause(self):
@@ -246,6 +260,7 @@ class DistributedTwoDGame(DistributedMinigame):
 
     def enterCleanup(self):
         self.notify.debug('enterCleanup')
+        taskMgr.remove(self.UpdateLocalToonTask)
         self.timer.stop()
         self.timer.destroy()
         del self.timer

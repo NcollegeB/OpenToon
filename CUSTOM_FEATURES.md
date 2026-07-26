@@ -114,9 +114,14 @@ It is granted once for normal, non-skipped completion before the client-exit
 barrier; an explicit skip does not count. Known early-abort fields in Toon
 Escape, Maze Game, and Treasure Dive now have cleanup guards. This common path
 covers the 16 normal trolley games and Trolley Tracks, but not racing, golf,
-Cogdo, party, picnic-table, fishing, or estate activities. See
-`changes\FEATURE_AUDIT.md` for the remaining live multi-client and all-game
-cleanup validation.
+Cogdo, party, picnic-table, fishing, or estate activities.
+
+Focused cleanup also covers Diving collision/control teardown, TwoD
+tasks/events/masks, Ring's ending task, Race tasks/intervals/dice, and delayed
+Target/Photo work. Live solo and two-player Maze skips returned cleanly with
+zero rewards; the two-player vote advanced from `1/2` to unanimous `2/2`. See
+`changes\FEATURE_AUDIT.md` for the remaining four-player and all-game cleanup
+validation.
 
 ## Ordinary hood fishing
 
@@ -131,11 +136,14 @@ Catches can produce quest items, fish, jellybeans, or boots. Fish update the
 persistent collection and tank; existing fisherman interactions use the
 manager to award sale value, clear the tank, and grant newly earned fishing
 trophies and Laff. Requested fish are accepted only when the current rod can
-catch them.
+catch them. Client target checks use X/Y distance across the pond plane, so a
+target's below-surface Z position does not turn a valid cast into a miss.
 
 This implementation is scoped to ordinary public hood ponds. Estate-pond
-fishing and authoritative Fish Bingo are still open, and no live client
-catch/sale/reconnect result is claimed by the 2026-07-26 source pass.
+fishing and authoritative Fish Bingo are still open. A live Party Clown Fish
+catch persisted collection `1`, tank `1`, and value `6` through reconnect;
+Fisherman Freddy then sold the tank, and another reconnect retained collection
+`1`, tank `0`, and the capped wallet value of `40`.
 
 ## Display and settings
 

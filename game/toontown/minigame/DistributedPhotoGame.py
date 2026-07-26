@@ -64,6 +64,7 @@ class DistributedPhotoGame(DistributedMinigame, PhotoGameBase.PhotoGameBase):
     RIGHT_KEY = 'arrow_right'
     INTRO_TASK_NAME = 'PhotoGameIntro'
     INTRO_TASK_NAME_CAMERA_LERP = 'PhotoGameIntroCamera'
+    VIEWFINDER_TASK_NAME = 'photo game viewfinder Task'
 
     def __init__(self, cr):
         DistributedMinigame.__init__(self, cr)
@@ -97,6 +98,9 @@ class DistributedPhotoGame(DistributedMinigame, PhotoGameBase.PhotoGameBase):
         self.starDict = {}
         self.starParentDict = {}
         self.textureBuffers = []
+        self.captureTaskNames = set()
+        self.captureTaskByBuffer = {}
+        self.captureTaskSerial = 0
         self.filmCount = 20
         self.edgeUp = 0
         self.edgeRight = 0
@@ -183,10 +187,8 @@ class DistributedPhotoGame(DistributedMinigame, PhotoGameBase.PhotoGameBase):
 
     def unload(self):
         self.notify.debug('unload')
+        self._cleanupRuntime()
         DistributedMinigame.unload(self)
-        if self.cameraTrack:
-            self.cameraTrack.finish()
-            self.cameraTrack = None
         self.__removeCapture()
         for textureBuffer in self.textureBuffers:
             base.graphicsEngine.removeWindow(textureBuffer)
@@ -274,6 +276,7 @@ class DistributedPhotoGame(DistributedMinigame, PhotoGameBase.PhotoGameBase):
 
     def offstage(self):
         self.notify.debug('offstage')
+        self._cleanupRuntime()
         self.sky.reparentTo(hidden)
         self.scene.reparentTo(hidden)
         for avId in self.avIdList:
@@ -521,7 +524,7 @@ class DistributedPhotoGame(DistributedMinigame, PhotoGameBase.PhotoGameBase):
                         buffer.setActive(1)
                         texturePanel.show()
                         texturePanel.setColorScale(1, 1, 1, 1)
-                        taskMgr.doMethodLater(0.2, buffer.setActive, 'capture Image', [0])
+                        self._scheduleCaptureDeactivate(buffer)
                         if score > self.assignmentDataDict[assignment][0]:
                             self.assignmentDataDict[assignment][0] = score
                             self.updateAssignmentPanels()
@@ -1117,23 +1120,23 @@ class DistributedPhotoGame(DistributedMinigame, PhotoGameBase.PhotoGameBase):
     def enterAim(self):
         self.notify.debug('enterAim')
         self.__enableAimInterface()
-        taskMgr.add(self.__moveViewfinder, 'photo game viewfinder Task')
+        taskMgr.add(self.__moveViewfinder, self.VIEWFINDER_TASK_NAME)
         self.accept('mouse1', self.__handleMouseClick)
         base.localAvatar.laffMeter.stop()
         base.transitions.noIris()
 
     def exitAim(self):
         self.__disableAimInterface()
-        taskMgr.remove('photo game viewfinder Task')
+        taskMgr.remove(self.VIEWFINDER_TASK_NAME)
         self.ignore('mouse1')
 
     def enterZoom(self):
         self.notify.debug('enterZoom')
-        taskMgr.add(self.__moveViewfinder, 'photo game viewfinder Task')
+        taskMgr.add(self.__moveViewfinder, self.VIEWFINDER_TASK_NAME)
         self.__doZoom()
 
     def exitZoom(self):
-        taskMgr.remove('photo game viewfinder Task')
+        taskMgr.remove(self.VIEWFINDER_TASK_NAME)
         self.notify.debug('exitZoom')
 
     def finishZoom(self, zoomed = None, task = None):
@@ -1153,16 +1156,86 @@ class DistributedPhotoGame(DistributedMinigame, PhotoGameBase.PhotoGameBase):
 
     def enterCleanup(self):
         self.notify.debug('enterCleanup')
+        self._cleanupRuntime()
         self.music.stop()
-        if hasattr(self, 'jarIval'):
+        if getattr(self, 'jarIval', None):
             self.jarIval.finish()
-            del self.jarIval
-        for avId in self.avIdList:
-            taskMgr.remove('firePhoto' + str(avId))
-            taskMgr.remove('flyingToon' + str(avId))
+        self.jarIval = None
 
     def exitCleanup(self):
         pass
+
+    def _scheduleCaptureDeactivate(self, buffer):
+        self.captureTaskSerial += 1
+        taskName = self.taskName(
+            'captureImage-%s' % self.captureTaskSerial)
+        bufferKey = id(buffer)
+        previousTaskName = self.captureTaskByBuffer.get(bufferKey)
+        if previousTaskName:
+            taskMgr.remove(previousTaskName)
+            self.captureTaskNames.discard(previousTaskName)
+        self.captureTaskByBuffer[bufferKey] = taskName
+        self.captureTaskNames.add(taskName)
+        taskMgr.doMethodLater(
+            0.2,
+            self._deactivateCaptureBuffer,
+            taskName,
+            extraArgs=[buffer, taskName])
+
+    def _deactivateCaptureBuffer(self, buffer, taskName):
+        self.captureTaskNames.discard(taskName)
+        bufferKey = id(buffer)
+        if self.captureTaskByBuffer.get(bufferKey) != taskName:
+            return Task.done
+        self.captureTaskByBuffer.pop(bufferKey, None)
+        textureBuffers = getattr(self, 'textureBuffers', ())
+        if buffer in textureBuffers:
+            buffer.setActive(0)
+        return Task.done
+
+    def _cancelCaptureTasks(self):
+        taskNames = tuple(getattr(self, 'captureTaskNames', ()))
+        self.captureTaskNames = set()
+        self.captureTaskByBuffer = {}
+        for taskName in taskNames:
+            taskMgr.remove(taskName)
+
+    def _pauseRuntimeInterval(self, attributeName):
+        interval = getattr(self, attributeName, None)
+        if interval:
+            interval.pause()
+        setattr(self, attributeName, None)
+
+    def _cleanupRuntime(self):
+        taskMgr.remove(self.VIEWFINDER_TASK_NAME)
+        taskMgr.remove(self.LOCAL_PHOTO_MOVE_TASK)
+        taskMgr.remove(self.INTRO_TASK_NAME)
+        taskMgr.remove(self.INTRO_TASK_NAME_CAMERA_LERP)
+        for avId in getattr(self, 'avIdList', ()):
+            taskMgr.remove('firePhoto' + str(avId))
+            taskMgr.remove('flyingToon' + str(avId))
+
+        self._cancelCaptureTasks()
+        for attributeName in ('cameraTrack', 'introSequence'):
+            self._pauseRuntimeInterval(attributeName)
+        subjectTracks = getattr(self, 'subjectTracks', {})
+        self.subjectTracks = {}
+        for subjectTrack in subjectTracks.values():
+            interval = subjectTrack[0]
+            if interval:
+                interval.pause()
+        self.ignore('mouse1')
+        for eventName in (
+                self.FIRE_KEY,
+                self.UP_KEY,
+                self.DOWN_KEY,
+                self.LEFT_KEY,
+                self.RIGHT_KEY):
+            self.ignore(eventName)
+            self.ignore(eventName + '-up')
+        if getattr(self, 'photoMoving', 0):
+            self.photoMoving = 0
+            self.sndPhotoMove.stop()
 
     def __enableAimInterface(self):
         self.accept(self.FIRE_KEY, self.__fireKeyPressed)
@@ -1354,7 +1427,7 @@ class DistributedPhotoGame(DistributedMinigame, PhotoGameBase.PhotoGameBase):
             self.curScore = score
         self.filmPanel['text'] = str(score)
         if self.curScore != score:
-            if hasattr(self, 'jarIval'):
+            if getattr(self, 'jarIval', None):
                 self.jarIval.finish()
             s = self.filmPanel.getScale()
             self.jarIval = Parallel(Sequence(self.filmPanel.scaleInterval(0.15, s * 3.0 / 4.0, blendType='easeOut'), self.filmPanel.scaleInterval(0.15, s, blendType='easeIn')), Sequence(Wait(0.25), SoundInterval(self.sndFilmTick)), name='photoGameFilmJarThrob')

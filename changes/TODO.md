@@ -12,9 +12,11 @@ after its acceptance criteria have passed and the result is recorded in
     jellybean costs, fish records, trophies, and quest progress.
   - Implement selling and tank clearing through a real `FishManagerAI`.
   - Repair `FishTank.removeFishAtIndex()` and its undefined variable.
+  - Evaluate client target hits on the pond's X/Y plane so target depth does
+    not turn a valid cast into a visual miss.
   - Add persistence and reconnect tests before enabling Fish Bingo.
-  - Source, focused tests, DC parsing, and AI startup passed on 2026-07-26;
-    live client catch/sale/reconnect validation remains open separately below.
+  - Source, focused tests, DC parsing, AI startup, and a live client
+    catch/sale/reconnect cycle passed on 2026-07-26.
 - [ ] Make trolley-minigame skipping lifecycle-safe.
   - [x] Restrict skipping to active gameplay.
   - [x] Guard known early-abort cleanup fields in Toon Escape, Maze Game, and
@@ -30,12 +32,22 @@ after its acceptance criteria have passed and the result is recorded in
     client-exit barrier.
   - Add server tests for completed, skipped, and duplicate-credit cases.
 - [ ] Complete live validation for the new P0 paths.
-  - Catch and sell fish in a public hood pond, reconnect, and confirm persisted
-    collection/tank state.
+  - [x] Catch and sell fish in a public hood pond, reconnect, and confirm
+    persisted collection/tank state.
+    - A Party Clown Fish catch persisted through disconnect and reconnect with
+      collection `1`, tank `1`, and value `6`.
+    - The live Fisherman Freddy sale emptied the tank, retained the collection,
+      and persisted the capped wallet value of `40` through another reconnect.
   - [x] Exercise a solo skip from active gameplay.
     - A live Maze Game skip produced unanimous `1/1` vote, skip, and
       zero-reward server events, then returned cleanly to Central Commons.
-  - Exercise a two- or four-player unanimous skip and visible vote status.
+  - [x] Exercise a two-player unanimous skip and visible vote status.
+    - Both clients displayed `Skip votes: 1/2` after the first vote.
+    - Astron recorded the second vote as `2/2`, the unanimous skip, and a
+      zero-reward result for each avatar.
+    - Both clients returned cleanly to Central Commons, and Escape dismissed
+      their post-return quest popups.
+  - [ ] Repeat the unanimous skip with four players.
 
 ## P1 - Minigame correctness and testing
 
@@ -113,11 +125,20 @@ after its acceptance criteria have passed and the result is recorded in
 - [x] Audit fishing implementation status.
 - [x] Audit all 16 standard trolley minigames and Trolley Tracks.
 - [x] Document minigame-skip coverage, limitations, and confirmed defects.
-- [x] Add the ordinary public-hood fishing AI/server source path and 20 focused
+- [x] Add the ordinary public-hood fishing AI/server source path and 21 focused
   server/persistence tests.
-- [x] Add active-play-only, confirmed, unanimous minigame skipping with 17
+- [x] Live-validate an authoritative public-hood fish catch, persistence
+  reconnect, Fisherman Freddy sale, and post-sale reconnect.
+- [x] Add active-play-only, confirmed, unanimous minigame skipping with 18
   focused tests.
 - [x] Require normal non-skipped completion for play-minigame ToonTask credit.
+- [x] Add focused early-exit cleanup coverage for Diving, TwoD, Ring, Race,
+  Target, and Photo Game.
+- [x] Add a repeatable fresh-client live minigame launcher with distinct
+  accounts, per-client logs, deterministic Maze selection, popup dismissal,
+  and tiled one- through four-client windows.
+- [x] Live-validate a two-player unanimous Maze skip with visible vote status,
+  zero rewards, and clean playground returns.
 
 ## Maintenance rule
 

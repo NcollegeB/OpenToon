@@ -14,12 +14,14 @@ import re
 import sys
 import unittest
 from types import SimpleNamespace
+from unittest.mock import patch
 
 GAME_ROOT = pathlib.Path(__file__).resolve().parents[1]
 RESOURCE_ROOT = GAME_ROOT / 'resources'
 if str(GAME_ROOT) not in sys.path:
     sys.path.insert(0, str(GAME_ROOT))
 
+from panda3d.core import Point3
 from panda3d.core import loadPrcFileData
 
 loadPrcFileData('', 'window-type none')
@@ -236,6 +238,37 @@ class AvatarReconnectTests(unittest.TestCase):
 
 
 class FishingClientDefectTests(unittest.TestCase):
+    def test_target_hit_detection_ignores_pond_depth_offset(self):
+        hits = []
+        scheduled = []
+        target = SimpleNamespace(
+            getDoId=lambda: 7001,
+            getPos=lambda unusedRender: Point3(1.0, 1.0, -4.8),
+            getRadius=lambda: 2.5,
+        )
+        pond = SimpleNamespace(
+            notify=SimpleNamespace(
+                debug=lambda unusedMessage: None,
+                warning=lambda unusedMessage: None,
+            ),
+            localToonSpot=object(),
+            localToonBobPos=Point3(0.0, 0.0, -1.4),
+            targets={target.getDoId(): target},
+            d_hitTarget=lambda caughtTarget: hits.append(caughtTarget),
+            taskName=lambda name: name,
+            checkTargets=lambda task=None: None,
+        )
+        scheduler = SimpleNamespace(
+            doMethodLater=lambda *args: scheduled.append(args),
+        )
+
+        with patch.object(
+                DistributedFishingPond, 'taskMgr', scheduler, create=True):
+            DistributedFishingPond.DistributedFishingPond.checkTargets(pond)
+
+        self.assertEqual(hits, [target])
+        self.assertEqual(scheduled, [])
+
     def test_boot_item_label_marks_bingo_wildcard(self):
         spot = SimpleNamespace(
             pond=_PondPresence(True),

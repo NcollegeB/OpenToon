@@ -329,9 +329,21 @@ class DistributedDivingGame(DistributedMinigame):
 
             del self.treasures
         if hasattr(self, 'cSphereNodePath1'):
+            if self.cTrav:
+                self.cTrav.removeCollider(self.cSphereNodePath1)
+            if self.cTrav2:
+                self.cTrav2.removeCollider(self.cSphereNodePath1)
+            if self.pusher:
+                self.pusher.removeCollider(self.cSphereNodePath1)
             self.cSphereNodePath1.removeNode()
             del self.cSphereNodePath1
-        if hasattr(self, 'cSphereNodePath1'):
+        if hasattr(self, 'cSphereNodePath2'):
+            if self.cTrav:
+                self.cTrav.removeCollider(self.cSphereNodePath2)
+            if self.cTrav2:
+                self.cTrav2.removeCollider(self.cSphereNodePath2)
+            if self.pusher:
+                self.pusher.removeCollider(self.cSphereNodePath2)
             self.cSphereNodePath2.removeNode()
             del self.cSphereNodePath2
         if hasattr(self, 'remoteToonCollNPs'):
@@ -471,7 +483,6 @@ class DistributedDivingGame(DistributedMinigame):
         cSphereNode = CollisionNode('%s' % self.localAvId)
         cSphereNode.addSolid(cSphere)
         cSphereNode.setFromCollideMask(DivingGameGlobals.CollideMask)
-        cSphereNode.setFromCollideMask(BitMask32.allOff())
         cSphereNode.setIntoCollideMask(BitMask32.allOff())
         headparts = base.localAvatar.getHeadParts()
         pos = headparts[2].getPos()
@@ -503,7 +514,7 @@ class DistributedDivingGame(DistributedMinigame):
                 cSphereNode.setCollideMask(DivingGameGlobals.CollideMask)
                 cSphereNP = toon.attachNewNode(cSphereNode)
                 cSphereNP.setPos(pos + Point3(0, 1.5, -1))
-                self.remoteToonCollNPs[int(str(avId) + str(1))] = cSphereNP
+                self.remoteToonCollNPs[int(str(avId) + str(2))] = cSphereNP
                 toonSD = DivingGameToonSD.DivingGameToonSD(avId, self)
                 self.toonSDs[avId] = toonSD
                 toonSD.load()
@@ -964,7 +975,9 @@ class DistributedDivingGame(DistributedMinigame):
         self.introMovie.finish()
         self.boatTilt.finish()
         self.treasurePanel.cleanup()
-        self.mapAvatars[self.localAvId].destroy()
+        for mapAvatar in list(self.mapAvatars.values()):
+            mapAvatar.destroy()
+
         del self.mapAvatars
         for i in range(self.NUMTREASURES):
             del self.chestIcons[i]

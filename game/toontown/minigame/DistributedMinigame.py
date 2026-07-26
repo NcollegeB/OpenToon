@@ -15,6 +15,7 @@ from direct.showbase import RandomNumGen
 from toontown.toonbase import TTLocalizer
 import random
 from . import MinigameGlobals
+from . import MinigameSkipPolicy
 from direct.showbase import PythonUtil
 from toontown.toon import TTEmote
 from toontown.toontowngui import TTDialog
@@ -194,6 +195,7 @@ class DistributedMinigame(DistributedObject.DistributedObject):
             scale=0.075,
             sortOrder=100,
             command=self.__requestSkipMinigame)
+        self.skipMinigameButton.hide()
         self.skipMinigameStatus = DirectLabel(
             parent=base.a2dBottomRight,
             relief=None,
@@ -204,9 +206,15 @@ class DistributedMinigame(DistributedObject.DistributedObject):
             text_align=TextNode.ARight,
             pos=(-0.04, 0, 0.235),
             sortOrder=100)
+        self.skipMinigameStatus.hide()
+        taskMgr.add(
+            self.__updateSkipMinigameAvailability,
+            self.uniqueName('skip-minigame-availability'))
+        self.__updateSkipMinigameAvailability(None)
         self.cleanupActions.append(self.__destroySkipMinigameButton)
 
     def __destroySkipMinigameButton(self):
+        taskMgr.remove(self.uniqueName('skip-minigame-availability'))
         if self.skipMinigameConfirm:
             self.skipMinigameConfirm.cleanup()
             self.skipMinigameConfirm = None
@@ -218,8 +226,40 @@ class DistributedMinigame(DistributedObject.DistributedObject):
             self.skipMinigameStatus = None
         self.skipMinigamePending = False
 
+    def __canRequestSkipMinigame(self):
+        frameworkState = self.frameworkFSM.getCurrentState()
+        frameworkStateName = (
+            frameworkState.getName() if frameworkState else None)
+        gameStateName = None
+        if hasattr(self, 'gameFSM') and self.gameFSM.getCurrentState():
+            gameStateName = self.gameFSM.getCurrentState().getName()
+        return MinigameSkipPolicy.canRequestSkip(
+            frameworkStateName, gameStateName)
+
+    def __updateSkipMinigameAvailability(self, task):
+        eligible = self.__canRequestSkipMinigame()
+        if self.skipMinigameButton:
+            if eligible:
+                self.skipMinigameButton.show()
+            else:
+                self.skipMinigameButton.hide()
+        if self.skipMinigameStatus:
+            if eligible:
+                self.skipMinigameStatus.show()
+            else:
+                self.skipMinigameStatus.hide()
+        if not eligible and self.skipMinigameConfirm:
+            self.skipMinigameConfirm.cleanup()
+            self.skipMinigameConfirm = None
+        if task is None:
+            return
+        return Task.cont
+
     def __requestSkipMinigame(self):
-        if self.skipMinigamePending or self.skipMinigameConfirm:
+        if (
+                not self.__canRequestSkipMinigame() or
+                self.skipMinigamePending or
+                self.skipMinigameConfirm):
             return
         self.skipMinigameConfirm = TTDialog.TTDialog(
             style=TTDialog.YesNo,
@@ -233,7 +273,10 @@ class DistributedMinigame(DistributedObject.DistributedObject):
         if self.skipMinigameConfirm:
             self.skipMinigameConfirm.cleanup()
             self.skipMinigameConfirm = None
-        if buttonValue != DGG.DIALOG_OK or self.skipMinigamePending:
+        if (
+                buttonValue != DGG.DIALOG_OK or
+                self.skipMinigamePending or
+                not self.__canRequestSkipMinigame()):
             return
         self.skipMinigamePending = True
         if self.skipMinigameButton:

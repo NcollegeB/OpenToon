@@ -8,8 +8,10 @@ upstream Open Toontown source and resources.
   initial local build.
 - [`2026-07-26.md`](2026-07-26.md) records the P0 ordinary hood-fishing server
   path, unanimous lifecycle-gated minigame skipping, completion-only minigame
-  quest credit, focused tests, the live solo Maze walkthrough, the public
-  open-source release preparation, and the remaining live-test boundaries.
+  quest credit, focused tests, the live solo and two-player Maze walkthroughs,
+  the live fishing catch/sale/reconnect cycle, the repeatable live-client
+  harness, the public open-source release preparation, and the remaining
+  live-test boundaries.
 - [`FILE_INVENTORY.md`](FILE_INVENTORY.md) lists every modified or newly added
   source/resource path, plus the authored bundle files outside the nested Git
   repositories.

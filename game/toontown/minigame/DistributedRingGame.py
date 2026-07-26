@@ -22,7 +22,7 @@ class DistributedRingGame(DistributedMinigame):
     UPDATE_RINGS_TASK = 'RingGameUpdateRingsTask'
     UPDATE_SHADOWS_TASK = 'RingGameUpdateShadowsTask'
     COLLISION_DETECTION_TASK = 'RingGameCollisionDetectionTask'
-    END_GAME_WAIT_TASK = 'RingGameCollisionDetectionTask'
+    END_GAME_WAIT_TASK = 'RingGameEndGameWaitTask'
     COLLISION_DETECTION_PRIORITY = 5
     UPDATE_SHADOWS_PRIORITY = 47
     RT_UNKNOWN = 0
