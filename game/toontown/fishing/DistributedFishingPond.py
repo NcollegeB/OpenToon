@@ -63,6 +63,9 @@ class DistributedFishingPond(DistributedObject.DistributedObject):
             for target in list(self.targets.values()):
                 targetPos = target.getPos(render)
                 distVec = Vec3(targetPos - self.localToonBobPos)
+                # Fishing targets may render below the water surface. Aim is
+                # evaluated across the pond plane, matching server validation.
+                distVec.setZ(0.0)
                 dist = distVec.length()
                 if dist < target.getRadius():
                     self.notify.debug('checkTargets: hit target: %s' % target.getDoId())
