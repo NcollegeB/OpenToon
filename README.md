@@ -1,8 +1,10 @@
 # OpenToon
 
-OpenToon is a community modification of
-[Open Toontown](https://github.com/open-toontown/open-toontown). It contains a
-local client, an Astron-backed server, a Windows server-control GUI,
+OpenToon is a free community modification of
+[Open Toontown](https://github.com/open-toontown/open-toontown). Allowing anyone the opportunity to host their own toontown server,
+Either for small local friend servers or large scale productions like Toontown Rewritten and Corporate Clash. This is an entirely Open source
+and modernized version of toontown. With updated Textures, 1080p support, 60fps, fishing implemented and so much more. 
+It contains a local client, an Astron-backed server, a Windows server-control GUI,
 cross-platform launch scripts, launcher build scripts, gameplay changes, and
 verification tools. 
 
