@@ -10,9 +10,9 @@ This is a **source-only repository**. It intentionally does not distribute
 game resources, native Astron executables, a Python/Panda3D runtime, live
 player databases, logs, backups, or compiled launcher binaries.
 
-The included setup scripts automatically fetch the compatible, separately
-licensed resource snapshot into the ignored local `game/resources/` folder.
-Users do not need to locate or copy that resource tree manually.
+The included setup scripts will automatically fetch the compatible, separately
+licensed resource snapshot into the ignored local `game/resources/` folder for you so do not worry!
+Users do not need to locate or copy that resource tree manually!!!
 
 ## Project status
 
