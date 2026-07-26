@@ -492,6 +492,65 @@ PyInstaller must be run on the target operating system. A Windows build cannot
 produce a native macOS application, and a macOS build cannot produce a native
 Windows executable.
 
+## Meaningful commits and contributions
+
+Keep each commit focused on one logical change and small enough for another
+contributor to review. A commit should leave the repository in a working state
+whenever practical. Before submitting a change:
+
+- Read and understand every line you add or modify.
+- Use a clear, imperative commit subject that describes the result, such as
+  `Fix fishing target ownership checks`, rather than `updates` or `misc fixes`.
+- Explain what changed, why it was needed, and how it was verified in the pull
+  request.
+- Include relevant tests and documentation with the behavior they cover.
+- Separate unrelated features, formatting, generated files, and refactors into
+  different commits.
+- Do not commit secrets, logs, caches, local databases, or build outputs unless
+  the repository intentionally tracks that specific artifact.
+- Preserve copyright, license, and attribution notices.
+
+### AI- and LLM-assisted contributions
+
+AI or LLM tools may assist with a contribution, but they do not replace
+contributor judgment or review. Prefer minimal generated code. The contributor
+submitting the change remains responsible for its correctness, security,
+licensing, maintainability, and compatibility with the rest of the project.
+
+Before submitting AI- or LLM-assisted code:
+
+- Read, understand, and manually review every generated or modified line.
+- Verify APIs, dependencies, file paths, assumptions, and error handling against
+  the actual repository.
+- Remove unnecessary abstractions, duplicated code, fabricated behavior, and
+  unused dependencies.
+- Run the relevant automated checks and perform an end-to-end test when the
+  change affects gameplay, networking, persistence, packaging, or security.
+- Mention substantial AI or LLM assistance in the pull-request description so
+  reviewers know where additional scrutiny may be useful.
+
+Unreviewed generated output is not an acceptable contribution.
+
+### Resource and artwork contributions
+
+Only contribute artwork, models, textures, audio, fonts, or other resources
+that meet at least one of these conditions:
+
+- You created the resource and have the right to license it to the project.
+- It is verifiably in the public domain or released under CC0.
+- Its explicit license permits modification and open-source redistribution in
+  this project.
+- You have written permission from the rights holder to contribute it under the
+  project's chosen asset license.
+
+Include the creator, original source, exact license, required attribution, and
+editable source file when available. A resource described only as
+`license-free`, `royalty-free`, or `found online` is not sufficient; the actual
+license terms must permit this project's use and redistribution. Do not submit
+extracted proprietary assets, close traces, recolors, or lightly modified
+versions of material that the contributor does not have permission to
+redistribute. The absence of a license is not permission.
+
 ## Verification
 
 Run these from `game/` using the compatible game Python:
