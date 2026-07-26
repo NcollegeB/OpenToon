@@ -1,0 +1,63 @@
+# Nested repositories and local source metadata
+**/.git/
+
+# Local resources and runtimes are intentionally not distributed
+/runtime/
+/game/resources/
+/game/astron/win32/
+/game/astron/darwin/
+/game/astron/linux/
+
+# Live server state, player accounts, and logs
+/backups/
+/game/data/*
+!/game/data/.gitignore
+/game/logs/*
+!/game/logs/.gitignore
+/game/runtime-control/*
+!/game/runtime-control/.gitignore
+/game/astron/databases/accounts.json
+/game/astron/databases/astrondb/*
+!/game/astron/databases/astrondb/.gitignore
+/game/astron/logs/*
+!/game/astron/logs/.gitignore
+
+# Machine-specific game configuration
+/game/PPYTHON_PATH
+/game/useropt.json
+/game/errorCode
+
+# Launcher build output and downloaded build tools
+/launcher/.build/
+/launcher/.build-tools/
+/launcher/.build-venv/
+/launcher/dist/
+/FULL_FILE_INDEX.txt
+
+# Python caches
+**/__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# Logs, crashes, and temporary files
+*.log
+*.dmp
+*.tmp
+*.temp
+
+# Local secrets and signing material
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.pfx
+*.p12
+
+# IDE and operating-system files
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
