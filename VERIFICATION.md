@@ -27,8 +27,8 @@ reaches its explicit ready record.
 
 ## Source and runtime integrity
 
-- All 1,849 Python files in `game\` AST-parsed successfully with the bundled
-  CPython 3.9 runtime.
+- The 2026-07-25 integrity pass AST-parsed all 1,849 Python files then present
+  in `game\` with the bundled CPython 3.9 runtime.
 - Runtime imports passed for `panda3d.core`, `panda3d.otp`,
   `panda3d.toontown`, and `pytz`.
 - `git diff --check` reported no whitespace errors; Git printed only expected
@@ -202,32 +202,62 @@ SHA-256: E8123D351F79D02358755C44F1118617ABBFEEDDB3641C229A8F51BA5B553931
 
 The first P0 implementation pass produced the following focused results:
 
-- `game\tools\test_minigame_skip.py` passed all 17 tests. Coverage includes
+- `game\tools\test_minigame_skip.py` passed all 18 tests. Coverage includes
   active-play state gating, solo and unanimous group votes, duplicate and
   outsider rejection, visible vote updates, explicit-skip zero-reward wiring,
-  normal-completion-only ToonTask credit, once-only credit, known cleanup
-  guards, source parsing, and the distributed-class field.
+  normal-completion-only ToonTask credit, once-only credit, child-game state
+  gating, ineligible-state UI teardown, known cleanup guards, source parsing,
+  and the distributed-class field.
 - `game\tools\test_fishing_server.py` passed all 11 tests. Coverage includes
   quest-item precedence, fish collection/tank writes, invalid-fish fallback,
   rod-specific jellybean catches, full-tank rejection, tank sale/trophy
   behavior, unique pier claims, requested-fish rod validation, one-time cast
   charging, invalid cast rejection, and target distance/flight-time checks.
-- `game\tools\test_fishing_persistence.py` passed all 9 tests. Coverage includes
+- `game\tools\test_fishing_persistence.py` passed all 10 tests. Coverage includes
   tank removal and bounds, tank/collection network round trips, collection
   records, all five fishing reconnect payload fields, client boot paths, and
-  the retained persistent DC declarations.
+  the retained persistent DC declarations. Its pond-plane regression confirms
+  that a target's below-surface Z offset cannot invalidate an otherwise valid
+  X/Y hit.
+- `game\tools\test_diving_twod_cleanup.py` passed all 8 tests covering
+  collision, mask, control, Laff-meter, task, event, and Ring ending-task
+  cleanup.
+- `game\tools\test_race_cleanup.py` passed all 5 tests covering owned tasks,
+  intervals, dice state, avatar neutralization, and idempotent early teardown.
+- `game\tools\test_target_photo_cleanup.py` passed all 12 tests covering
+  delayed work, intervals, collision state, and barriers.
+- `game\tools\test_live_minigame_harness.py` passed all 7 tests, and PowerShell
+  parsing accepted `game\tools\start_live_minigame_clients.ps1`.
 - Panda3D's DC parser accepted `game\etc\toon.dc` after the skip-vote field was
   added.
-- All 1,854 game-worktree Python files passed an AST parse, and
-  `git diff --check` found no whitespace errors.
+- The earlier pre-harness pass AST-parsed all 1,854 game-worktree Python files
+  then present, and `git diff --check` found no whitespace errors.
 - A real AI server startup running the changed source reached
   `ToontownAIRepository: Done.`
 
-This verification is intentionally limited to focused automation and server
-startup plus the live solo result below. It does not claim a live client fish
-catch, sale, reconnect, multi-client unanimous vote, or all-minigame lifecycle
-sweep. Public hood ponds are the implemented fishing scope; estate-pond
-fishing and Fish Bingo remain open.
+This verification includes focused automation and server startup plus the live
+public-hood fishing, solo Maze, and two-player Maze results below. It does not
+claim a four-player unanimous vote or an all-minigame lifecycle sweep.
+Estate-pond fishing and Fish Bingo remain open.
+
+### Live public-hood fishing catch, persistence, and sale
+
+- A fresh local client made an authoritative cast at the Central Commons
+  public pond and caught a Party Clown Fish: genus `4`, species `2`, weight
+  `40`, value `6`.
+- The accepted cast changed money from `39` to `38`, collection size from `0`
+  to `1`, and tank size from `0` to `1`.
+- After a clean disconnect, the avatar YAML stored money `38`, collection `1`,
+  and tank `1`.
+- Reconnecting rehydrated collection `1`, tank `1`, and tank value `6`.
+- The live Fisherman Freddy flow sold the fish. The tank changed from `1` to
+  `0`, while money changed from `38` to the wallet cap of `40`.
+- Post-sale YAML retained collection `1`, stored tank `0`, and stored money
+  `40`. A final reconnect reproduced collection `1`, tank `0`, and money `40`.
+
+This verifies the ordinary public-hood catch, persistence, fisherman sale, and
+post-sale reconnect path. It does not validate estate ponds, Fish Bingo, or a
+multiplayer fishing session.
 
 ### Live solo Maze skip
 
@@ -241,13 +271,43 @@ fishing and Fish Bingo remain open.
   log contained no targeted traceback, assertion, task-error, fatal, or
   exception-exit pattern.
 
-This confirms only the one-player Maze path. The two-/four-player vote paths
-and every-game leak/cleanup sweep remain open.
+This confirms the one-player Maze path. The four-player vote path and
+every-game leak/cleanup sweep remain open.
 
 Before that clean run, reusing the developer-only `~mg maze` teleport in a
 client that had already completed Maze triggered a PandaNode render assertion.
 The fresh-client skip run did not reproduce it. The repeat-teleport behavior
-remains an open test-harness issue in `changes\TODO.md`.
+remains an open test-harness issue in `changes\TODO.md`; the repeatable launcher
+below avoids it by starting fresh client processes.
+
+### Repeatable live-client harness
+
+- `game\tools\start_live_minigame_clients.ps1` starts one through four clients
+  with distinct local account tokens, fixed tiled windows, and separate
+  persistent logs.
+- `game\tools\live_minigame_client.py` loads the game source path, reapplies
+  test-window properties after saved settings load, dismisses blocking login
+  quest popups, requests the selected minigame from the first client, and
+  boards every client onto the same trolley.
+- The helper redirects all four Python output streams to stable files so the
+  clients remain usable after the starting PowerShell process exits.
+
+### Live two-player Maze skip
+
+- Two fresh clients selected Stinky (`100000001`) and Deputy Moe Crumblehoffer
+  (`100000003`); both joined Maze Game `6` in zone `2000`.
+- Both clients displayed `Skip votes: 1/2` after the first vote, and the game
+  remained active.
+- Astron then recorded the second vote as `2/2`, followed by
+  `minigame_skipped`.
+- Astron emitted one `minigame` result for each avatar with reward `0`.
+- Both clients completed the Gag Shop purchase transition and returned to
+  Central Commons. Escape dismissed each post-return quest popup.
+- Neither fresh client log contained a targeted traceback, assertion,
+  task-error, fatal, or exception-exit match.
+
+This confirms the two-player Maze path. Four-player voting and the full
+one-, two-, and four-player lifecycle matrix remain open.
 
 ## Platform boundary
 

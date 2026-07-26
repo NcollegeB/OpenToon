@@ -500,10 +500,31 @@ Run these from `game/` using the compatible game Python:
 & $env:OPEN_TOONTOWN_PYTHON -u tools/test_keyboard_shortcuts.py
 & $env:OPEN_TOONTOWN_PYTHON -u tools/verify_quest_overlay.py
 & $env:OPEN_TOONTOWN_PYTHON -u tools/test_minigame_skip.py
+& $env:OPEN_TOONTOWN_PYTHON -u tools/test_diving_twod_cleanup.py
+& $env:OPEN_TOONTOWN_PYTHON -u tools/test_race_cleanup.py
+& $env:OPEN_TOONTOWN_PYTHON -u tools/test_target_photo_cleanup.py
+& $env:OPEN_TOONTOWN_PYTHON -u tools/test_live_minigame_harness.py
 & $env:OPEN_TOONTOWN_PYTHON -u tools/test_fishing_server.py
 & $env:OPEN_TOONTOWN_PYTHON -u tools/test_fishing_persistence.py
 & $env:OPEN_TOONTOWN_PYTHON -u tools/verify_gag_xp.py
 & $env:OPEN_TOONTOWN_PYTHON -u tools/verify_gagshop_models.py
+```
+
+With the local server running, start the verified two-client Maze workflow:
+
+```powershell
+& .\tools\start_live_minigame_clients.ps1
+```
+
+The development launcher accepts one through four distinct local account
+tokens, gives every client a separate log, tiles the windows, and requests the
+selected minigame from the first client. Each account must already have a
+playable avatar in slot zero. For example:
+
+```powershell
+& .\tools\start_live_minigame_clients.ps1 `
+  -Tokens dev,dev2,dev3,dev4 `
+  -Minigame maze
 ```
 
 See [`VERIFICATION.md`](VERIFICATION.md) for the current evidence and known

@@ -60,18 +60,23 @@ the overlay shows all active tasks and Escape closes it.
 
 Ordinary public-hood fishing now has authoritative pier/target generation,
 cast and target validation, catch rolls, quest-item handling, persistent fish
-collection/tank updates, fisherman sales, trophies, and Laff rewards. Its 20
-focused server/persistence tests pass and the AI reaches normal startup with
-the path loaded. A live client catch/sale/reconnect walkthrough has not yet
-been recorded. Estate-pond fishing and authoritative Fish Bingo remain
-unfinished.
+collection/tank updates, fisherman sales, trophies, and Laff rewards. Client
+hit testing uses pond-plane X/Y distance so target depth does not invalidate a
+cast. Its 21 focused server/persistence tests pass and the AI reaches normal
+startup with the path loaded. A live Party Clown Fish catch persisted its
+collection, tank, value, and cast cost through reconnect; Fisherman Freddy then
+sold it, and the empty tank, retained collection, and capped wallet persisted
+through a second reconnect. Estate-pond fishing and authoritative Fish Bingo
+remain unfinished.
 
 The 16 standard trolley minigames and Trolley Tracks have client/server source.
-Their common skip path has 17 focused policy/wiring tests, and a live solo Maze
-skip recorded a unanimous `1/1` vote, zero reward, and a clean playground
-return. A live multi-client vote and the complete all-game cleanup matrix
-remain open. See `changes\FEATURE_AUDIT.md` for the exact evidence boundary
-and `changes\TODO.md` for the prioritized, checkable implementation backlog.
+Their common skip path has 18 focused policy/wiring tests, plus focused cleanup
+suites for Diving, TwoD, Ring, Race, Target, and Photo Game. Live solo and
+two-player Maze runs recorded `1/1` and `1/2` to `2/2` unanimous votes, zero
+rewards, and clean playground returns. Four-player voting and the complete
+all-game cleanup matrix remain open. See `changes\FEATURE_AUDIT.md` for the
+exact evidence boundary and `changes\TODO.md` for the prioritized, checkable
+implementation backlog.
 
 ## Neutral presentation and compatibility boundary
 
