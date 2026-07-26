@@ -1,10 +1,16 @@
 # OpenToon
 
-OpenToon is a modification of
+OpenToon is a community modification of
 [Open Toontown](https://github.com/open-toontown/open-toontown). It contains a
 local client, an Astron-backed server, a Windows server-control GUI,
 cross-platform launch scripts, launcher build scripts, gameplay changes, and
-verification tools.
+verification tools. 
+
+This was created by me and all who would like to contribute, to work towards a modernized version of toontown
+for everyone to run their own private servers with minimal setup and low entry cost.
+
+If contributing please read the TO-DO-List or if you think of any features make a pull request. 
+more can be seem in the Meaningfull Commits section. 
 
 This is a **source-only repository**. It intentionally does not distribute
 game resources, native Astron executables, a Python/Panda3D runtime, live
@@ -13,6 +19,13 @@ player databases, logs, backups, or compiled launcher binaries.
 The included setup scripts will automatically fetch the compatible, separately
 licensed resource snapshot into the ignored local `game/resources/` folder for you so do not worry!
 Users do not need to locate or copy that resource tree manually!!!
+
+## Quick Links
+- [Windows quick start](#windows-quick-start)
+- [macOS setup](#macos-setup)
+- [Linux setup](#linux-setup)
+- 
+
 
 ## Project status
 
@@ -40,22 +53,6 @@ must supply native builds of the custom Panda3D runtime and Astron.
 - Automated checks for keyboard shortcuts, quest overlay behavior, minigame
   skipping, fishing, Gag XP, and model references
 - Architecture, build, feature, and verification documentation
-
-## What is not included
-
-The following stay out of Git:
-
-- `game/resources/`: models, textures, audio, DNA, and other game resources
-- `runtime/`: Python, Panda3D, and bundled native libraries
-- `game/astron/{win32,darwin,linux}/`: target-native Astron executables
-- `game/astron/databases/`: local accounts and avatar object records
-- `game/astron/logs/`, `game/logs/`, and `game/runtime-control/`
-- `backups/`
-- `launcher/dist/`, build environments, and PyInstaller work files
-
-You must provide compatible resources that you are authorized to use. The
-upstream resource archive is not open-source and is not covered by this
-project's license.
 
 ## How the system fits together
 
