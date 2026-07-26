@@ -276,6 +276,9 @@ class DistributedRaceGame(DistributedMinigame):
         self.timerStartTime = None
         self.walkSeqs = {}
         self.runSeqs = {}
+        self.chanceCardInterval = None
+        self.cameraInterval = None
+        self.diceInstanceList = []
         return None
 
     def getTitle(self):
@@ -331,6 +334,7 @@ class DistributedRaceGame(DistributedMinigame):
 
     def unload(self):
         self.notify.debug('unload')
+        self.__stopRaceMotion()
         DistributedMinigame.unload(self)
         self.raceBoard.removeNode()
         del self.raceBoard
@@ -375,6 +379,7 @@ class DistributedRaceGame(DistributedMinigame):
 
     def offstage(self):
         self.notify.debug('offstage')
+        self.__stopRaceMotion()
         DistributedMinigame.offstage(self)
         self.music.stop()
         base.setBackgroundColor(ToontownGlobals.DefaultBackgroundColor)
@@ -526,7 +531,7 @@ class DistributedRaceGame(DistributedMinigame):
 
     def hideNumbers(self, task):
         self.notify.debug('hiding numbers...')
-        for dice in self.diceInstanceList:
+        for dice in getattr(self, 'diceInstanceList', []):
             if dice:
                 dice.removeNode()
 
@@ -581,7 +586,7 @@ class DistributedRaceGame(DistributedMinigame):
         wdt.name = 'walk done'
         tasks.append(wdt)
         moveTask = Task.sequence(*tasks)
-        taskMgr.add(moveTask, 'moveAvatars')
+        taskMgr.add(moveTask, self.uniqueName('moveAvatars'))
 
     def walkDone(self, task):
         self.choiceList = []
@@ -638,7 +643,14 @@ class DistributedRaceGame(DistributedMinigame):
         self.chanceCard.reparentTo(render)
         quat = Quat()
         quat.setHpr((270, 0, -85.24))
-        self.chanceCard.posQuatInterval(1.0, (19.62, 13.41, 13.14), quat, other=camera, name='cardLerp').start()
+        self.__pauseRaceInterval('chanceCardInterval')
+        self.chanceCardInterval = self.chanceCard.posQuatInterval(
+            1.0,
+            (19.62, 13.41, 13.14),
+            quat,
+            other=camera,
+            name=self.uniqueName('cardLerp'))
+        self.chanceCardInterval.start()
         return Task.done
 
     def hideChanceMarker(self, task):
@@ -712,7 +724,13 @@ class DistributedRaceGame(DistributedMinigame):
         CamQuat.setHpr(camera.getHpr())
         camera.setPos(savedCamPos)
         camera.setHpr(savedCamHpr)
-        camera.posQuatInterval(0.75, CamPos, CamQuat).start()
+        self.__pauseRaceInterval('cameraInterval')
+        self.cameraInterval = camera.posQuatInterval(
+            0.75,
+            CamPos,
+            CamQuat,
+            name=self.uniqueName('cameraLerp'))
+        self.cameraInterval.start()
 
     def getWalkDuration(self, squares_walked):
         walkDuration = abs(squares_walked / 1.2)
@@ -757,7 +775,7 @@ class DistributedRaceGame(DistributedMinigame):
 
     def exitMoveAvatars(self):
         self.notify.debug('In exitMoveAvatars: removing hooks')
-        taskMgr.remove('moveAvatars')
+        self.__stopRaceMotion()
         return None
 
     def gameOverCallback(self, task):
@@ -788,15 +806,19 @@ class DistributedRaceGame(DistributedMinigame):
                         del self.walkSeqs[lane]
                     avatar.setAnimState('jump', 1.0)
 
-        taskMgr.doMethodLater(4.0, self.gameOverCallback, 'playMovie')
+        taskMgr.doMethodLater(
+            4.0,
+            self.gameOverCallback,
+            self.uniqueName('playMovie'))
 
     def exitWinMovie(self):
-        taskMgr.remove('playMovie')
+        taskMgr.remove(self.uniqueName('playMovie'))
         self.winSting.stop()
         self.loseSting.stop()
 
     def enterCleanup(self):
         self.notify.debug('enterCleanup')
+        self.__stopRaceMotion()
 
     def exitCleanup(self):
         pass
@@ -822,6 +844,9 @@ class DistributedRaceGame(DistributedMinigame):
         walkSeq = Sequence(Func(avatar.setAnimState, 'walk', 1),
                            avatar.posQuatInterval(time, (posH[0], posH[1], posH[2]), posQuat, other=self.raceBoard),
                            Func(stopWalk))
+        oldWalkSeq = self.walkSeqs.get(str(lane))
+        if oldWalkSeq:
+            oldWalkSeq.pause()
         self.walkSeqs[str(lane)] = walkSeq
         walkSeq.start()
 
@@ -847,8 +872,39 @@ class DistributedRaceGame(DistributedMinigame):
                           avatar.posQuatInterval(time / 3.0, (pos2[0], pos2[1], pos2[2]), pos2Quat, other=self.raceBoard),
                           avatar.posQuatInterval(time / 3.0, (pos3[0], pos3[1], pos3[2]), pos3Quat, other=self.raceBoard),
                           Func(stopRun))
+        oldRunSeq = self.runSeqs.get(str(lane))
+        if oldRunSeq:
+            oldRunSeq.pause()
         self.runSeqs[str(lane)] = runSeq
         runSeq.start()
+
+    def __pauseRaceInterval(self, attributeName):
+        interval = getattr(self, attributeName, None)
+        if interval:
+            interval.pause()
+        setattr(self, attributeName, None)
+
+    def __stopRaceMotion(self):
+        taskMgr.remove(self.uniqueName('moveAvatars'))
+        taskMgr.remove(self.uniqueName('playMovie'))
+        self.__pauseRaceInterval('chanceCardInterval')
+        self.__pauseRaceInterval('cameraInterval')
+        for track in list(getattr(self, 'walkSeqs', {}).values()):
+            if track:
+                track.pause()
+        for track in list(getattr(self, 'runSeqs', {}).values()):
+            if track:
+                track.pause()
+        self.walkSeqs = {}
+        self.runSeqs = {}
+        for avId in getattr(self, 'avIdList', []):
+            avatar = self.getAvatar(avId)
+            if avatar:
+                avatar.setAnimState('neutral', 1.0)
+        for dice in getattr(self, 'diceInstanceList', []):
+            if dice:
+                dice.removeNode()
+        self.diceInstanceList = []
 
     def setAvatarChoice(self, choice):
         self.notify.error('setAvatarChoice should not be called on the client')
