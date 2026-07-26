@@ -124,7 +124,7 @@ class DistributedTargetGame(DistributedMinigame):
     UPDATE_LOCALTOON_TASK = 'TargetGameUpdateLocalToonTask'
     UPDATE_SHADOWS_TASK = 'TargetGameUpdateShadowsTask'
     COLLISION_DETECTION_TASK = 'TargetGameCollisionDetectionTask'
-    END_GAME_WAIT_TASK = 'TargetGameCollisionDetectionTask'
+    END_GAME_WAIT_TASK = 'TargetGameEndGameWaitTask'
     UPDATE_POWERBAR_TASK = 'TargetGameUpdatePowerBarTask'
     GAME_DONE_TASK = 'gameDoneTask'
     UPDATE_COUNTDOWN_TASK = 'countdown task'
@@ -170,6 +170,10 @@ class DistributedTargetGame(DistributedMinigame):
          1,
          1,
          1]
+        self.rubberBands = []
+        self.cameraWork = None
+        self.flyToFallCameraTrack = None
+        self.scoreCameraTrack = None
         self.localTrack = None
         self.hitInfo = None
         return
@@ -518,6 +522,8 @@ class DistributedTargetGame(DistributedMinigame):
 
     def unload(self):
         self.notify.debug('unload')
+        self._cleanupRuntime()
+        self._deleteRubberBands()
         DistributedMinigame.unload(self)
         del self.__textGen
         del self.toonDropShadows
@@ -553,8 +559,8 @@ class DistributedTargetGame(DistributedMinigame):
         self.help.destroy()
         del self.help
         if self.localTrack:
-            self.localTrack.finish()
-            del self.localTrack
+            self.localTrack.pause()
+        self.localTrack = None
 
     def onstage(self):
         self.notify.debug('onstage')
@@ -691,6 +697,7 @@ class DistributedTargetGame(DistributedMinigame):
 
     def offstage(self):
         self.notify.debug('offstage')
+        self._cleanupRuntime()
         DistributedMinigame.offstage(self)
         if self.music:
             self.music.stop()
@@ -720,12 +727,43 @@ class DistributedTargetGame(DistributedMinigame):
                 av.dropShadow.show()
                 av.resetLOD()
 
-        for band in self.rubberBands:
-            band.delete()
-
-        rubberBands = []
+        self._deleteRubberBands()
         self.targetsPlaced = []
         return
+
+    def _deleteRubberBands(self):
+        bands = getattr(self, 'rubberBands', [])
+        self.rubberBands = []
+        for band in bands:
+            band.delete()
+
+    def _stopRuntimeInterval(self, attributeName):
+        interval = getattr(self, attributeName, None)
+        if interval:
+            interval.pause()
+        setattr(self, attributeName, None)
+
+    def _cleanupRuntime(self):
+        taskNames = (
+            self.UPDATE_ENVIRON_TASK,
+            self.UPDATE_LOCALTOON_TASK,
+            self.UPDATE_SHADOWS_TASK,
+            self.COLLISION_DETECTION_TASK,
+            self.END_GAME_WAIT_TASK,
+            self.UPDATE_POWERBAR_TASK,
+            self.GAME_DONE_TASK,
+            self.UPDATE_COUNTDOWN_TASK,
+            self.TOONSTRETCHTASK,
+        )
+        for taskName in taskNames:
+            taskMgr.remove(taskName)
+
+        for attributeName in (
+                'cameraWork',
+                'flyToFallCameraTrack',
+                'scoreCameraTrack',
+                'localTrack'):
+            self._stopRuntimeInterval(attributeName)
 
     def handleDisabledAvatar(self, avId):
         self.notify.debug('handleDisabledAvatar')
@@ -887,7 +925,9 @@ class DistributedTargetGame(DistributedMinigame):
         self.help['text'] = TTLocalizer.TargetGameCountHelp
 
     def exitLaunch(self):
-        self.cameraWork.finish()
+        if self.cameraWork:
+            self.cameraWork.finish()
+            self.cameraWork = None
         self.__killUpdatePowerBarTask()
         self.speedLaunch = self.power
         self.powerBar.hide()
@@ -927,7 +967,9 @@ class DistributedTargetGame(DistributedMinigame):
         self.gravity = 4
         newHpr = Point3(0, -68, 0)
         newPos = Point3(0, self.CAMERA_Y + self.TOON_Y + 15, 15)
-        camera.posHprInterval(2.5, newPos, newHpr, blendType='easeInOut', name=self.FLY2FALL_CAM_TASK).start()
+        self._stopRuntimeInterval('flyToFallCameraTrack')
+        self.flyToFallCameraTrack = camera.posHprInterval(2.5, newPos, newHpr, blendType='easeInOut', name=self.FLY2FALL_CAM_TASK)
+        self.flyToFallCameraTrack.start()
         open = self.umbrella.find('**/open_umbrella')
         open.show()
         closed = self.umbrella.find('**/closed_umbrella')
@@ -1017,7 +1059,9 @@ class DistributedTargetGame(DistributedMinigame):
             self.localTrack.append(Parallel(Func(base.localAvatar.b_setAnimState, 'victory', 1.0), Func(self.playSound, 'score')))
         newHpr = Point3(180, 10, 0)
         newPos = Point3(0, -(self.CAMERA_Y + self.TOON_Y + 12), 1)
-        camera.posHprInterval(5.0, newPos, newHpr, blendType='easeInOut', name=self.SCORE_CAM_TASK).start()
+        self._stopRuntimeInterval('scoreCameraTrack')
+        self.scoreCameraTrack = camera.posHprInterval(5.0, newPos, newHpr, blendType='easeInOut', name=self.SCORE_CAM_TASK)
+        self.scoreCameraTrack.start()
         self.help.hide()
         self.localTrack.start()
         return
@@ -1027,16 +1071,20 @@ class DistributedTargetGame(DistributedMinigame):
 
     def enterCleanup(self):
         self.notify.debug('enterCleanup')
+        self._cleanupRuntime()
         if not self.isSinglePlayer():
-            for np in list(self.remoteToonCollNPs.values()):
+            remoteToonCollNPs = getattr(self, 'remoteToonCollNPs', {})
+            for np in list(remoteToonCollNPs.values()):
                 np.removeNode()
 
-            del self.remoteToonCollNPs
-            self.cSphereNodePath.removeNode()
-            del self.cSphereNodePath
-            del self.pusher
-            del self.cTrav
-            base.localAvatar.collisionsOn()
+            self.remoteToonCollNPs = {}
+            cSphereNodePath = getattr(self, 'cSphereNodePath', None)
+            if cSphereNodePath:
+                cSphereNodePath.removeNode()
+                self.cSphereNodePath = None
+                base.localAvatar.collisionsOn()
+            self.pusher = None
+            self.cTrav = None
 
     def exitCleanup(self):
         pass

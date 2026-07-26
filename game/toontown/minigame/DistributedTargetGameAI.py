@@ -40,13 +40,20 @@ class DistributedTargetGameAI(DistributedMinigameAI):
 
     def delete(self):
         self.notify.debug('delete')
+        self._removeRoundResetTask()
+        self._cleanupBarrierScore()
         del self.gameFSM
         del self.scoreTrack
-        if hasattr(self, 'barrierScore'):
-            if self.barrierScore:
-                self.barrierScore.cleanup()
-                del self.barrierScore
         DistributedMinigameAI.delete(self)
+
+    def _removeRoundResetTask(self):
+        taskMgr.remove(self.taskName('roundReset'))
+
+    def _cleanupBarrierScore(self):
+        barrierScore = getattr(self, 'barrierScore', None)
+        self.barrierScore = None
+        if barrierScore:
+            barrierScore.cleanup()
 
     def setGameReady(self):
         self.notify.debug('setGameReady')
@@ -148,15 +155,21 @@ class DistributedTargetGameAI(DistributedMinigameAI):
 
     def enterFly(self):
         self.notify.debug('enterFly')
+        self._cleanupBarrierScore()
         self.barrierScore = ToonBarrier('waitClientsScore', self.uniqueName('waitClientsScore'), self.avIdList, 120, self.allAvatarsScore, self.handleTimeout)
 
     def exitFly(self):
-        pass
+        self._cleanupBarrierScore()
 
     def handleTimeout(self, other = None):
         pass
 
     def allAvatarsScore(self, other = None):
+        if not hasattr(self, 'gameFSM'):
+            return
+        currentState = self.gameFSM.getCurrentState()
+        if not currentState or currentState.getName() != 'fly':
+            return
         if self.round == 0:
             self.gameOver()
         else:
@@ -184,8 +197,8 @@ class DistributedTargetGameAI(DistributedMinigameAI):
         scoreList = self.getScoreList()
         self.scoreTrack.append(scoreList)
         self.sendUpdate('setRoundDone', [])
-        self.barrierScore.cleanup()
-        del self.barrierScore
+        self._cleanupBarrierScore()
+        self._removeRoundResetTask()
         taskMgr.doMethodLater(0.1, self.gotoFly, self.taskName('roundReset'))
 
     def exitResetRound(self):
@@ -193,23 +206,29 @@ class DistributedTargetGameAI(DistributedMinigameAI):
 
     def gotoFly(self, extra = None):
         if hasattr(self, 'gameFSM'):
+            currentState = self.gameFSM.getCurrentState()
+            if not currentState or currentState.getName() != 'resetRound':
+                return
             self.gameFSM.request('fly')
 
     def enterCleanup(self):
         self.notify.debug('enterCleanup')
+        self._removeRoundResetTask()
+        self._cleanupBarrierScore()
         self.gameFSM.request('inactive')
 
     def exitCleanup(self):
         pass
 
     def setPlayerDone(self, other = None):
-        if not hasattr(self, 'barrierScore') or self.barrierScore == None:
+        barrierScore = getattr(self, 'barrierScore', None)
+        if barrierScore == None:
             return
         avId = self.air.getAvatarIdFromSender()
-        self.barrierScore.clear(avId)
+        barrierScore.clear(avId)
         for avId in list(self.stateDict.keys()):
             if self.stateDict[avId] == EXITED:
-                self.barrierScore.clear(avId)
+                barrierScore.clear(avId)
 
         return
 
