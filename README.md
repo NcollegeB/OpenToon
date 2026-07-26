@@ -1,6 +1,6 @@
 # OpenToon
 
-OpenToon is NcollegeB's modification of
+OpenToon is a modification of
 [Open Toontown](https://github.com/open-toontown/open-toontown). It contains a
 local client, an Astron-backed server, a Windows server-control GUI,
 cross-platform launch scripts, launcher build scripts, gameplay changes, and
