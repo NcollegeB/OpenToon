@@ -4,6 +4,7 @@
 # Local resources and runtimes are intentionally not distributed
 /runtime/
 /game/resources/
+/game/open_town_assets/
 /game/astron/win32/
 /game/astron/darwin/
 /game/astron/linux/

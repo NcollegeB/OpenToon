@@ -178,6 +178,14 @@ if ($resolvedPython) {
         -Value $resolvedPython `
         -NoNewline
     Write-Host "Compatible game Python: $resolvedPython"
+    Push-Location $gameRoot
+    try {
+        Invoke-Checked {
+            & $resolvedPython -m otp.otpbase.NeutralResources --verify
+        } "Building the neutral presentation overlay failed"
+    } finally {
+        Pop-Location
+    }
 } else {
     Write-Host ""
     Write-Host "A compatible game Python was not found." -ForegroundColor Yellow

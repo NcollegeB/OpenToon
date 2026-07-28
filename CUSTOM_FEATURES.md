@@ -53,14 +53,20 @@ branded upstream visuals:
 - The tutorial guide, Dance Coach, maze jellybean, and three-burst firework
   replace the active character-specific presentation in those systems.
 - Active DNA text baselines use neutral neighborhood, street, destination, and
-  cinema names. Active character destination portraits use `neutralSZ`, and
-  displayed landmark statues use `prop_neutral_landmark`.
+  cinema names. Active character destination portrait model paths resolve to
+  a neutral star, and displayed landmark model paths resolve to a neutral
+  planter.
 - The two Acorn entrance BAM variants remove only the displayed character
   subtree. Their architecture and all collision nodes/solids are retained.
 
 The substitutions deliberately preserve catalog item IDs, plant/special IDs,
 prices, saved inventory meaning, DC class order, and firework type number.
 Legacy-named local variables and unused nodes may therefore remain internally.
+
+`game\otp\otpbase\NeutralResources.py` deterministically generates the
+resource substitutions under `game\open_town_assets`. The generated overlay is
+loaded before the separate upstream resource snapshot, is verified during
+setup, and is recreated by the client when missing.
 
 Internal DNA group names, font/storage codes, filenames, legacy model paths,
 classic-character resources/classes, unused binary nodes, and the legacy

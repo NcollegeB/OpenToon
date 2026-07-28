@@ -22,6 +22,12 @@ The included setup scripts will automatically fetch the compatible, separately
 licensed resource snapshot into the ignored local `game/resources/` folder for you so do not worry!
 Users do not need to locate or copy that resource tree manually!!!
 
+Setup also builds `game/open_town_assets/`, a local generated overlay containing
+Open Town's neutral signs, street maps, display DNA, and model substitutions.
+Panda3D loads that overlay before the upstream snapshot. The overlay is
+reproducible from tracked source and is rebuilt automatically if it is missing,
+so the presentation changes work the same way on Windows, macOS, and Linux.
+
 ## Quick Links
 - [Windows quick start](#windows-quick-start)
 - [macOS setup](#macos-setup)
@@ -52,6 +58,7 @@ must supply native builds of the custom Panda3D runtime and Astron.
 - Windows, macOS, and Linux service launch scripts
 - A small cross-platform launcher and PyInstaller build scripts
 - Gameplay and quality-of-life changes documented under [`changes/`](changes/)
+- A cross-platform generator for the neutral presentation overlay
 - Automated checks for keyboard shortcuts, quest overlay behavior, minigame
   skipping, fishing, Gag XP, and model references
 - Architecture, build, feature, and verification documentation

@@ -94,11 +94,19 @@ portrait. These substitutions reuse compatible models, nodes, textures, and
 numeric IDs so the affected systems continue to load existing data.
 
 Active world DNA was also presentation-neutralized. Displayed neighborhood,
-street, cinema, and destination text uses the Open Town names; 52 active
-character destination portraits use a neutral star; four displayed character
-statues use a neutral planter; and the two Acorn entrance models omit only
-their displayed character subtree while preserving their architecture and
-collisions.
+street, cinema, and destination text uses the Open Town names. Character
+destination portrait model paths resolve to a neutral star, displayed
+character landmark paths resolve to a neutral planter, and the two Acorn
+entrance models omit only their displayed character subtree while preserving
+their architecture and collisions.
+
+These resource changes are generated into the ignored
+`game/open_town_assets/` directory by
+`game/otp/otpbase/NeutralResources.py`. `Configrc.prc` places that directory
+before the separately downloaded `game/resources/` snapshot. Both setup
+scripts build and verify the overlay, and the client recreates it if it is
+missing. This keeps the authored neutralization reproducible across operating
+systems without committing the upstream resource archive.
 
 This is a presentation-layer compatibility pass, not deletion of the upstream
 resource archive. Internal Python/DC identifiers, database fields, numeric
