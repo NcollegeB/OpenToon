@@ -54,6 +54,10 @@ printf '%s\n' \
 . "$GAME_ROOT/tools/platform_runtime.sh"
 if game_python=$(find_open_toontown_python "$BUNDLE_ROOT"); then
     printf 'Compatible game Python: %s\n' "$game_python"
+    (
+        cd "$GAME_ROOT"
+        "$game_python" -m otp.otpbase.NeutralResources --verify
+    )
     python_ready=1
 else
     python_ready=0

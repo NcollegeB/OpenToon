@@ -25,6 +25,9 @@ multisamples 0
 show-frame-rate-meter #f
 
 # Models/Resources
+# Generated Open Town presentation overrides must resolve before the separate
+# upstream resource snapshot.
+model-path open_town_assets
 model-path resources
 default-model-extension .bam
 vfs-case-sensitive 0

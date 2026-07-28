@@ -12,6 +12,9 @@ upstream Open Toontown source and resources.
   the live fishing catch/sale/reconnect cycle, the repeatable live-client
   harness, the public open-source release preparation, and the remaining
   live-test boundaries.
+- [`2026-07-28.md`](2026-07-28.md) records the cross-platform generated neutral
+  resource overlay and the repository-boundary fix that keeps those
+  presentation changes reproducible.
 - [`FILE_INVENTORY.md`](FILE_INVENTORY.md) lists every modified or newly added
   source/resource path, plus the authored bundle files outside the nested Git
   repositories.

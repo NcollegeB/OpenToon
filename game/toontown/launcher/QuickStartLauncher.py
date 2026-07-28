@@ -1,3 +1,7 @@
+from otp.otpbase.NeutralResources import ensure_neutral_resources
+
+ensure_neutral_resources()
+
 if __debug__:
     from panda3d.core import loadPrcFile
     loadPrcFile('etc/Configrc.prc')
