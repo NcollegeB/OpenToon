@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for closet within
+# estates, houses, gardens, mailboxes, closets, and banks.
+
 SHIRT = 1
 SHORTS = 2
 CLOSET_MOVIE_COMPLETE = 1

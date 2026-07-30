@@ -1,3 +1,6 @@
+# This module provides a minimal client delivery-manager protocol stub with hello and
+# acknowledgement messages used for connectivity testing.
+
 from panda3d.core import *
 from direct.distributed.DistributedObject import DistributedObject
 from toontown.catalog import CatalogItemList

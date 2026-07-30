@@ -1,3 +1,6 @@
+# This module implements the client-side distributed fireworks cannon, handling network updates,
+# presentation, and player interaction for estates, houses, gardens, mailboxes, closets, and banks.
+
 from toontown.toonbase.ToontownGlobals import *
 from direct.interval.IntervalGlobal import *
 from direct.distributed.ClockDelta import *

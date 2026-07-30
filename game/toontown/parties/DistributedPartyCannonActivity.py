@@ -1,3 +1,7 @@
+# This module implements the client-side distributed party cannon activity, handling network
+# updates, presentation, and player interaction for party scheduling, activities, decorations, and
+# services.
+
 import math
 from panda3d.core import *
 from direct.distributed.ClockDelta import *

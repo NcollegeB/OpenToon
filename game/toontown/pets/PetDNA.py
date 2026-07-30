@@ -1,3 +1,6 @@
+# This module defines pet appearance or configuration fields together with their construction and
+# serialization helpers for Doodle appearance, behavior, training, AI, and interfaces.
+
 from toontown.toon import ToonDNA
 from panda3d.core import VBase4
 from toontown.toonbase import TTLocalizer, ToontownGlobals

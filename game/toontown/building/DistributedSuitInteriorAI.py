@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of suit interior, handling validated state
+# and synchronized gameplay for buildings, interiors, doors, elevators, and boarding.
+
 from toontown.toonbase.ToontownBattleGlobals import *
 from otp.ai.AIBaseGlobal import *
 from direct.distributed.ClockDelta import *

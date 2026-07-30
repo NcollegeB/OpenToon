@@ -1,3 +1,6 @@
+# This module provides AI-server logic for Bossbot HQ data, coordinating authoritative simulation
+# and state for neighborhoods, zone data, and neighborhood lifecycle.
+
 from panda3d.core import Point3
 from direct.directnotify import DirectNotifyGlobal
 from . import HoodDataAI

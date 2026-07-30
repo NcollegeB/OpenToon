@@ -1,3 +1,6 @@
+# This module manages the client location lifecycle, state transitions, and interactions for Bossbot
+# office exterior within Cog HQ facilities, bosses, rooms, and level entities.
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.fsm import ClassicFSM
 from direct.fsm import State

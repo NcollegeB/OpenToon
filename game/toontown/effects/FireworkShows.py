@@ -1,3 +1,6 @@
+# This module supplies the firework shows data and definitions used by visual, particle, and
+# firework effects.
+
 from .FireworkGlobals import *
 from toontown.toonbase import ToontownGlobals
 from toontown.parties import PartyGlobals

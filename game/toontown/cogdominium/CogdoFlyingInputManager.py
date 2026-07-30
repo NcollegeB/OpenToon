@@ -1,3 +1,6 @@
+# This module coordinates Cogdo flying input lifecycle, state, and services for Cogdo rooms,
+# activities, entities, and rewards.
+
 from panda3d.core import CollisionSphere, CollisionNode, BitMask32, CollisionHandlerEvent, CollisionRay
 from toontown.minigame import ArrowKeys
 

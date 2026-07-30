@@ -1,3 +1,6 @@
+# This module provides AI-server logic for promotion, coordinating authoritative simulation and
+# state for Cog HQ facilities, bosses, rooms, and level entities.
+
 from otp.ai.AIBaseGlobal import *
 from direct.directnotify import DirectNotifyGlobal
 import random

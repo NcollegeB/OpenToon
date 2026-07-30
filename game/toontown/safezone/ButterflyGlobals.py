@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for butterfly within
+# playgrounds, treasures, and safe-zone activities.
+
 from panda3d.core import *
 import random
 OFF = 0

@@ -1,3 +1,6 @@
+# This module coordinates newbie purchase lifecycle, state, and services for Shticker Book pages,
+# settings, and dialogs.
+
 from . import PurchaseManager
 from toontown.quest import QuestParser
 from toontown.toon import NPCToons

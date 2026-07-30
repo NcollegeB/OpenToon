@@ -1,3 +1,6 @@
+# This module defines trait distribution and its supporting behavior for Doodle appearance,
+# behavior, training, AI, and interfaces.
+
 from direct.showbase.PythonUtil import randFloat, normalDistrib
 from direct.showbase.PythonUtil import clampScalar
 from toontown.toonbase import TTLocalizer, ToontownGlobals

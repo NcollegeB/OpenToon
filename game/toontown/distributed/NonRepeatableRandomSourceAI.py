@@ -1,3 +1,6 @@
+# This module provides AI-server logic for non repeatable random source, coordinating authoritative
+# simulation and state for core repositories, districts, timers, and world lifecycle.
+
 from direct.directnotify.DirectNotifyGlobal import directNotify
 from direct.distributed.DistributedObjectAI import DistributedObjectAI
 from direct.task import Task

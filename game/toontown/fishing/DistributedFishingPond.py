@@ -1,3 +1,6 @@
+# This module manages a client fishing pond's targets and Bingo integration, checking casts against
+# the pond and reporting confirmed target hits.
+
 from direct.distributed import DistributedObject
 from direct.directnotify import DirectNotifyGlobal
 from toontown.toonbase import ToontownGlobals

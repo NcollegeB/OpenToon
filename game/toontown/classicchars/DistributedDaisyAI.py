@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of daisy, handling validated state and
+# synchronized gameplay for classic-character NPC actors, paths, and dialogue.
+
 from otp.ai.AIBaseGlobal import *
 from . import DistributedCCharBaseAI
 from direct.directnotify import DirectNotifyGlobal

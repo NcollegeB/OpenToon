@@ -1,3 +1,6 @@
+# This module defines diner status indicator and its supporting behavior for Cog HQ facilities,
+# bosses, rooms, and level entities.
+
 from panda3d.core import NodePath, BillboardEffect, Vec3, Point3, TextureStage, TransparencyAttrib, DecalEffect, VBase4
 from direct.fsm import FSM
 from direct.gui.DirectGui import DirectFrame, DGG

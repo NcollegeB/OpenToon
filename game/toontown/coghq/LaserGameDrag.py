@@ -1,3 +1,6 @@
+# This module defines laser game drag and its supporting behavior for Cog HQ facilities, bosses,
+# rooms, and level entities.
+
 from toontown.coghq import LaserGameBase
 from direct.distributed import ClockDelta
 from direct.task import Task

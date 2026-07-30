@@ -1,3 +1,6 @@
+# This module manages base activity states, transitions, animation, and cleanup for party
+# scheduling, activities, decorations, and services.
+
 from direct.fsm.FSM import FSM
 from direct.directnotify import DirectNotifyGlobal
 

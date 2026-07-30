@@ -1,3 +1,6 @@
+# This module coordinates Toon blitz asset lifecycle, state, and services for trolley minigame
+# rules, presentation, and synchronization.
+
 from panda3d.core import CardMaker, CollisionNode, CollisionPlane, NodePath, Plane, Point3, Vec3
 
 from direct.directnotify.DirectNotifyGlobal import directNotify

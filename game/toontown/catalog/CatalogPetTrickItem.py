@@ -1,3 +1,6 @@
+# This module defines catalog pet trick item and its supporting behavior for catalog items,
+# purchasing, delivery, and catalog interfaces.
+
 from . import CatalogItem
 from toontown.pets import PetTricks
 from toontown.toonbase import ToontownGlobals

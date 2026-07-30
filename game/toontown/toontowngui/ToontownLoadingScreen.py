@@ -1,3 +1,6 @@
+# This module displays and updates the loading interface, including randomized tips, progress text,
+# progress-bar state, completion, and cancellation cleanup.
+
 from direct.gui.DirectGui import *
 from panda3d.core import *
 from toontown.toonbase import ToontownGlobals

@@ -1,3 +1,6 @@
+# This module implements the client-side distributed Cog kart, handling network updates,
+# presentation, and player interaction for Cog HQ facilities, bosses, rooms, and level entities.
+
 import math
 from panda3d.core import CollisionSphere, CollisionNode, Vec3, Point3, deg2Rad
 from direct.interval.IntervalGlobal import Sequence, Func, Parallel, ActorInterval, Wait, Parallel, LerpHprInterval, ProjectileInterval, LerpPosInterval

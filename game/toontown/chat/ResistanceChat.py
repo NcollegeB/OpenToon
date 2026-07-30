@@ -1,3 +1,6 @@
+# This module provides resistance chat helpers for player chat, whitelist filtering, and SpeedChat
+# integration.
+
 from direct.interval.IntervalGlobal import *
 from panda3d.core import *
 from toontown.toonbase import TTLocalizer

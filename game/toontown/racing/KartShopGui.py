@@ -1,3 +1,6 @@
+# This module implements the kart shop interface, presenting and updating player controls and
+# information for kart races, tracks, pads, projectiles, scores, and leaderboards.
+
 if __name__ == '__main__':
     from direct.directbase import DirectStart
 from panda3d.core import *

@@ -1,3 +1,6 @@
+# This module provides shared client behavior for distributed classic characters, including
+# collisions, chat, interaction, movement, turning, and visual effects.
+
 from panda3d.core import *
 from panda3d.otp import *
 from direct.interval.IntervalGlobal import *

@@ -1,3 +1,6 @@
+# This module supplies shared Photo Fun setup and deterministic assignment templates based on the
+# selected safe zone's subjects and animations.
+
 from . import PhotoGameGlobals
 import random
 

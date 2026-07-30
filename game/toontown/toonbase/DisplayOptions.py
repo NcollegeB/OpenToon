@@ -1,3 +1,6 @@
+# This module defines display options and its supporting behavior for application bootstrap, global
+# configuration, localization, loading, and access.
+
 import copy
 import string
 import os

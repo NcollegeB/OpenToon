@@ -1,3 +1,6 @@
+# This module defines Cogdo game exit and its supporting behavior for Cogdo rooms, activities,
+# entities, and rewards.
+
 from panda3d.core import NodePath, Point3
 from direct.interval.MetaInterval import Parallel, Sequence
 from direct.interval.SoundInterval import SoundInterval

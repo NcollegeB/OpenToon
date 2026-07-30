@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of grid, handling validated state and
+# synchronized gameplay for Cog HQ facilities, bosses, rooms, and level entities.
+
 from .CrateGlobals import *
 from otp.level import DistributedEntityAI
 from direct.directnotify import DirectNotifyGlobal

@@ -1,3 +1,7 @@
+# This module implements the client-side distributed leader board, handling network updates,
+# presentation, and player interaction for kart races, tracks, pads, projectiles, scores, and
+# leaderboards.
+
 from panda3d.core import NodePath, TextNode
 
 from direct.directnotify.DirectNotifyGlobal import directNotify

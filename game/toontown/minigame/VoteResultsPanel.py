@@ -1,3 +1,6 @@
+# This module implements the vote results interface, presenting and updating player controls and
+# information for trolley minigame rules, presentation, and synchronization.
+
 from direct.gui.DirectGui import DirectFrame, DGG, DirectLabel
 from direct.directnotify import DirectNotifyGlobal
 from toontown.toonbase import ToontownGlobals

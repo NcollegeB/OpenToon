@@ -1,3 +1,6 @@
+# This module provides calendar parsing, date comparison, and age-calculation utilities used by
+# login and account-related interfaces.
+
 import time
 
 class DateObject:

@@ -1,3 +1,6 @@
+# This module builds randomized weekly, back-catalog, and monthly sale inventories from item pools,
+# schedules, and per-avatar catalog history.
+
 from direct.directnotify import DirectNotifyGlobal
 from . import CatalogItem
 from . import CatalogItemList

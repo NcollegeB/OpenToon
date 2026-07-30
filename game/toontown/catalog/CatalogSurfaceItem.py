@@ -1,3 +1,6 @@
+# This module defines catalog surface item and its supporting behavior for catalog items,
+# purchasing, delivery, and catalog interfaces.
+
 from . import CatalogItem
 from . import CatalogAtticItem
 from toontown.toonbase import ToontownGlobals

@@ -1,3 +1,6 @@
+# This module implements the client-side distributed gag tree, handling network updates,
+# presentation, and player interaction for estates, houses, gardens, mailboxes, closets, and banks.
+
 from toontown.estate import DistributedPlantBase
 from direct.interval.IntervalGlobal import *
 from direct.directnotify import DirectNotifyGlobal

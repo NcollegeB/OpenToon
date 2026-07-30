@@ -1,3 +1,6 @@
+# This module defines the declarative entities, scenarios, and encounter layout for Lawbot office
+# entrance action 00 in the Cog facility level system.
+
 from toontown.coghq.SpecImports import *
 import random
 GlobalEntities = {1000: {'type': 'levelMgr',

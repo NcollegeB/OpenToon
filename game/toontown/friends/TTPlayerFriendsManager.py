@@ -1,3 +1,6 @@
+# This module coordinates Toontown player friends lifecycle, state, and services for friend
+# invitations, lists, secrets, and notifications.
+
 from direct.distributed.DistributedObjectGlobal import DistributedObjectGlobal
 from direct.directnotify.DirectNotifyGlobal import directNotify
 from otp.otpbase import OTPGlobals

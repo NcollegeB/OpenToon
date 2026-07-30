@@ -1,3 +1,6 @@
+# This module defines zero animated prop and its supporting behavior for neighborhoods, zone data,
+# and neighborhood lifecycle.
+
 import types
 import math
 from direct.interval.IntervalGlobal import Sequence, Wait, ActorInterval, Func, SoundInterval, Parallel

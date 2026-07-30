@@ -1,3 +1,6 @@
+# This module plans and spawns authoritative regen treasure entities or activities for playgrounds,
+# treasures, and safe-zone activities.
+
 from direct.distributed.ClockDelta import *
 from direct.showbase import DirectObject
 from direct.directnotify import DirectNotifyGlobal

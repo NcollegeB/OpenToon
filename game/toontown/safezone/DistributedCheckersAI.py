@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of checkers, handling validated state and
+# synchronized gameplay for playgrounds, treasures, and safe-zone activities.
+
 from direct.distributed.DistributedNodeAI import DistributedNodeAI
 from direct.distributed.ClockDelta import *
 from direct.fsm import ClassicFSM, State

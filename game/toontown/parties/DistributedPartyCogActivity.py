@@ -1,3 +1,6 @@
+# This module implements the client-side distributed party Cog activity, handling network updates,
+# presentation, and player interaction for party scheduling, activities, decorations, and services.
+
 from direct.distributed.ClockDelta import globalClockDelta
 from panda3d.core import Point3
 from toontown.toonbase import TTLocalizer

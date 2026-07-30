@@ -1,3 +1,6 @@
+# This module implements the pet detail interface, presenting and updating player controls and
+# information for Doodle appearance, behavior, training, AI, and interfaces.
+
 from panda3d.core import *
 from toontown.toonbase.ToontownGlobals import *
 from direct.gui.DirectGui import *

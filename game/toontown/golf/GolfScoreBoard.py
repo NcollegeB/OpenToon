@@ -1,3 +1,6 @@
+# This module defines golf score board and its supporting behavior for courses, holes, physics,
+# scores, and rewards.
+
 from panda3d.core import *
 from toontown.toonbase import TTLocalizer, ToontownGlobals
 from direct.directnotify import DirectNotifyGlobal

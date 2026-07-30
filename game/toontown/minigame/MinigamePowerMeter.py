@@ -1,3 +1,6 @@
+# This module implements the minigame power interface, presenting and updating player controls and
+# information for trolley minigame rules, presentation, and synchronization.
+
 from panda3d.core import *
 from toontown.toonbase.ToontownGlobals import *
 from direct.gui.DirectGui import *

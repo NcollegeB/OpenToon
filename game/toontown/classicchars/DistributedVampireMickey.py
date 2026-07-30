@@ -1,3 +1,6 @@
+# This module implements the client-side distributed vampire mickey, handling network updates,
+# presentation, and player interaction for classic-character NPC actors, paths, and dialogue.
+
 from panda3d.core import *
 from . import DistributedCCharBase
 from direct.directnotify import DirectNotifyGlobal

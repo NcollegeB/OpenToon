@@ -1,3 +1,6 @@
+# This module assembles and re-exports the Toontown-specific SpeedChat menu and terminal classes
+# used to build the available chat hierarchy.
+
 from .TTSCToontaskMenu import TTSCToontaskMenu
 from .TTSCFactoryMenu import TTSCFactoryMenu
 from .TTSCCogMenu import TTSCCogMenu

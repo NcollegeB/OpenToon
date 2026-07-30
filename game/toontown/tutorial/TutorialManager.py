@@ -1,3 +1,6 @@
+# This module coordinates the client tutorial handshake and lifecycle, including entry, completion
+# updates, skip requests, and the context-sensitive skip button.
+
 from panda3d.core import *
 from direct.gui.DirectGui import DirectButton, DGG
 from direct.distributed import DistributedObject

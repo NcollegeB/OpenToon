@@ -1,3 +1,6 @@
+# This module defines quest map and its supporting behavior for quest definitions, parsing,
+# progression, rewards, posters, and maps.
+
 import math
 from panda3d.core import CardMaker, TextNode
 from direct.gui.DirectGui import DirectFrame, DirectLabel, DirectButton

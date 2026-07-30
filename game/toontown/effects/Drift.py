@@ -1,3 +1,6 @@
+# This module builds and controls drift visual, interval, or particle effects for visual, particle,
+# and firework effects.
+
 from panda3d.core import *
 from direct.particles import ParticleEffect
 from direct.directnotify import DirectNotifyGlobal

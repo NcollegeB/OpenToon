@@ -1,3 +1,6 @@
+# This module defines Toontown chat input white list and its supporting behavior for player chat,
+# whitelist filtering, and SpeedChat integration.
+
 from otp.chat.ChatInputWhiteListFrame import ChatInputWhiteListFrame
 from toontown.chat.TTWhiteList import TTWhiteList
 from direct.showbase import DirectObject

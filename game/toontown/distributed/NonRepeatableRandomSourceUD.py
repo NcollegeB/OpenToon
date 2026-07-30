@@ -1,3 +1,6 @@
+# This module provides UberDOG service logic for non repeatable random source, handling global or
+# persistent coordination outside an individual district.
+
 from direct.distributed.DistributedObjectGlobalUD import DistributedObjectGlobalUD
 from direct.directnotify.DirectNotifyGlobal import directNotify
 import random

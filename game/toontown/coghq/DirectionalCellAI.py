@@ -1,3 +1,6 @@
+# This module provides AI-server logic for directional cell, coordinating authoritative simulation
+# and state for Cog HQ facilities, bosses, rooms, and level entities.
+
 from direct.directnotify import DirectNotifyGlobal
 from . import ActiveCellAI, CrateGlobals
 from direct.task import Task

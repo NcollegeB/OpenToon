@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for golf within
+# courses, holes, physics, scores, and rewards.
+
 from direct.directnotify import DirectNotifyGlobal
 import random
 MAX_PLAYERS_PER_HOLE = 4

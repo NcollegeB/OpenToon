@@ -1,3 +1,6 @@
+# This module provides shared purchase behavior and data used by related implementations in trolley
+# minigame rules, presentation, and synchronization.
+
 from toontown.toonbase.ToontownBattleGlobals import *
 from toontown.toonbase import ToontownGlobals
 from direct.fsm import StateData

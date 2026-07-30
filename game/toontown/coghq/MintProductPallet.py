@@ -1,3 +1,6 @@
+# This module defines mint product pallet and its supporting behavior for Cog HQ facilities, bosses,
+# rooms, and level entities.
+
 from toontown.toonbase.ToontownGlobals import *
 from toontown.coghq import MintProduct
 

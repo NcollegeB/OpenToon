@@ -1,3 +1,6 @@
+# This module defines dist Cogdo crane and its supporting behavior for Cogdo rooms, activities,
+# entities, and rewards.
+
 from direct.gui.DirectGui import *
 from panda3d.core import *
 from panda3d.direct import SmoothMover

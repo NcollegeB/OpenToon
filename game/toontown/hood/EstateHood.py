@@ -1,3 +1,6 @@
+# This module manages the client location lifecycle, state transitions, and interactions for estate
+# hood within neighborhoods, zone data, and neighborhood lifecycle.
+
 from panda3d.core import *
 from toontown.toonbase.ToonBaseGlobal import *
 from toontown.toonbase.ToontownGlobals import *

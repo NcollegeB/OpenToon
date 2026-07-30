@@ -1,3 +1,6 @@
+# This module defines mole hill and its supporting behavior for Cog HQ facilities, bosses, rooms,
+# and level entities.
+
 from panda3d.core import NodePath, Point3, CollisionSphere, CollisionNode, Vec4
 from direct.interval.IntervalGlobal import Sequence, LerpPosInterval, Parallel, LerpScaleInterval, Track, ParticleInterval, Wait, Func
 from toontown.toonbase import ToontownGlobals

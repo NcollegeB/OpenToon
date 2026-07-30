@@ -1,3 +1,6 @@
+# This module defines mailbox interactive prop and its supporting behavior for neighborhoods, zone
+# data, and neighborhood lifecycle.
+
 from direct.actor import Actor
 from direct.directnotify import DirectNotifyGlobal
 from direct.interval.IntervalGlobal import Sequence, Func

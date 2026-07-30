@@ -1,3 +1,6 @@
+# This module defines the data tables and configuration used by suit timings in Cog and boss actors,
+# behavior, and combat support.
+
 dict = {}
 fromSky = 6.5
 toSky = 6.5

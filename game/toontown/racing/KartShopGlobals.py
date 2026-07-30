@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for kart shop within
+# kart races, tracks, pads, projectiles, scores, and leaderboards.
+
 from enum import IntEnum
 
 class KartShopGlobals:

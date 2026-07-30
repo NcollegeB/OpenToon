@@ -1,3 +1,6 @@
+# This module represents a server-side kart-shop interior by storing and exposing its zone and
+# building-block identifiers.
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed.DistributedObjectAI import DistributedObjectAI
 

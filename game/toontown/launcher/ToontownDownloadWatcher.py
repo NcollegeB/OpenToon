@@ -1,3 +1,6 @@
+# This module defines Toontown download watcher and its supporting behavior for client startup,
+# downloading, and launch monitoring.
+
 from direct.directnotify import DirectNotifyGlobal
 from otp.launcher.DownloadWatcher import DownloadWatcher
 from toontown.toonbase import TTLocalizer

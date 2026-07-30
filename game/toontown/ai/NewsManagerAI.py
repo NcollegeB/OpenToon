@@ -1,3 +1,6 @@
+# This module defines the AI-side news-manager stub and currently exposes empty weekly, yearly,
+# one-time, relative, and multiple-start holiday calendars.
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed.DistributedObjectAI import DistributedObjectAI
 

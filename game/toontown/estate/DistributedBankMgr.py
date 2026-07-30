@@ -1,3 +1,6 @@
+# This module implements the client-side distributed bank, handling network updates, presentation,
+# and player interaction for estates, houses, gardens, mailboxes, closets, and banks.
+
 from direct.distributed import DistributedObject
 from direct.directnotify import DirectNotifyGlobal
 from toontown.toonbase import TTLocalizer

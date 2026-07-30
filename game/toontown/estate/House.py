@@ -1,3 +1,6 @@
+# This module defines house and its supporting behavior for estates, houses, gardens, mailboxes,
+# closets, and banks.
+
 from panda3d.core import *
 from toontown.toonbase.ToonBaseGlobal import *
 from direct.directnotify import DirectNotifyGlobal

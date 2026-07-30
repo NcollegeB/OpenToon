@@ -1,3 +1,6 @@
+# This module defines quiet zone state and its supporting behavior for neighborhoods, zone data, and
+# neighborhood lifecycle.
+
 from panda3d.core import *
 from panda3d.toontown import *
 from direct.showbase.PythonUtil import Functor, PriorityCallbacks

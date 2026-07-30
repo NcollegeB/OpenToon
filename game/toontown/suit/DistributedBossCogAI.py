@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of boss Cog, handling validated state and
+# synchronized gameplay for Cog and boss actors, behavior, and combat support.
+
 from direct.directnotify import DirectNotifyGlobal
 from otp.avatar import DistributedAvatarAI
 from toontown.battle import BattleExperienceAI

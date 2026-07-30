@@ -1,3 +1,6 @@
+# This module configures the Toontown UberDOG repository connections, distributed objects, and
+# runtime lifecycle for global delivery, party, mail, news, whitelist, and data services.
+
 import time
 
 from direct.directnotify import DirectNotifyGlobal

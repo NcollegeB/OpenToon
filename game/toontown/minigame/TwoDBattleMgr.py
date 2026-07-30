@@ -1,3 +1,6 @@
+# This module coordinates two d battle lifecycle, state, and services for trolley minigame rules,
+# presentation, and synchronization.
+
 from panda3d.core import CollisionHandlerEvent, CollisionNode, CollisionSphere, Point3, Point4, VBase3, Vec3
 
 from direct.directnotify.DirectNotifyGlobal import directNotify

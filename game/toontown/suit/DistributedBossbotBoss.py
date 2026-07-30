@@ -1,3 +1,6 @@
+# This module implements the client-side distributed Bossbot boss, handling network updates,
+# presentation, and player interaction for Cog and boss actors, behavior, and combat support.
+
 import math
 import random
 from panda3d.core import VBase3, CollisionPlane, CollisionNode, CollisionSphere, CollisionTube, NodePath, Plane, Vec3, Vec2, Point3, BitMask32, CollisionHandlerEvent, TextureStage, VBase4, BoundingSphere

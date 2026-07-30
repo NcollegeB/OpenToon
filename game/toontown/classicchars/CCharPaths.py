@@ -1,3 +1,6 @@
+# This module defines classic-character waypoint graphs and helpers for measuring, joining, and
+# traversing their roaming paths.
+
 from panda3d.core import Point3
 from panda3d.core import Vec3
 import copy

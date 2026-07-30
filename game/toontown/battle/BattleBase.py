@@ -1,3 +1,6 @@
+# This module provides shared battle behavior and data used by related implementations in Cog battle
+# rules, presentation, calculations, and rewards.
+
 from panda3d.core import *
 from toontown.toonbase.ToontownBattleGlobals import *
 from direct.task.Timer import *

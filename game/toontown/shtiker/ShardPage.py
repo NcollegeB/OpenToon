@@ -1,3 +1,6 @@
+# This module implements the shard interface, presenting and updating player controls and
+# information for Shticker Book pages, settings, and dialogs.
+
 from panda3d.core import *
 from . import ShtikerPage
 from direct.task.Task import Task

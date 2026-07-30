@@ -1,3 +1,6 @@
+# This module implements the town battle Toon interface, presenting and updating player controls and
+# information for streets, town loading, place state, and street battles.
+
 from panda3d.core import *
 from toontown.toonbase import ToontownGlobals
 from toontown.toonbase.ToontownBattleGlobals import *

@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for Cog page within
+# Shticker Book pages, settings, and dialogs.
+
 COG_QUOTAS = ((30, 25, 20, 15, 10, 5, 2, 1), (45, 40, 35, 30, 25, 20, 15, 10))
 COG_UNSEEN = 1
 COG_BATTLED = 2

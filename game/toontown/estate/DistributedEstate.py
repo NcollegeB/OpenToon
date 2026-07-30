@@ -1,3 +1,6 @@
+# This module manages the client presentation of an estate, including houses, camera setup, day and
+# night cycles, ambient effects, gardens, cannons, and activities.
+
 from panda3d.core import *
 from toontown.toonbase.ToonBaseGlobal import *
 from direct.gui.DirectGui import *

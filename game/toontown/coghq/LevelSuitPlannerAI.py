@@ -1,3 +1,6 @@
+# This module plans and spawns authoritative level suit entities or activities for Cog HQ
+# facilities, bosses, rooms, and level entities.
+
 from panda3d.core import *
 from direct.showbase import DirectObject
 from toontown.suit import SuitDNA

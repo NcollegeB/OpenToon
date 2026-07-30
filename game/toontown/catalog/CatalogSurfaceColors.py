@@ -1,3 +1,6 @@
+# This module defines the data tables and configuration used by catalog surface colors in catalog
+# items, purchasing, delivery, and catalog interfaces.
+
 CT_WHITE = (1.0, 1.0, 1.0, 1.0)
 CT_RED = (1.0, 0.5, 0.5, 1.0)
 CT_BROWN = (0.641, 0.355, 0.27, 1.0)

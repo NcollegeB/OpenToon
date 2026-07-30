@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of cannon, handling validated state and
+# synchronized gameplay for estates, houses, gardens, mailboxes, closets, and banks.
+
 from toontown.toonbase import ToontownGlobals
 from direct.distributed.ClockDelta import *
 from direct.fsm import ClassicFSM

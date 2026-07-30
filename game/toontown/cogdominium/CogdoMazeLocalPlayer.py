@@ -1,3 +1,6 @@
+# This module defines Cogdo maze local player and its supporting behavior for Cogdo rooms,
+# activities, entities, and rewards.
+
 from panda3d.core import Point3, CollisionNode, CollisionSphere, CollisionHandlerEvent
 from direct.interval.IntervalGlobal import Func, Sequence, Wait
 from direct.showbase.PythonUtil import bound as clamp

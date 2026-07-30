@@ -1,3 +1,6 @@
+# This module implements the race interface, presenting and updating player controls and information
+# for kart races, tracks, pads, projectiles, scores, and leaderboards.
+
 from panda3d.core import *
 from direct.showbase.PythonUtil import clampScalar
 from direct.distributed.ClockDelta import *

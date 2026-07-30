@@ -1,3 +1,6 @@
+# This module defines playing card deck and its supporting behavior for trolley minigame rules,
+# presentation, and synchronization.
+
 import random
 from . import PlayingCardGlobals
 from toontown.minigame.PlayingCard import PlayingCardBase

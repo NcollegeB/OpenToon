@@ -1,3 +1,6 @@
+# This module implements the client-side distributed HQ interior, handling network updates,
+# presentation, and player interaction for buildings, interiors, doors, elevators, and boarding.
+
 from panda3d.core import ModelNode, NodePath, TextNode
 from panda3d.toontown import DNADoor
 

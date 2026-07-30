@@ -1,3 +1,6 @@
+# This module implements the Cogdo memo interface, presenting and updating player controls and
+# information for Cogdo rooms, activities, entities, and rewards.
+
 from direct.gui.DirectGui import DGG, DirectFrame, DirectLabel
 from panda3d.core import TextNode
 from toontown.toonbase import ToontownGlobals

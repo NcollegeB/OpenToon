@@ -1,3 +1,7 @@
+# This module implements the client-side distributed pattern game, handling network updates,
+# presentation, and player interaction for trolley minigame rules, presentation, and
+# synchronization.
+
 from panda3d.core import Point3, VBase4, Vec3
 from panda3d.otp import CFSpeech, NametagGlobals
 

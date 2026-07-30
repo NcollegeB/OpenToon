@@ -1,3 +1,6 @@
+# This module provides shared pet behavior and data used by related implementations in Doodle
+# appearance, behavior, training, AI, and interfaces.
+
 from toontown.pets.PetConstants import AnimMoods
 from toontown.pets import PetMood
 import string

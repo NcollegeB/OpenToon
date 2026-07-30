@@ -1,3 +1,6 @@
+# This module defines the base visual Toon avatar, assembling appearance-driven body parts, detail
+# levels, animations, dialogue, collisions, accessories, and shared resources.
+
 from otp.avatar import Avatar
 from otp.avatar.Avatar import teleportNotify
 from . import ToonDNA

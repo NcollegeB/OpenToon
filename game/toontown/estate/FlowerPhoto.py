@@ -1,3 +1,6 @@
+# This module renders flower specimens in an isolated display region, loading and positioning garden
+# models for collection-interface photos.
+
 from direct.directnotify import DirectNotifyGlobal
 from panda3d.core import *
 from direct.interval.IntervalGlobal import *

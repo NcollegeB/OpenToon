@@ -1,3 +1,6 @@
+# This module provides AI-server logic for factory, coordinating authoritative simulation and state
+# for Cog HQ facilities, bosses, rooms, and level entities.
+
 from direct.directnotify import DirectNotifyGlobal
 from . import DistributedFactoryAI
 from toontown.toonbase import ToontownGlobals

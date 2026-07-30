@@ -1,3 +1,6 @@
+# This module builds and controls fireworks visual, interval, or particle effects for visual,
+# particle, and firework effects.
+
 from direct.interval.IntervalGlobal import *
 from direct.particles import ParticleEffect
 from direct.particles import Particles

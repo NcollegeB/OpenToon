@@ -1,3 +1,6 @@
+# This module defines pet shop fish animated prop and its supporting behavior for neighborhoods,
+# zone data, and neighborhood lifecycle.
+
 from . import AnimatedProp
 from direct.actor import Actor
 from direct.interval.IntervalGlobal import *

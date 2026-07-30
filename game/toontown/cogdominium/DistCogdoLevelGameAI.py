@@ -1,3 +1,6 @@
+# This module provides AI-server logic for dist Cogdo level game, coordinating authoritative
+# simulation and state for Cogdo rooms, activities, entities, and rewards.
+
 from direct.directnotify.DirectNotifyGlobal import directNotify
 from otp.level.DistributedLevelAI import DistributedLevelAI
 from toontown.cogdominium.DistCogdoGameAI import DistCogdoGameAI

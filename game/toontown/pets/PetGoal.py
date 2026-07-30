@@ -1,3 +1,6 @@
+# This module defines pet goal and its supporting behavior for Doodle appearance, behavior,
+# training, AI, and interfaces.
+
 from direct.task import Task
 from direct.fsm import FSM, ClassicFSM, State
 from direct.showbase.PythonUtil import randFloat, Functor

@@ -1,3 +1,6 @@
+# This module defines SpeedChat toontask terminal and its supporting behavior for SpeedChat menus,
+# terminals, phrases, and decoding.
+
 from otp.speedchat.SCTerminal import *
 from toontown.quest import Quests
 from toontown.toon import NPCToons

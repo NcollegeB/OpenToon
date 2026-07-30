@@ -1,3 +1,6 @@
+# This module defines calendar GUI month and its supporting behavior for party scheduling,
+# activities, decorations, and services.
+
 import calendar
 from datetime import timedelta, datetime
 from panda3d.core import Vec4, TextNode

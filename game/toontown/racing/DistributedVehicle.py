@@ -1,3 +1,7 @@
+# This module implements the client-side distributed vehicle, handling network updates,
+# presentation, and player interaction for kart races, tracks, pads, projectiles, scores, and
+# leaderboards.
+
 from panda3d.core import *
 from panda3d.otp import *
 from direct.distributed.ClockDelta import *

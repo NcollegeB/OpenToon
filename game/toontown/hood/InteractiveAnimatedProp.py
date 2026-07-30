@@ -1,3 +1,6 @@
+# This module defines interactive animated prop and its supporting behavior for neighborhoods, zone
+# data, and neighborhood lifecycle.
+
 import math
 import random
 from . import GenericAnimatedProp

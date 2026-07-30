@@ -1,3 +1,6 @@
+# This module implements the teaser interface, presenting and updating player controls and
+# information for shared game dialogs, loading screens, and interface widgets.
+
 from panda3d.core import *
 from direct.gui.DirectGui import *
 from direct.gui import DirectGuiGlobals

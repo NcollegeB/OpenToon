@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of crate, handling validated state and
+# synchronized gameplay for Cog HQ facilities, bosses, rooms, and level entities.
+
 from .CrateGlobals import *
 from direct.directnotify import DirectNotifyGlobal
 from . import DistributedCrushableEntityAI

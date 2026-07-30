@@ -1,3 +1,6 @@
+# This module defines Toontown pick a name pattern and its supporting behavior for Toon creation,
+# appearance, clothing, and naming.
+
 from direct.showbase.PythonUtil import listToItem2index
 from otp.namepanel.PickANamePattern import PickANamePatternTwoPartLastName
 from toontown.makeatoon.NameGenerator import NameGenerator

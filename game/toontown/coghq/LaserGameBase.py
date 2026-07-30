@@ -1,3 +1,6 @@
+# This module provides shared laser game behavior and data used by related implementations in Cog HQ
+# facilities, bosses, rooms, and level entities.
+
 from direct.distributed import ClockDelta
 from direct.task import Task
 import random

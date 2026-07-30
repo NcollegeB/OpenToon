@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of goon, handling validated state and
+# synchronized gameplay for Cog and boss actors, behavior, and combat support.
+
 from otp.ai.AIBaseGlobal import *
 from .GoonGlobals import *
 from direct.directnotify import DirectNotifyGlobal

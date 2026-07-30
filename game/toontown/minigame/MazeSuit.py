@@ -1,3 +1,6 @@
+# This module defines maze suit and its supporting behavior for trolley minigame rules,
+# presentation, and synchronization.
+
 from direct.showbase.DirectObject import DirectObject
 from direct.interval.MetaInterval import Parallel
 from direct.interval.LerpInterval import LerpPosInterval, LerpHprInterval

@@ -1,3 +1,6 @@
+# This module manages diving game Toon states, transitions, animation, and cleanup for trolley
+# minigame rules, presentation, and synchronization.
+
 from direct.showbase.ShowBaseGlobal import *
 from toontown.toonbase.ToonBaseGlobal import *
 from direct.interval.IntervalGlobal import *

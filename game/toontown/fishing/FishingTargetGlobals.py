@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for fishing target
+# within ponds, fish, targets, rewards, and Bingo.
+
 from toontown.toonbase import ToontownGlobals
 OFF = 0
 MOVING = 1

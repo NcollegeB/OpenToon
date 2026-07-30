@@ -1,3 +1,6 @@
+# This module provides the base client state for playgrounds, coordinating geometry, walking,
+# activities, NPCs, fishing, teleportation, and health acknowledgements.
+
 from panda3d.core import LineSegs, NodePath, TextNode, Vec4
 from panda3d.otp import NametagGlobals
 

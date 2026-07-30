@@ -1,3 +1,6 @@
+# This module loads and unloads scenes, assets, and place transitions for party within party
+# scheduling, activities, decorations, and services.
+
 import math
 import random
 from direct.directnotify import DirectNotifyGlobal

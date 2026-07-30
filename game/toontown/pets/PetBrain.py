@@ -1,3 +1,6 @@
+# This module runs server-side pet decision making, observations, goals, priorities, interactions,
+# trick behavior, and periodic thinking.
+
 from panda3d.core import *
 from panda3d.toontown import *
 from direct.showbase.PythonUtil import weightedChoice, randFloat, Functor

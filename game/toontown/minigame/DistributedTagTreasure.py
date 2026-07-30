@@ -1,3 +1,7 @@
+# This module implements the client-side distributed tag treasure, handling network updates,
+# presentation, and player interaction for trolley minigame rules, presentation, and
+# synchronization.
+
 from toontown.safezone import DistributedTreasure
 
 class DistributedTagTreasure(DistributedTreasure.DistributedTreasure):

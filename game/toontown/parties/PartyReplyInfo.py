@@ -1,4 +1,5 @@
-
+# This module defines single reply and its supporting behavior for party scheduling, activities,
+# decorations, and services.
 
 class SingleReply:
 

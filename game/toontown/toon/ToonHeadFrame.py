@@ -1,3 +1,6 @@
+# This module implements the Toon head interface, presenting and updating player controls and
+# information for player Toon avatars, NPCs, inventory, and presentation.
+
 from direct.gui.DirectGui import *
 from panda3d.core import *
 from panda3d.otp import *

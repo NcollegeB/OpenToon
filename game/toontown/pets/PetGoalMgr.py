@@ -1,3 +1,6 @@
+# This module coordinates pet goal lifecycle, state, and services for Doodle appearance, behavior,
+# training, AI, and interfaces.
+
 from panda3d.core import *
 from direct.directnotify import DirectNotifyGlobal
 from direct.showbase import DirectObject

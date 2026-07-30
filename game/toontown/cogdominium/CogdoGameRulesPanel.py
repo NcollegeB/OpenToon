@@ -1,3 +1,6 @@
+# This module implements the Cogdo game rules interface, presenting and updating player controls and
+# information for Cogdo rooms, activities, entities, and rewards.
+
 from direct.task import Task
 from direct.fsm import StateData
 from toontown.toonbase.ToontownGlobals import *

@@ -1,3 +1,6 @@
+# This module implements the fish interface, presenting and updating player controls and information
+# for Shticker Book pages, settings, and dialogs.
+
 from toontown.toonbase import ToontownGlobals
 from . import ShtikerPage
 from direct.directnotify import DirectNotifyGlobal

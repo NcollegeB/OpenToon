@@ -1,3 +1,6 @@
+# This module builds a quadrant-based flying course with platforms, bounds, collisions, obstacles,
+# gatherables, fog, and camera-relative visibility.
+
 from panda3d.core import NodePath, Plane, Vec3, Point3
 from panda3d.core import CollisionPlane, CollisionNode
 from direct.showbase.RandomNumGen import RandomNumGen

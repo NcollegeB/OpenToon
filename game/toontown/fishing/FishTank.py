@@ -1,3 +1,6 @@
+# This module defines fish tank and its supporting behavior for ponds, fish, targets, rewards, and
+# Bingo.
+
 from . import FishBase
 from . import FishGlobals
 

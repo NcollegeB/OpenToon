@@ -1,3 +1,6 @@
+# This module manages the client location lifecycle, state transitions, and interactions for
+# tutorial street within streets, town loading, place state, and street battles.
+
 from . import TTStreet
 
 class TutorialStreet(TTStreet.TTStreet):

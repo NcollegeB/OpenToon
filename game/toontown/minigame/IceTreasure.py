@@ -1,3 +1,6 @@
+# This module defines ice treasure and its supporting behavior for trolley minigame rules,
+# presentation, and synchronization.
+
 from panda3d.core import Point3, CollisionSphere, CollisionNode, BitMask32
 from direct.interval.IntervalGlobal import Sequence, LerpScaleInterval, Parallel, Func, SoundInterval
 from direct.directnotify import DirectNotifyGlobal

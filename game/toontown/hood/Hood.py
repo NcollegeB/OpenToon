@@ -1,3 +1,6 @@
+# This module provides the base client lifecycle for a neighborhood, including DNA, skies, holiday
+# presentation, location titles, quiet zones, and loader transitions.
+
 from panda3d.core import (
     CompassEffect,
     ModelPool,

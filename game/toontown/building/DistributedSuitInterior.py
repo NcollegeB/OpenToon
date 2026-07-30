@@ -1,3 +1,6 @@
+# This module implements the client-side distributed suit interior, handling network updates,
+# presentation, and player interaction for buildings, interiors, doors, elevators, and boarding.
+
 from direct.interval.IntervalGlobal import *
 from direct.distributed.ClockDelta import *
 from .ElevatorConstants import *

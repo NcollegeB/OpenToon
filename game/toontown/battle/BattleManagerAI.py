@@ -1,3 +1,6 @@
+# This module provides AI-server logic for battle, coordinating authoritative simulation and state
+# for Cog battle rules, presentation, calculations, and rewards.
+
 from . import DistributedBattleAI
 from direct.directnotify import DirectNotifyGlobal
 

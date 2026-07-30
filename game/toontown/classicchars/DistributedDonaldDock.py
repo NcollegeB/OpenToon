@@ -1,3 +1,6 @@
+# This module implements the client-side distributed donald dock, handling network updates,
+# presentation, and player interaction for classic-character NPC actors, paths, and dialogue.
+
 from panda3d.core import *
 from direct.interval.IntervalGlobal import *
 from . import DistributedCCharBase

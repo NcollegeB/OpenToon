@@ -1,3 +1,6 @@
+# This module defines party Cog activity and its supporting behavior for party scheduling,
+# activities, decorations, and services.
+
 from direct.interval.MetaInterval import Sequence, Parallel, Track
 from direct.interval.FunctionInterval import Func, Wait
 from direct.interval.SoundInterval import SoundInterval

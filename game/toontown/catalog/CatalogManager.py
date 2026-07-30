@@ -1,3 +1,6 @@
+# This module registers the client's distributed catalog manager and requests catalog initialization
+# when the local avatar has no next catalog scheduled.
+
 from direct.distributed import DistributedObject
 from direct.directnotify import DirectNotifyGlobal
 

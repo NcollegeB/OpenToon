@@ -1,3 +1,6 @@
+# This module implements the client-side distributed party catch activity, handling network updates,
+# presentation, and player interaction for party scheduling, activities, decorations, and services.
+
 import math
 from direct.directnotify import DirectNotifyGlobal
 from toontown.minigame.DropScheduler import ThreePhaseDropScheduler

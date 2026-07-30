@@ -1,4 +1,5 @@
-
+# This module provides shared simple mail behavior and data used by related implementations in party
+# scheduling, activities, decorations, and services.
 
 class SimpleMailBase:
 

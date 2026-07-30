@@ -1,3 +1,6 @@
+# This module parses and runs custom NPC movie scripts for quests and tutorials, managing variables,
+# actors, interface elements, chapters, and intervals.
+
 import sys
 import os
 import tokenize

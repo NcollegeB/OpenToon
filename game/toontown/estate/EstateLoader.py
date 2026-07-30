@@ -1,3 +1,6 @@
+# This module loads and unloads scenes, assets, and place transitions for estate within estates,
+# houses, gardens, mailboxes, closets, and banks.
+
 from panda3d.core import *
 from toontown.toonbase.ToontownGlobals import *
 from direct.interval.IntervalGlobal import *

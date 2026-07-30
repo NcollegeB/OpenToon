@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of anim door, handling validated state and
+# synchronized gameplay for buildings, interiors, doors, elevators, and boarding.
+
 from direct.directnotify import DirectNotifyGlobal
 from toontown.building import DistributedDoorAI
 

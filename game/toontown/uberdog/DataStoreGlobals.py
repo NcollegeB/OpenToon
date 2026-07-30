@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for data store
+# within global delivery, party, mail, news, whitelist, and data services.
+
 from toontown.uberdog.ScavengerHuntDataStore import *
 from toontown.uberdog.DataStore import *
 SH = 1

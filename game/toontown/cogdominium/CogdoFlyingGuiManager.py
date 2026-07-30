@@ -1,3 +1,6 @@
+# This module coordinates Cogdo flying GUI lifecycle, state, and services for Cogdo rooms,
+# activities, entities, and rewards.
+
 from panda3d.core import NodePath
 from toontown.toonbase import ToontownIntervals
 from toontown.toonbase.ToontownTimer import ToontownTimer

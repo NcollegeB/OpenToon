@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for cannon within
+# estates, houses, gardens, mailboxes, closets, and banks.
+
 CANNON_TIMEOUT = 20
 CANNON_MOVIE_LOAD = 1
 CANNON_MOVIE_CLEAR = 2

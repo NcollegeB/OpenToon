@@ -1,3 +1,6 @@
+# This module implements the client-side distributed Lawbot boss gavel, handling network updates,
+# presentation, and player interaction for Cog HQ facilities, bosses, rooms, and level entities.
+
 from direct.gui.DirectGui import *
 from panda3d.core import *
 from direct.interval.IntervalGlobal import *

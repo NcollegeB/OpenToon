@@ -1,3 +1,6 @@
+# This module provides the canonical English text and dialogue catalog used by Toontown interfaces,
+# characters, activities, and system messages.
+
 from toontown.toonbase.TTLocalizerEnglishProperty import *
 from toontown.catalog import CatalogAccessoryItemGlobals
 from otp.otpbase import OTPLocalizer as OL

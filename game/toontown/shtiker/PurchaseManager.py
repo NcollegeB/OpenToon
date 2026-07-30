@@ -1,3 +1,6 @@
+# This module coordinates purchase lifecycle, state, and services for Shticker Book pages, settings,
+# and dialogs.
+
 from panda3d.core import *
 from .PurchaseManagerConstants import *
 from direct.distributed.ClockDelta import *

@@ -1,3 +1,6 @@
+# This module registers the client trophy-manager singleton and sends requests for the current
+# trophy score.
+
 from direct.distributed import DistributedObject
 from direct.directnotify import DirectNotifyGlobal
 from toontown.toonbase import TTLocalizer

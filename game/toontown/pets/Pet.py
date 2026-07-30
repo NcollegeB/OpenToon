@@ -1,3 +1,6 @@
+# This module defines pet and its supporting behavior for Doodle appearance, behavior, training, AI,
+# and interfaces.
+
 from panda3d.core import *
 from direct.directnotify import DirectNotifyGlobal
 from direct.interval.IntervalGlobal import *

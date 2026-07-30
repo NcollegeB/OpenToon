@@ -1,3 +1,6 @@
+# This module defines fish, rod, pond, rarity, weight, and value data plus the algorithms used to
+# select catches and calculate outcomes.
+
 from toontown.toonbase import TTLocalizer
 from math import ceil, pow
 import random

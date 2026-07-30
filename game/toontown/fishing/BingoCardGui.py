@@ -1,3 +1,6 @@
+# This module implements the Bingo card interface, presenting and updating player controls and
+# information for ponds, fish, targets, rewards, and Bingo.
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.gui.DirectGui import *
 from panda3d.core import *

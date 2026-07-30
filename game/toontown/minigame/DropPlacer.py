@@ -1,3 +1,6 @@
+# This module defines drop placer and its supporting behavior for trolley minigame rules,
+# presentation, and synchronization.
+
 from direct.showbase.RandomNumGen import RandomNumGen
 from . import CatchGameGlobals
 from . import DropScheduler

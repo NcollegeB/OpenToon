@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of NPC scientist, handling validated state
+# and synchronized gameplay for player Toon avatars, NPCs, inventory, and presentation.
+
 from . import DistributedNPCToonBaseAI
 from toontown.toonbase import TTLocalizer, ToontownGlobals
 from direct.fsm import ClassicFSM, State

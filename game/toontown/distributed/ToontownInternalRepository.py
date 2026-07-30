@@ -1,3 +1,6 @@
+# This module configures the Toontown internal repository connections, distributed objects, and
+# runtime lifecycle for core repositories, districts, timers, and world lifecycle.
+
 from direct.directnotify import DirectNotifyGlobal
 from otp.distributed.OTPInternalRepository import OTPInternalRepository
 from otp.distributed.OtpDoGlobals import *

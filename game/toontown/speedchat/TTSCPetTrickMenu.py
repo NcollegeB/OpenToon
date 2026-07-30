@@ -1,3 +1,6 @@
+# This module implements the SpeedChat pet trick interface, presenting and updating player controls
+# and information for SpeedChat menus, terminals, phrases, and decoding.
+
 from direct.directnotify import DirectNotifyGlobal
 from otp.speedchat.SCMenu import SCMenu
 from otp.speedchat import SCMenuHolder

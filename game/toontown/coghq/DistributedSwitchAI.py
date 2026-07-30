@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of switch, handling validated state and
+# synchronized gameplay for Cog HQ facilities, bosses, rooms, and level entities.
+
 from direct.distributed.ClockDelta import *
 from direct.directnotify import DirectNotifyGlobal
 from . import DistributedSwitchBase

@@ -1,3 +1,6 @@
+# This module supplies the ring tracks data and definitions used by trolley minigame rules,
+# presentation, and synchronization.
+
 import math
 from . import RingTrack
 from . import RingAction

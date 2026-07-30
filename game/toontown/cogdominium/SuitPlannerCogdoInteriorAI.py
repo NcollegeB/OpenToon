@@ -1,3 +1,6 @@
+# This module provides AI-server logic for suit planner Cogdo interior, coordinating authoritative
+# simulation and state for Cogdo rooms, activities, entities, and rewards.
+
 from toontown.building.SuitPlannerInteriorAI import SuitPlannerInteriorAI
 
 class SuitPlannerCogdoInteriorAI(SuitPlannerInteriorAI):

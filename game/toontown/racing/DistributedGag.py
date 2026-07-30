@@ -1,3 +1,6 @@
+# This module implements the client-side distributed gag, handling network updates, presentation,
+# and player interaction for kart races, tracks, pads, projectiles, scores, and leaderboards.
+
 from panda3d.core import *
 from direct.distributed import DistributedObject
 from direct.interval.ProjectileInterval import *

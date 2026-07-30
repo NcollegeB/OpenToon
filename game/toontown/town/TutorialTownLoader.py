@@ -1,3 +1,6 @@
+# This module loads and unloads scenes, assets, and place transitions for tutorial town within
+# streets, town loading, place state, and street battles.
+
 from . import TownLoader
 from . import TTTownLoader
 from . import TutorialStreet

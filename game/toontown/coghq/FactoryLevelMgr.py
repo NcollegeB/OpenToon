@@ -1,3 +1,6 @@
+# This module coordinates factory level lifecycle, state, and services for Cog HQ facilities,
+# bosses, rooms, and level entities.
+
 from otp.level import LevelMgr
 from . import FactoryUtil
 from direct.showbase.PythonUtil import Functor

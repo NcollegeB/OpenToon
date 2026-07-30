@@ -1,3 +1,6 @@
+# This module builds and controls skull flash visual, interval, or particle effects for visual,
+# particle, and firework effects.
+
 from panda3d.core import *
 from direct.showbase.DirectObject import *
 from direct.interval.IntervalGlobal import *

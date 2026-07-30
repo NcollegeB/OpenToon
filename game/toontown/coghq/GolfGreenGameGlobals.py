@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for golf green game
+# within Cog HQ facilities, bosses, rooms, and level entities.
+
 gameBoards = [
     ('rbygl', 'r_______b', 'byyywgggr', 'r_______b', 'bggyyyggr', 'r_______b', 'byylllyyr', 'r_______b', 'Blllllllr'),
     ('rgby', 'rrrgggbbb', 'rwrgggbwb', 'rrryyybbb', 'bByyyyyRr'),

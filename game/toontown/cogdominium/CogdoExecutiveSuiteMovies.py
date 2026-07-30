@@ -1,3 +1,6 @@
+# This module builds the coordinated animation and camera sequences for Cogdo executive suite movies
+# within Cogdo rooms, activities, entities, and rewards.
+
 from panda3d.core import NodePath, Point3, Plane, PlaneNode, TextNode
 from direct.interval.IntervalGlobal import *
 from direct.directnotify import DirectNotifyGlobal

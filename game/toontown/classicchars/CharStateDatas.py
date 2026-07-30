@@ -1,3 +1,6 @@
+# This module defines reusable idle, walking, and follow states for roaming classic characters,
+# including path intervals and synchronized movement timing.
+
 from panda3d.core import *
 from direct.interval.IntervalGlobal import *
 from direct.distributed.ClockDelta import *

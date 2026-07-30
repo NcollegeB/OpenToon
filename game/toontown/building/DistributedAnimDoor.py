@@ -1,3 +1,6 @@
+# This module implements the client-side distributed anim door, handling network updates,
+# presentation, and player interaction for buildings, interiors, doors, elevators, and boarding.
+
 from panda3d.core import NodePath, VBase3
 from direct.directnotify import DirectNotifyGlobal
 from direct.interval.IntervalGlobal import Parallel, Sequence, Wait, HprInterval, LerpHprInterval, SoundInterval

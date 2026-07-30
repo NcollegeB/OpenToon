@@ -1,3 +1,7 @@
+# This module implements the client-side distributed party dance 20 activity, handling network
+# updates, presentation, and player interaction for party scheduling, activities, decorations, and
+# services.
+
 from toontown.parties import PartyGlobals
 from toontown.parties.DistributedPartyDanceActivityBase import DistributedPartyDanceActivityBase
 from toontown.toonbase import TTLocalizer

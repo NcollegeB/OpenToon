@@ -1,3 +1,6 @@
+# This module defines boss Cog and its supporting behavior for Cog and boss actors, behavior, and
+# combat support.
+
 from panda3d.core import *
 from panda3d.otp import *
 from direct.interval.IntervalGlobal import *

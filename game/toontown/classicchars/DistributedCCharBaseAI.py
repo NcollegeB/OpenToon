@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of classic character, handling validated
+# state and synchronized gameplay for classic-character NPC actors, paths, and dialogue.
+
 from otp.ai.AIBaseGlobal import *
 from direct.distributed.ClockDelta import *
 from otp.avatar import DistributedAvatarAI

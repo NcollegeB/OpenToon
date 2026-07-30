@@ -1,3 +1,6 @@
+# This module provides an UberDOG persistence base with DBM or legacy pickle storage, periodic
+# synchronization, backups, and serialized query dispatch.
+
 from direct.directnotify import DirectNotifyGlobal
 from panda3d.core import ConfigVariableBool
 from direct.task import Task

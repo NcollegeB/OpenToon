@@ -1,4 +1,5 @@
-
+# This module defines server event buffer and its supporting behavior for district startup,
+# holidays, events, and shared AI managers.
 
 class ServerEventBuffer:
 

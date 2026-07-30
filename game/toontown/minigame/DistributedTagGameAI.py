@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of tag game, handling validated state and
+# synchronized gameplay for trolley minigame rules, presentation, and synchronization.
+
 from .DistributedMinigameAI import *
 from .TagTreasurePlannerAI import *
 from direct.fsm import ClassicFSM, State

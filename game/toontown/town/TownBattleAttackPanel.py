@@ -1,3 +1,6 @@
+# This module implements the town battle attack interface, presenting and updating player controls
+# and information for streets, town loading, place state, and street battles.
+
 from panda3d.core import *
 from direct.directnotify import DirectNotifyGlobal
 import string

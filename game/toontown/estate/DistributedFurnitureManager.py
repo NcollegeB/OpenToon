@@ -1,3 +1,6 @@
+# This module implements the client-side distributed furniture, handling network updates,
+# presentation, and player interaction for estates, houses, gardens, mailboxes, closets, and banks.
+
 from direct.distributed import DistributedObject
 from toontown.catalog import CatalogItem
 from toontown.catalog import CatalogItemList

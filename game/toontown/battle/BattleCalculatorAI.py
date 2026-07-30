@@ -1,3 +1,6 @@
+# This module resolves authoritative battles by calculating gag accuracy, damage, status effects,
+# targets, skill credit, and Cog attacks.
+
 from .BattleBase import *
 from .DistributedBattleAI import *
 from toontown.toonbase.ToontownBattleGlobals import *

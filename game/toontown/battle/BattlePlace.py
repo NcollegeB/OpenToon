@@ -1,3 +1,6 @@
+# This module manages the client location lifecycle, state transitions, and interactions for battle
+# place within Cog battle rules, presentation, calculations, and rewards.
+
 from panda3d.core import *
 from toontown.toon import Toon
 from toontown.hood import Place

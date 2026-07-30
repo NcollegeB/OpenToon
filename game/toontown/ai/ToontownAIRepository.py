@@ -1,3 +1,6 @@
+# This module runs the authoritative game-server repository, creating global managers,
+# neighborhoods, zones, interactive objects, and district population state.
+
 from direct.directnotify import DirectNotifyGlobal
 from panda3d.core import *
 from panda3d.toontown import *

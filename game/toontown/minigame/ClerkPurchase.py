@@ -1,3 +1,6 @@
+# This module defines clerk purchase and its supporting behavior for trolley minigame rules,
+# presentation, and synchronization.
+
 from .PurchaseBase import *
 from toontown.toonbase import ToontownTimer
 COUNT_UP_RATE = 0.15

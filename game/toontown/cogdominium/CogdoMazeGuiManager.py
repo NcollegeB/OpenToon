@@ -1,3 +1,6 @@
+# This module coordinates Cogdo maze GUI lifecycle, state, and services for Cogdo rooms, activities,
+# entities, and rewards.
+
 from panda3d.core import NodePath
 from direct.interval.MetaInterval import Sequence
 from direct.interval.FunctionInterval import Func

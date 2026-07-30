@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of Toon, handling validated state and
+# synchronized gameplay for player Toon avatars, NPCs, inventory, and presentation.
+
 from otp.ai.AIBaseGlobal import *
 from panda3d.core import *
 from otp.otpbase import OTPGlobals

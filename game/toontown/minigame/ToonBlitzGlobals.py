@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for Toon blitz
+# within trolley minigame rules, presentation, and synchronization.
+
 from toontown.toonbase import ToontownGlobals
 from panda3d.core import BitMask32
 ShowScoresDuration = 4.0

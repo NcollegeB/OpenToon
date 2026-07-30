@@ -1,3 +1,6 @@
+# This module defines Cogdo flying obtacle factory and its supporting behavior for Cogdo rooms,
+# activities, entities, and rewards.
+
 import random
 from direct.showbase.DirectObject import DirectObject
 from direct.interval.IntervalGlobal import LerpFunc, ActorInterval, LerpPosInterval

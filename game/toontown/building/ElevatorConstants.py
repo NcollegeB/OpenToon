@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for elevator within
+# buildings, interiors, doors, elevators, and boarding.
+
 from panda3d.core import *
 ELEVATOR_NORMAL = 0
 ELEVATOR_VP = 1

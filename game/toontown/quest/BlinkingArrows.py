@@ -1,3 +1,6 @@
+# This module defines blinking arrows and its supporting behavior for quest definitions, parsing,
+# progression, rewards, posters, and maps.
+
 from direct.interval.IntervalGlobal import *
 from panda3d.core import *
 

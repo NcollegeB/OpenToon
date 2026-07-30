@@ -1,3 +1,6 @@
+# This module implements the client-side distributed golf course, handling network updates,
+# presentation, and player interaction for courses, holes, physics, scores, and rewards.
+
 from direct.interval.IntervalGlobal import Sequence, Func, Wait, LerpColorScaleInterval, Parallel
 from direct.distributed import DistributedObject
 from direct.directnotify import DirectNotifyGlobal

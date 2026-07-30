@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for Cog thief game
+# within trolley minigame rules, presentation, and synchronization.
+
 from panda3d.core import VBase3, BitMask32
 GameTime = 60
 NumBarrels = 4

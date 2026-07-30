@@ -1,3 +1,6 @@
+# This module provides pet util helper functions for Doodle appearance, behavior, training, AI, and
+# interfaces.
+
 from toontown.pets import PetDNA, PetTraits, PetConstants
 from toontown.pets import PetNameGenerator
 from direct.showbase import PythonUtil

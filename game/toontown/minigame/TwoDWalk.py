@@ -1,3 +1,6 @@
+# This module defines two d walk and its supporting behavior for trolley minigame rules,
+# presentation, and synchronization.
+
 from .OrthoWalk import *
 
 class TwoDWalk(OrthoWalk):

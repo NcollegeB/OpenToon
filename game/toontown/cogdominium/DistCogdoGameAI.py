@@ -1,3 +1,6 @@
+# This module provides AI-server logic for dist Cogdo game, coordinating authoritative simulation
+# and state for Cogdo rooms, activities, entities, and rewards.
+
 from direct.directnotify.DirectNotifyGlobal import directNotify
 from direct.distributed.ClockDelta import globalClockDelta
 from direct.distributed.DistributedObjectAI import DistributedObjectAI

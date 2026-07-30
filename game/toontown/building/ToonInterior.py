@@ -1,3 +1,6 @@
+# This module manages the client location lifecycle, state transitions, and interactions for Toon
+# interior within buildings, interiors, doors, elevators, and boarding.
+
 from panda3d.core import ModelPool, TexturePool
 from panda3d.otp import NametagGlobals
 

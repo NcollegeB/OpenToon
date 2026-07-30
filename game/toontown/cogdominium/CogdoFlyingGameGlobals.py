@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for Cogdo flying
+# game within Cogdo rooms, activities, entities, and rewards.
+
 from panda3d.core import VBase4, Vec3, Point3
 from .CogdoUtil import VariableContainer, DevVariableContainer
 from enum import IntEnum

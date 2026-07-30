@@ -1,3 +1,6 @@
+# This module implements the client-side distributed phone, handling network updates, presentation,
+# and player interaction for estates, houses, gardens, mailboxes, closets, and banks.
+
 from toontown.toonbase import ToontownGlobals
 from . import PhoneGlobals
 from toontown.catalog import CatalogScreen

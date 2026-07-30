@@ -1,3 +1,6 @@
+# This module provides AI-server logic for suit planner interior, coordinating authoritative
+# simulation and state for buildings, interiors, doors, elevators, and boarding.
+
 from otp.ai.AIBaseGlobal import *
 import random, functools
 from toontown.suit import SuitDNA

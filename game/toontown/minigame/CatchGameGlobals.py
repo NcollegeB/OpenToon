@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for catch game
+# within trolley minigame rules, presentation, and synchronization.
+
 EndlessGame = config.GetBool('endless-catch-game', 0)
 GameDuration = 55.0
 

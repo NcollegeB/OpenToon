@@ -1,3 +1,6 @@
+# This module defines Cogdo flying collisions and its supporting behavior for Cogdo rooms,
+# activities, entities, and rewards.
+
 from direct.controls.GravityWalker import GravityWalker
 from panda3d.core import CollisionSphere, CollisionNode, BitMask32, CollisionHandlerEvent, CollisionRay, CollisionHandlerGravity, CollisionHandlerFluidPusher, CollisionHandlerPusher
 from toontown.toonbase import ToontownGlobals

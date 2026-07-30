@@ -1,3 +1,6 @@
+# This module provides AI-server logic for tutorial, coordinating authoritative simulation and state
+# for tutorial progression, battles, and managers.
+
 from otp.ai.AIBaseGlobal import *
 from panda3d.core import *
 from panda3d.toontown import *

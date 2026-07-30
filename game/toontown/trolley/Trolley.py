@@ -1,3 +1,6 @@
+# This module controls client-side trolley interaction, including boarding requests, access
+# acknowledgements, rejection dialogs, and transitions into a minigame.
+
 from panda3d.core import *
 from toontown.toonbase.ToonBaseGlobal import *
 from direct.gui.DirectGui import *

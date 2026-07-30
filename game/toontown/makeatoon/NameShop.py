@@ -1,3 +1,6 @@
+# This module defines name shop and its supporting behavior for Toon creation, appearance, clothing,
+# and naming.
+
 from panda3d.core import *
 from toontown.toonbase.ToontownGlobals import *
 from direct.task.TaskManagerGlobal import *

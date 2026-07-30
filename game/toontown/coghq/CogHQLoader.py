@@ -1,3 +1,6 @@
+# This module loads and unloads scenes, assets, and place transitions for Cog HQ within Cog HQ
+# facilities, bosses, rooms, and level entities.
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.fsm import StateData
 from direct.fsm import ClassicFSM, State

@@ -1,3 +1,6 @@
+# This module implements the client-side distributed battle tutorial, handling network updates,
+# presentation, and player interaction for tutorial progression, battles, and managers.
+
 from toontown.battle import DistributedBattle
 from direct.directnotify import DirectNotifyGlobal
 

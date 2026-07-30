@@ -1,3 +1,6 @@
+# This module implements avatar selection, including slot presentation, avatar inspection, creation,
+# deletion, quitting, and required-download acknowledgements.
+
 from panda3d.core import *
 from toontown.toonbase import ToontownGlobals
 from . import AvatarChoice

@@ -1,3 +1,6 @@
+# This module defines Cogdo flying level quadrant and its supporting behavior for Cogdo rooms,
+# activities, entities, and rewards.
+
 import math
 from direct.directutil import Mopath
 from panda3d.core import NodePath, Point3, Vec4

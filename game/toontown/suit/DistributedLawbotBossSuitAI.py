@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of Lawbot boss suit, handling validated
+# state and synchronized gameplay for Cog and boss actors, behavior, and combat support.
+
 from otp.ai.AIBaseGlobal import *
 from direct.distributed.ClockDelta import *
 from direct.directnotify import DirectNotifyGlobal

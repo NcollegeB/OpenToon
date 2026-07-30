@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of country club room, handling validated
+# state and synchronized gameplay for Cog HQ facilities, bosses, rooms, and level entities.
+
 from otp.level import DistributedLevelAI, LevelSpec
 from direct.directnotify import DirectNotifyGlobal
 from direct.task import Task

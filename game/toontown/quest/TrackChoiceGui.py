@@ -1,3 +1,6 @@
+# This module implements the track choice interface, presenting and updating player controls and
+# information for quest definitions, parsing, progression, rewards, posters, and maps.
+
 from direct.gui.DirectGui import *
 from panda3d.core import *
 from toontown.toonbase import ToontownTimer

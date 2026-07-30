@@ -1,3 +1,6 @@
+# This module defines dist Cogdo game and its supporting behavior for Cogdo rooms, activities,
+# entities, and rewards.
+
 from panda3d.core import VBase4
 from direct.gui.DirectGui import DirectLabel
 from direct.directnotify.DirectNotifyGlobal import directNotify

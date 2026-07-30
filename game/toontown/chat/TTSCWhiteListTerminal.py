@@ -1,3 +1,6 @@
+# This module defines SpeedChat white list terminal and its supporting behavior for player chat,
+# whitelist filtering, and SpeedChat integration.
+
 from otp.speedchat.SCTerminal import SCTerminal
 from otp.otpbase.OTPLocalizer import SpeedChatStaticText
 SCStaticTextMsgEvent = 'SCStaticTextMsg'

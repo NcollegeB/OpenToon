@@ -1,3 +1,6 @@
+# This module implements the maze map interface, presenting and updating player controls and
+# information for trolley minigame rules, presentation, and synchronization.
+
 from direct.gui.DirectGui import DirectFrame, DGG
 from panda3d.core import Vec2, VBase4F
 from panda3d.core import CardMaker, NodePath

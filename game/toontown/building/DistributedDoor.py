@@ -1,3 +1,6 @@
+# This module implements client-side networked doors, including collisions, nametags, animations,
+# state transitions, and entrance or exit coordination.
+
 from panda3d.core import NodePath, Point3, VBase3, Vec3
 from panda3d.otp import Nametag, NametagGroup
 

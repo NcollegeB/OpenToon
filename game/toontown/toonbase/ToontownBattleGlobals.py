@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for Toontown battle
+# within application bootstrap, global configuration, localization, loading, and access.
+
 from .ToontownGlobals import *
 import math
 from . import TTLocalizer

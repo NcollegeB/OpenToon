@@ -1,4 +1,5 @@
-
+# This module defines chinese checkers board and its supporting behavior for playgrounds, treasures,
+# and safe-zone activities.
 
 class ChineseCheckersBoard:
 

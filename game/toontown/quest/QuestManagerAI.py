@@ -1,3 +1,6 @@
+# This module provides AI-server logic for quest, coordinating authoritative simulation and state
+# for quest definitions, parsing, progression, rewards, posters, and maps.
+
 from otp.ai.AIBaseGlobal import *
 from direct.task import Task
 from direct.directnotify import DirectNotifyGlobal

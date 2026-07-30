@@ -1,3 +1,6 @@
+# This module provides shared law office behavior and data used by related implementations in Cog HQ
+# facilities, bosses, rooms, and level entities.
+
 from . import FactorySpecs
 from otp.level import LevelSpec
 from toontown.toonbase import ToontownGlobals

@@ -1,3 +1,6 @@
+# This module manages the client location lifecycle, state transitions, and interactions for suit
+# interior within buildings, interiors, doors, elevators, and boarding.
+
 from panda3d.core import *
 from toontown.toonbase.ToonBaseGlobal import *
 from direct.directnotify import DirectNotifyGlobal

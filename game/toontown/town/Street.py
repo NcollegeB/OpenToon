@@ -1,3 +1,6 @@
+# This module manages the client location lifecycle, state transitions, and interactions for street
+# within streets, town loading, place state, and street battles.
+
 from panda3d.core import *
 from panda3d.otp import *
 from toontown.battle.BattleProps import *

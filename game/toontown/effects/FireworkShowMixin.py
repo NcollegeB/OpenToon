@@ -1,3 +1,6 @@
+# This module builds and controls firework show mixin visual, interval, or particle effects for
+# visual, particle, and firework effects.
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed.ClockDelta import *
 from direct.interval.IntervalGlobal import *

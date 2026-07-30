@@ -1,3 +1,7 @@
+# This module implements the client-side distributed party winter catch activity, handling network
+# updates, presentation, and player interaction for party scheduling, activities, decorations, and
+# services.
+
 from panda3d.core import NodePath
 from toontown.toonbase import TTLocalizer
 from toontown.parties.DistributedPartyCatchActivity import DistributedPartyCatchActivity

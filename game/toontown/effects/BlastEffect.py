@@ -1,3 +1,6 @@
+# This module builds and controls blast effect visual, interval, or particle effects for visual,
+# particle, and firework effects.
+
 from panda3d.core import *
 from direct.interval.IntervalGlobal import *
 from .EffectController import EffectController

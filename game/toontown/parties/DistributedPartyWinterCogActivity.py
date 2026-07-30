@@ -1,3 +1,7 @@
+# This module implements the client-side distributed party winter Cog activity, handling network
+# updates, presentation, and player interaction for party scheduling, activities, decorations, and
+# services.
+
 from toontown.parties.DistributedPartyCogActivity import DistributedPartyCogActivity
 
 class DistributedPartyWinterCogActivity(DistributedPartyCogActivity):

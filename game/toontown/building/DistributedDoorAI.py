@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of door, handling validated state and
+# synchronized gameplay for buildings, interiors, doors, elevators, and boarding.
+
 from otp.ai.AIBaseGlobal import *
 from direct.task.Task import Task
 from direct.distributed.ClockDelta import *

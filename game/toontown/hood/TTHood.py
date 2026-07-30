@@ -1,3 +1,6 @@
+# This module manages the client location lifecycle, state transitions, and interactions for
+# Toontown hood within neighborhoods, zone data, and neighborhood lifecycle.
+
 from panda3d.core import *
 from direct.interval.IntervalGlobal import *
 from . import ToonHood

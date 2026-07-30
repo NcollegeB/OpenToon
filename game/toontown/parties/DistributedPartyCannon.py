@@ -1,3 +1,6 @@
+# This module implements the client-side distributed party cannon, handling network updates,
+# presentation, and player interaction for party scheduling, activities, decorations, and services.
+
 from panda3d.core import *
 from direct.distributed.DistributedObject import DistributedObject
 from direct.task.Task import Task

@@ -1,3 +1,6 @@
+# This module coordinates safe zone lifecycle, state, and services for playgrounds, treasures, and
+# safe-zone activities.
+
 from panda3d.core import *
 from direct.distributed import DistributedObject
 from direct.directnotify import DirectNotifyGlobal

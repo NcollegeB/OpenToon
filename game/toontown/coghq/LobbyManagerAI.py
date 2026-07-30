@@ -1,3 +1,6 @@
+# This module provides AI-server logic for lobby, coordinating authoritative simulation and state
+# for Cog HQ facilities, bosses, rooms, and level entities.
+
 from direct.distributed import DistributedObjectAI
 from direct.directnotify import DirectNotifyGlobal
 from toontown.toonbase import ToontownGlobals

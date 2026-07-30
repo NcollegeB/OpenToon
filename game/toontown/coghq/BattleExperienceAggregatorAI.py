@@ -1,4 +1,5 @@
-
+# This module shares battle-result collections across facility floors so successive battles can
+# accumulate experience, rewards, merits, and defeated Cogs.
 
 class BattleExperienceAggregatorAI:
 

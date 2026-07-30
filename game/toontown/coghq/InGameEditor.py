@@ -1,3 +1,6 @@
+# This module defines in game editor and its supporting behavior for Cog HQ facilities, bosses,
+# rooms, and level entities.
+
 from panda3d.core import Point3, Vec3, VBase3
 from direct.tkwidgets.AppShell import *
 from direct.showbase.TkGlobal import *

@@ -1,3 +1,6 @@
+# This module defines dist Cogdo boardroom game and its supporting behavior for Cogdo rooms,
+# activities, entities, and rewards.
+
 from direct.directnotify.DirectNotifyGlobal import directNotify
 from toontown.cogdominium.DistCogdoLevelGame import DistCogdoLevelGame
 from toontown.cogdominium.CogdoBoardroomGameBase import CogdoBoardroomGameBase

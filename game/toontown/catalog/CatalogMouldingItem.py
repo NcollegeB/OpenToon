@@ -1,3 +1,6 @@
+# This module defines catalog moulding item and its supporting behavior for catalog items,
+# purchasing, delivery, and catalog interfaces.
+
 from .CatalogSurfaceItem import *
 MTTextureName = 0
 MTColor = 1

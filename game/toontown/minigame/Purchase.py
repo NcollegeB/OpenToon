@@ -1,3 +1,6 @@
+# This module defines purchase and its supporting behavior for trolley minigame rules, presentation,
+# and synchronization.
+
 from panda3d.otp import *
 from .PurchaseBase import *
 from direct.task.Task import Task

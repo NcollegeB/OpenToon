@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of Cog thief game, handling validated
+# state and synchronized gameplay for trolley minigame rules, presentation, and synchronization.
+
 import random
 from panda3d.core import Point3
 from direct.fsm import ClassicFSM

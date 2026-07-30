@@ -1,3 +1,6 @@
+# This module defines public walk and its supporting behavior for playgrounds, treasures, and
+# safe-zone activities.
+
 from panda3d.core import *
 from toontown.toonbase.ToontownGlobals import *
 from direct.directnotify import DirectNotifyGlobal

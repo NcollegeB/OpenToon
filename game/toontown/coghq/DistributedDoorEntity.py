@@ -1,3 +1,6 @@
+# This module implements the client-side distributed door entity, handling network updates,
+# presentation, and player interaction for Cog HQ facilities, bosses, rooms, and level entities.
+
 from panda3d.core import *
 from direct.interval.IntervalGlobal import *
 from panda3d.direct import ShowInterval, HideInterval

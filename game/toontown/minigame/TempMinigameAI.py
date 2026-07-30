@@ -1,3 +1,6 @@
+# This module provides AI-server logic for temp minigame, coordinating authoritative simulation and
+# state for trolley minigame rules, presentation, and synchronization.
+
 from toontown.toonbase import ToontownGlobals
 ALLOW_TEMP_MINIGAMES = simbase.config.GetBool('allow-temp-minigames', False)
 TEMP_MG_ID_COUNTER = ToontownGlobals.TravelGameId - 1

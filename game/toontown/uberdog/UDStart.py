@@ -1,3 +1,6 @@
+# This module bootstraps UberDOG start runtime configuration, services, and event processing for
+# global delivery, party, mail, news, whitelist, and data services.
+
 from panda3d.core import *
 import builtins
 

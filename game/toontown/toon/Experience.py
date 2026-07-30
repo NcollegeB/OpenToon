@@ -1,3 +1,6 @@
+# This module defines experience and its supporting behavior for player Toon avatars, NPCs,
+# inventory, and presentation.
+
 from panda3d.core import *
 from toontown.toonbase.ToontownBattleGlobals import *
 from direct.directnotify import DirectNotifyGlobal

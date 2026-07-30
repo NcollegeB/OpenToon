@@ -1,3 +1,6 @@
+# This module manages party dance activity Toon states, transitions, animation, and cleanup for
+# party scheduling, activities, decorations, and services.
+
 from panda3d.core import *
 from direct.fsm.FSM import FSM
 from direct.showbase import PythonUtil

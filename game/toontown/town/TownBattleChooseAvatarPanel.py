@@ -1,3 +1,6 @@
+# This module implements the town battle choose avatar interface, presenting and updating player
+# controls and information for streets, town loading, place state, and street battles.
+
 from toontown.toonbase.ToontownBattleGlobals import *
 from toontown.toonbase import ToontownGlobals
 from direct.fsm import StateData

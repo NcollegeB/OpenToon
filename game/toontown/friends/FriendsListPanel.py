@@ -1,3 +1,6 @@
+# This module implements the friends list interface, presenting and updating player controls and
+# information for friend invitations, lists, secrets, and notifications.
+
 from panda3d.core import *
 from direct.gui.DirectGui import *
 from panda3d.core import *

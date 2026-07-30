@@ -1,3 +1,6 @@
+# This module manages pet action states, transitions, animation, and cleanup for Doodle appearance,
+# behavior, training, AI, and interfaces.
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.fsm import FSM
 from direct.interval.IntervalGlobal import *

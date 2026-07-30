@@ -1,3 +1,6 @@
+# This module implements the client-side distributed crushable entity, handling network updates,
+# presentation, and player interaction for Cog HQ facilities, bosses, rooms, and level entities.
+
 from otp.level import DistributedEntity
 from direct.directnotify import DirectNotifyGlobal
 from panda3d.core import NodePath

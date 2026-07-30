@@ -1,3 +1,6 @@
+# This module defines party Cog manager and its supporting behavior for party scheduling,
+# activities, decorations, and services.
+
 import math
 from direct.actor.Actor import Actor
 from direct.interval.ActorInterval import ActorInterval

@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for Toontown code
+# redemption within code-redemption validation and service flow.
+
 DefaultDbName = 'tt_code_redemption'
 RedeemErrors = Enum('Success, CodeDoesntExist, CodeIsInactive, CodeAlreadyRedeemed, AwardCouldntBeGiven, TooManyAttempts, SystemUnavailable, ')
 RedeemErrorStrings = {RedeemErrors.Success: 'Success',

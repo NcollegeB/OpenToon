@@ -1,3 +1,6 @@
+# This module provides AI-server logic for battle experience, coordinating authoritative simulation
+# and state for Cog battle rules, presentation, calculations, and rewards.
+
 from direct.directnotify import DirectNotifyGlobal
 from toontown.toonbase import ToontownBattleGlobals
 from toontown.suit import SuitDNA

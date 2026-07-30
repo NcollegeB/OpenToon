@@ -1,3 +1,6 @@
+# This module defines Toontown dummy launcher and its supporting behavior for client startup,
+# downloading, and launch monitoring.
+
 from direct.directnotify import DirectNotifyGlobal
 from otp.launcher.DummyLauncherBase import DummyLauncherBase
 from toontown.launcher.ToontownLauncher import ToontownLauncher

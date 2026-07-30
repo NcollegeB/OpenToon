@@ -1,3 +1,6 @@
+# This module defines Toontown talk assistant and its supporting behavior for player chat, whitelist
+# filtering, and SpeedChat integration.
+
 import string
 import sys
 from direct.showbase import DirectObject

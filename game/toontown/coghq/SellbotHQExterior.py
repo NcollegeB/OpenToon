@@ -1,3 +1,6 @@
+# This module manages the client location lifecycle, state transitions, and interactions for Sellbot
+# HQ exterior within Cog HQ facilities, bosses, rooms, and level entities.
+
 from direct.directnotify import DirectNotifyGlobal
 from toontown.coghq import CogHQExterior
 

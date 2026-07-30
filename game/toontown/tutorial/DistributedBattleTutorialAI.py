@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of battle tutorial, handling validated
+# state and synchronized gameplay for tutorial progression, battles, and managers.
+
 from toontown.battle import DistributedBattleAI
 from direct.directnotify import DirectNotifyGlobal
 

@@ -1,3 +1,6 @@
+# This module provides ring track groups helpers for trolley minigame rules, presentation, and
+# synchronization.
+
 import math
 from . import RingGameGlobals
 from . import RingAction

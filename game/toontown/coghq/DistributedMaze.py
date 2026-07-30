@@ -1,3 +1,6 @@
+# This module implements the client-side distributed maze, handling network updates, presentation,
+# and player interaction for Cog HQ facilities, bosses, rooms, and level entities.
+
 from otp.level.BasicEntities import DistributedNodePathEntity
 from panda3d.core import *
 from direct.interval.IntervalGlobal import *

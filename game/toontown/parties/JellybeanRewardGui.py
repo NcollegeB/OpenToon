@@ -1,3 +1,6 @@
+# This module implements the jellybean reward interface, presenting and updating player controls and
+# information for party scheduling, activities, decorations, and services.
+
 from panda3d.core import TextNode
 from direct.gui.DirectGui import DirectFrame
 from direct.gui.DirectGui import DirectButton

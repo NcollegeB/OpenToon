@@ -1,3 +1,6 @@
+# This module implements the suit interface, presenting and updating player controls and information
+# for Shticker Book pages, settings, and dialogs.
+
 from . import ShtikerPage
 from direct.task.Task import Task
 from . import SummonCogDialog

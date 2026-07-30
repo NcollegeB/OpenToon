@@ -1,3 +1,7 @@
+# This module implements the client-side distributed ice game, handling network updates,
+# presentation, and player interaction for trolley minigame rules, presentation, and
+# synchronization.
+
 import math
 from panda3d.core import Vec3, deg2Rad, Point3, NodePath, VBase4, CollisionHandlerEvent, CollisionNode, CollisionSphere
 from direct.fsm import ClassicFSM, State

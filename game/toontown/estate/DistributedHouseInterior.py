@@ -1,3 +1,6 @@
+# This module implements the client-side distributed house interior, handling network updates,
+# presentation, and player interaction for estates, houses, gardens, mailboxes, closets, and banks.
+
 from toontown.toonbase.ToontownGlobals import *
 from toontown.toonbase.ToonBaseGlobal import *
 from panda3d.core import *

@@ -1,3 +1,6 @@
+# This module implements the client-side distributed NPC Toon, handling network updates,
+# presentation, and player interaction for player Toon avatars, NPCs, inventory, and presentation.
+
 from panda3d.core import *
 from panda3d.otp import *
 from direct.directnotify import DirectNotifyGlobal

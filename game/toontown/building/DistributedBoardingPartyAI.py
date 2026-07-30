@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of boarding party, handling validated
+# state and synchronized gameplay for buildings, interiors, doors, elevators, and boarding.
+
 from otp.otpbase import OTPGlobals
 from otp.ai.AIBase import *
 from toontown.toonbase import ToontownGlobals

@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for pairing game
+# within trolley minigame rules, presentation, and synchronization.
+
 from . import PlayingCardDeck
 EasiestGameDuration = 120
 HardestGameDuration = 90

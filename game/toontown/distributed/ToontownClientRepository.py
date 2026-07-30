@@ -1,3 +1,6 @@
+# This module runs the primary client network repository, including avatars, shards, friends,
+# distributed-object interests, tutorial entry, and connection lifecycle.
+
 from panda3d.core import *
 from direct.distributed.ClockDelta import *
 from direct.gui.DirectGui import *

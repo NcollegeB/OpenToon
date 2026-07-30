@@ -1,3 +1,6 @@
+# This module defines piejectile and its supporting behavior for kart races, tracks, pads,
+# projectiles, scores, and leaderboards.
+
 import math
 import random
 from direct.showbase.PythonUtil import *

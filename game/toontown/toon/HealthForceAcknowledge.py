@@ -1,3 +1,6 @@
+# This module defines health force acknowledge and its supporting behavior for player Toon avatars,
+# NPCs, inventory, and presentation.
+
 from panda3d.core import *
 from toontown.toontowngui import TTDialog
 from toontown.toonbase import TTLocalizer

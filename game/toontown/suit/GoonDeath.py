@@ -1,3 +1,5 @@
+# This module provides goon death helpers for Cog and boss actors, behavior, and combat support.
+
 from direct.interval.IntervalGlobal import *
 from panda3d.core import *
 from direct.particles import ParticleEffect

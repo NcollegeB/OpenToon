@@ -1,3 +1,6 @@
+# This module provides shared flower behavior and data used by related implementations in estates,
+# houses, gardens, mailboxes, closets, and banks.
+
 from . import GardenGlobals
 from toontown.toonbase import TTLocalizer
 from direct.directnotify import DirectNotifyGlobal

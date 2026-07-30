@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for maze game within
+# trolley minigame rules, presentation, and synchronization.
+
 from direct.showbase import RandomNumGen
 
 def getMazeName(gameDoId, numPlayers, mazeNames):

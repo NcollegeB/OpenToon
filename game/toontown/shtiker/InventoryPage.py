@@ -1,3 +1,6 @@
+# This module implements the inventory interface, presenting and updating player controls and
+# information for Shticker Book pages, settings, and dialogs.
+
 from . import ShtikerPage
 from toontown.toonbase import ToontownBattleGlobals
 from direct.gui.DirectGui import *

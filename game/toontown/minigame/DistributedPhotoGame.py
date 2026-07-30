@@ -1,3 +1,7 @@
+# This module implements the client-side distributed photo game, handling network updates,
+# presentation, and player interaction for trolley minigame rules, presentation, and
+# synchronization.
+
 from direct.directnotify import DirectNotifyGlobal
 from panda3d.core import *
 from panda3d.toontown import *

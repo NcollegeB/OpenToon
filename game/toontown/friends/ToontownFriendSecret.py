@@ -1,3 +1,6 @@
+# This module defines Toontown friend secret and its supporting behavior for friend invitations,
+# lists, secrets, and notifications.
+
 from panda3d.core import *
 from direct.gui.DirectGui import *
 from direct.directnotify import DirectNotifyGlobal

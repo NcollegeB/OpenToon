@@ -7,6 +7,8 @@
 # License: MIT
 # Version: 1.0.0
 ##################################################
+# This module defines the magic-word registry, command base class, permissions, argument handling,
+# and implementations of privileged commands.
 
 import collections, types
 

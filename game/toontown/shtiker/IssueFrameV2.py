@@ -1,3 +1,6 @@
+# This module defines issue frame v 2 and its supporting behavior for Shticker Book pages, settings,
+# and dialogs.
+
 from panda3d.core import Filename
 from direct.directnotify import DirectNotifyGlobal
 from direct.gui.DirectGui import DGG, DirectFrame, DirectButton

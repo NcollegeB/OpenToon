@@ -1,3 +1,6 @@
+# This module defines pet leash and its supporting behavior for Doodle appearance, behavior,
+# training, AI, and interfaces.
+
 from panda3d.core import *
 from otp.movement import Impulse
 

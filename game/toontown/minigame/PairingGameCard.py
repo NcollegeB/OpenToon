@@ -1,3 +1,6 @@
+# This module defines pairing game card and its supporting behavior for trolley minigame rules,
+# presentation, and synchronization.
+
 from .PlayingCard import PlayingCardNodePath
 from . import PlayingCardGlobals
 from panda3d.core import NodePath, Vec3

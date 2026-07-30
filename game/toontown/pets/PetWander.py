@@ -1,3 +1,6 @@
+# This module defines pet wander and its supporting behavior for Doodle appearance, behavior,
+# training, AI, and interfaces.
+
 from panda3d.core import *
 from panda3d.toontown import *
 from direct.showbase.PythonUtil import reduceAngle, randFloat, normalDistrib

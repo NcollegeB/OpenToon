@@ -1,3 +1,7 @@
+# This module implements the authoritative AI-server side of law office elevator ext, handling
+# validated state and synchronized gameplay for Cog HQ facilities, bosses, rooms, and level
+# entities.
+
 from otp.ai.AIBase import *
 from toontown.toonbase import ToontownGlobals
 from direct.distributed.ClockDelta import *

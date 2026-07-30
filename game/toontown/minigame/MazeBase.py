@@ -1,3 +1,6 @@
+# This module provides shared maze behavior and data used by related implementations in trolley
+# minigame rules, presentation, and synchronization.
+
 from panda3d.core import VBase3
 from direct.showbase.RandomNumGen import RandomNumGen
 

@@ -1,3 +1,6 @@
+# This module defines flower collection and its supporting behavior for estates, houses, gardens,
+# mailboxes, closets, and banks.
+
 from . import GardenGlobals
 from direct.directnotify import DirectNotifyGlobal
 from . import FlowerBase

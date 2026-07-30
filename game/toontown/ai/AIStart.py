@@ -1,3 +1,6 @@
+# This module bootstraps an AI server process, constructs its repository, connects it to Astron, and
+# enters the Panda3D event loop.
+
 from panda3d.core import *
 import builtins
 

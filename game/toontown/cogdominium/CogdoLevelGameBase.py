@@ -1,3 +1,6 @@
+# This module provides shared Cogdo level game behavior and data used by related implementations in
+# Cogdo rooms, activities, entities, and rewards.
+
 from direct.fsm.StatePush import FunctionCall
 from otp.level.EntityStateVarSet import EntityStateVarSet
 from otp.level.LevelSpec import LevelSpec

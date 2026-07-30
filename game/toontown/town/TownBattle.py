@@ -1,3 +1,6 @@
+# This module defines town battle and its supporting behavior for streets, town loading, place
+# state, and street battles.
+
 from toontown.toonbase.ToontownBattleGlobals import *
 import types
 from direct.fsm import StateData

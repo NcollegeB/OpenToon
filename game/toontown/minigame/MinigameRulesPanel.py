@@ -1,3 +1,6 @@
+# This module implements the minigame rules interface, presenting and updating player controls and
+# information for trolley minigame rules, presentation, and synchronization.
+
 from direct.task import Task
 from direct.fsm import StateData
 from toontown.toonbase.ToontownGlobals import *

@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for trolley within
+# playgrounds, treasures, and safe-zone activities.
+
 TROLLEY_ENTER_TIME = 2.0
 TROLLEY_EXIT_TIME = 5.0
 TROLLEY_COUNTDOWN_TIME = 10.0

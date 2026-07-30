@@ -1,3 +1,6 @@
+# This module defines friend handle and its supporting behavior for friend invitations, lists,
+# secrets, and notifications.
+
 from otp.avatar.Avatar import teleportNotify
 from toontown.toonbase import ToontownGlobals
 import copy

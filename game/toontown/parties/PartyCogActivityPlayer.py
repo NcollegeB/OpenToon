@@ -1,3 +1,6 @@
+# This module defines party Cog activity player and its supporting behavior for party scheduling,
+# activities, decorations, and services.
+
 import math
 from direct.showbase.PythonUtil import bound, lerp
 from direct.task.Task import Task

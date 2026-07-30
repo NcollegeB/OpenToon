@@ -1,3 +1,6 @@
+# This module coordinates client loading and state transitions for streets, interiors, battles,
+# elevators, teleportation, and shared town resources.
+
 from panda3d.core import *
 from toontown.battle.BattleProps import *
 from toontown.battle.BattleSounds import *

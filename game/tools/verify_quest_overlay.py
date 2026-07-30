@@ -23,8 +23,8 @@ from direct.showbase.MessengerGlobal import messenger
 
 class _Avatar:
     def __init__(self):
-        # Stinky's live completed tutorial quest exercises the real poster
-        # renderer instead of only the empty-state path.
+        # A completed tutorial quest exercises the real poster renderer instead
+        # of only the empty-state path.
         self.quests = [[145, 1000, 1000, 100, 1]]
 
     @staticmethod

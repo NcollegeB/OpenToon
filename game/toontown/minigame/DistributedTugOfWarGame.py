@@ -1,3 +1,7 @@
+# This module implements the client-side distributed tug of war game, handling network updates,
+# presentation, and player interaction for trolley minigame rules, presentation, and
+# synchronization.
+
 from panda3d.core import RopeNode, VBase3
 from panda3d.otp import NametagGlobals
 

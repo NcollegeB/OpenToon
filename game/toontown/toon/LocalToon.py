@@ -1,3 +1,6 @@
+# This module defines local Toon and its supporting behavior for player Toon avatars, NPCs,
+# inventory, and presentation.
+
 import random
 import math
 import time

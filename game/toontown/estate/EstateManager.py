@@ -1,3 +1,6 @@
+# This module coordinates estate lifecycle, state, and services for estates, houses, gardens,
+# mailboxes, closets, and banks.
+
 from panda3d.core import *
 from toontown.toonbase import ToontownGlobals
 from direct.distributed import DistributedObject

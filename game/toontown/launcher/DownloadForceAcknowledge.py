@@ -1,3 +1,6 @@
+# This module defines download force acknowledge and its supporting behavior for client startup,
+# downloading, and launch monitoring.
+
 from panda3d.core import *
 from toontown.toontowngui import TTDialog
 from toontown.toonbase import TTLocalizer

@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for travel game
+# within trolley minigame rules, presentation, and synchronization.
+
 DefaultStartingVotes = 5
 FinalMetagameRoundIndex = 5
 BaseBeans = 10

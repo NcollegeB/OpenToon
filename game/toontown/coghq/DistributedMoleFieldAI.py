@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of mole field, handling validated state
+# and synchronized gameplay for Cog HQ facilities, bosses, rooms, and level entities.
+
 from otp.level import DistributedEntityAI
 from toontown.coghq import MoleFieldBase
 from direct.distributed.ClockDelta import globalClockDelta

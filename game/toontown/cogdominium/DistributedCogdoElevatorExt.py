@@ -1,3 +1,6 @@
+# This module implements the client-side distributed Cogdo elevator ext, handling network updates,
+# presentation, and player interaction for Cogdo rooms, activities, entities, and rewards.
+
 from toontown.building.DistributedElevatorExt import DistributedElevatorExt
 
 class DistributedCogdoElevatorExt(DistributedElevatorExt):

@@ -1,3 +1,6 @@
+# This module supplies the fa door codes data and definitions used by buildings, interiors, doors,
+# elevators, and boarding.
+
 from toontown.toonbase import TTLocalizer
 UNLOCKED = 0
 TALK_TO_TOM = 1

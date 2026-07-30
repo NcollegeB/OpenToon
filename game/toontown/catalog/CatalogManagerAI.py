@@ -1,3 +1,6 @@
+# This module provides AI-server logic for catalog, coordinating authoritative simulation and state
+# for catalog items, purchasing, delivery, and catalog interfaces.
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed.DistributedObjectAI import DistributedObjectAI
 

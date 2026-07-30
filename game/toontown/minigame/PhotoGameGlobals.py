@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for photo game
+# within trolley minigame rules, presentation, and synchronization.
+
 from panda3d.core import *
 from toontown.toonbase import TTLocalizer
 from toontown.toonbase import ToontownGlobals

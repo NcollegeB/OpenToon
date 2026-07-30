@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of sinking platform, handling validated
+# state and synchronized gameplay for Cog HQ facilities, bosses, rooms, and level entities.
+
 from otp.ai.AIBase import *
 from direct.directnotify import DirectNotifyGlobal
 from otp.level import DistributedEntityAI

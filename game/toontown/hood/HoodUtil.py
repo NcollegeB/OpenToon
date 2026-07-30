@@ -1,3 +1,6 @@
+# This module provides hood util helper functions for neighborhoods, zone data, and neighborhood
+# lifecycle.
+
 from toontown.toonbase import ToontownGlobals
 
 def calcPropType(node):

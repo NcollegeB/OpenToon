@@ -1,3 +1,6 @@
+# This module defines arrow keys and its supporting behavior for trolley minigame rules,
+# presentation, and synchronization.
+
 from panda3d.core import ModifierButtons
 from direct.showbase.DirectObject import DirectObject
 

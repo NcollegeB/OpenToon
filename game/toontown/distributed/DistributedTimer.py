@@ -1,3 +1,6 @@
+# This module implements the client-side distributed timer, handling network updates, presentation,
+# and player interaction for core repositories, districts, timers, and world lifecycle.
+
 from direct.distributed import DistributedObject
 from direct.directnotify import DirectNotifyGlobal
 from toontown.toonbase import ToontownGlobals

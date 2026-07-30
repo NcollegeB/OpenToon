@@ -1,3 +1,6 @@
+# This module implements the client-side distributed NPC party person, handling network updates,
+# presentation, and player interaction for player Toon avatars, NPCs, inventory, and presentation.
+
 from .DistributedNPCToonBase import DistributedNPCToonBase
 from direct.distributed.DistributedObject import DistributedObject
 from toontown.toon import NPCToons

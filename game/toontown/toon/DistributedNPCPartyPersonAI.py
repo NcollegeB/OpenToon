@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of NPC party person, handling validated
+# state and synchronized gameplay for player Toon avatars, NPCs, inventory, and presentation.
+
 from .DistributedNPCToonBaseAI import DistributedNPCToonBaseAI
 from toontown.toonbase import TTLocalizer
 from direct.task import Task

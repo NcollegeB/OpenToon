@@ -1,3 +1,6 @@
+# This module implements the catalog interface, presenting and updating player controls and
+# information for catalog items, purchasing, delivery, and catalog interfaces.
+
 from panda3d.core import *
 from direct.gui.DirectGui import *
 from panda3d.core import *

@@ -1,3 +1,6 @@
+# This module defines friend notifier and its supporting behavior for friend invitations, lists,
+# secrets, and notifications.
+
 from panda3d.core import *
 from toontown.toonbase.ToontownGlobals import *
 from direct.showbase import DirectObject

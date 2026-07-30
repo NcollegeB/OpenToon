@@ -1,3 +1,6 @@
+# This module implements the client-side distributed Daisy Gardens flower, handling network updates,
+# presentation, and player interaction for playgrounds, treasures, and safe-zone activities.
+
 from panda3d.core import *
 from direct.distributed.ClockDelta import *
 from direct.distributed import DistributedObject

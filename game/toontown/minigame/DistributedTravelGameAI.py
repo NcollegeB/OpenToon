@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of travel game, handling validated state
+# and synchronized gameplay for trolley minigame rules, presentation, and synchronization.
+
 from toontown.minigame.DistributedMinigameAI import *
 from direct.fsm import ClassicFSM, State
 from direct.fsm import State

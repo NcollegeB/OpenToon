@@ -1,3 +1,6 @@
+# This module defines party Cog activity input and its supporting behavior for party scheduling,
+# activities, decorations, and services.
+
 from direct.showbase.DirectObject import DirectObject
 from panda3d.core import ModifierButtons
 from otp.otpgui.KeyboardShortcutManager import keyboardShortcutManager

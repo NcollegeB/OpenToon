@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for Bingo within
+# ponds, fish, targets, rewards, and Bingo.
+
 from toontown.toonbase import TTLocalizer
 NORMAL_CARD = 0
 FOURCORNER_CARD = 1

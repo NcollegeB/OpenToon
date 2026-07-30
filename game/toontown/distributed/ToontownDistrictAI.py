@@ -1,3 +1,6 @@
+# This module provides AI-server logic for Toontown district, coordinating authoritative simulation
+# and state for core repositories, districts, timers, and world lifecycle.
+
 from direct.directnotify import DirectNotifyGlobal
 from otp.distributed.DistributedDistrictAI import DistributedDistrictAI
 

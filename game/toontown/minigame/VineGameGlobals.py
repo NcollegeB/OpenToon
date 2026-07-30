@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for vine game within
+# trolley minigame rules, presentation, and synchronization.
+
 from toontown.toonbase import ToontownGlobals
 from panda3d.core import BitMask32
 NumVines = 20

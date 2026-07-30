@@ -1,3 +1,6 @@
+# This module provides AI-server logic for law office, coordinating authoritative simulation and
+# state for Cog HQ facilities, bosses, rooms, and level entities.
+
 from direct.directnotify import DirectNotifyGlobal
 from . import DistributedLawOfficeAI, DistributedStageAI
 from toontown.coghq import StageLayout

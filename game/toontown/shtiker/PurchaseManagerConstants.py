@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for purchase manager
+# within Shticker Book pages, settings, and dialogs.
+
 PURCHASE_NO_CLIENT_STATE = 0
 PURCHASE_WAITING_STATE = 1
 PURCHASE_PLAYAGAIN_STATE = 2

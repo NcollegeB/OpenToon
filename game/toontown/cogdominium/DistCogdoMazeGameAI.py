@@ -1,3 +1,6 @@
+# This module provides AI-server logic for dist Cogdo maze game, coordinating authoritative
+# simulation and state for Cogdo rooms, activities, entities, and rewards.
+
 from panda3d.core import Vec3, NodePath
 from direct.distributed.ClockDelta import globalClockDelta
 from otp.avatar.SpeedMonitor import SpeedMonitor

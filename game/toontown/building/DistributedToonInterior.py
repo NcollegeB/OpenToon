@@ -1,3 +1,6 @@
+# This module implements the client-side distributed Toon interior, handling network updates,
+# presentation, and player interaction for buildings, interiors, doors, elevators, and boarding.
+
 from toontown.toonbase.ToonBaseGlobal import *
 from panda3d.core import *
 from panda3d.toontown import *

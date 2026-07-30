@@ -1,3 +1,6 @@
+# This module coordinates the client's location state machine across quiet zones, neighborhoods,
+# estates, parties, and Cog headquarters.
+
 from panda3d.core import *
 from panda3d.toontown import *
 from toontown.toonbase.ToonBaseGlobal import *

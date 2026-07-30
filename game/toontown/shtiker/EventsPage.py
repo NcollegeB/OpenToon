@@ -1,3 +1,6 @@
+# This module implements the events interface, presenting and updating player controls and
+# information for Shticker Book pages, settings, and dialogs.
+
 import urllib.request
 from panda3d.core import Vec4, Vec3, TextNode, PNMImage, StringStream, Texture, HTTPClient, DocumentSpec, Ramfile, Point3, ConfigVariableBool, ConfigVariableString
 from direct.task.Task import Task

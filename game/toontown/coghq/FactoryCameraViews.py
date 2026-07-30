@@ -1,3 +1,6 @@
+# This module defines factory camera views and its supporting behavior for Cog HQ facilities,
+# bosses, rooms, and level entities.
+
 from panda3d.core import *
 from direct.showbase.PythonUtil import Functor
 from toontown.toonbase import ToontownGlobals

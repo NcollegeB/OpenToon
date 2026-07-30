@@ -1,3 +1,6 @@
+# This module defines hydrant one animated prop and its supporting behavior for neighborhoods, zone
+# data, and neighborhood lifecycle.
+
 from toontown.hood import ZeroAnimatedProp
 from toontown.toonbase import ToontownGlobals
 from direct.directnotify import DirectNotifyGlobal

@@ -1,3 +1,6 @@
+# This module implements the client-side distributed Cashbot boss, handling network updates,
+# presentation, and player interaction for Cog and boss actors, behavior, and combat support.
+
 from direct.interval.IntervalGlobal import *
 from direct.task.TaskManagerGlobal import *
 from direct.directnotify import DirectNotifyGlobal

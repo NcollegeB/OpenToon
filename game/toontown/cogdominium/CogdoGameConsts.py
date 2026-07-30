@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for Cogdo game
+# within Cogdo rooms, activities, entities, and rewards.
+
 from toontown.minigame.MinigameGlobals import getSafezoneId, DifficultyOverrideMult, QuantizeDifficultyOverride, NoDifficultyOverride, getDifficulty
 from toontown.minigame.MinigameGlobals import NoTrolleyZoneOverride as NoExteriorZoneOverride
 MaxPlayers = 4

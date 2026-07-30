@@ -1,3 +1,6 @@
+# This module provides AI-server logic for trolley holiday, coordinating authoritative simulation
+# and state for trolley minigame rules, presentation, and synchronization.
+
 from direct.directnotify import DirectNotifyGlobal
 from toontown.toonbase import ToontownGlobals, TTLocalizer
 from toontown.ai import HolidayBaseAI

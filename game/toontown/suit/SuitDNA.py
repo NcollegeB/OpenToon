@@ -1,3 +1,6 @@
+# This module defines suit appearance or configuration fields together with their construction and
+# serialization helpers for Cog and boss actors, behavior, and combat support.
+
 import random
 from panda3d.core import *
 from direct.directnotify.DirectNotifyGlobal import *

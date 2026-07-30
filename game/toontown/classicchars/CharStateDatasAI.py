@@ -1,3 +1,6 @@
+# This module provides AI-server logic for character state datas, coordinating authoritative
+# simulation and state for classic-character NPC actors, paths, and dialogue.
+
 from otp.ai.AIBaseGlobal import *
 from direct.distributed.ClockDelta import *
 from direct.fsm import StateData

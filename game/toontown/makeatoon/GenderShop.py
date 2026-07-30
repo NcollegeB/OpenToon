@@ -1,3 +1,6 @@
+# This module defines gender shop and its supporting behavior for Toon creation, appearance,
+# clothing, and naming.
+
 from panda3d.core import *
 from direct.fsm import StateData
 from direct.gui.DirectGui import *

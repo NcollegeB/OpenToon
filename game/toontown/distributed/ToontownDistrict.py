@@ -1,3 +1,6 @@
+# This module defines Toontown district and its supporting behavior for core repositories,
+# districts, timers, and world lifecycle.
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed import DistributedObject
 from otp.distributed import DistributedDistrict

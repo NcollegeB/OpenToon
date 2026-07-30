@@ -1,3 +1,6 @@
+# This module provides AI-server logic for factory entity creator, coordinating authoritative
+# simulation and state for Cog HQ facilities, bosses, rooms, and level entities.
+
 from otp.level import EntityCreatorAI
 from direct.showbase.PythonUtil import Functor
 from . import DistributedBeanBarrelAI, DistributedButtonAI, DistributedCrateAI, DistributedLiftAI, DistributedDoorEntityAI, DistributedGagBarrelAI, DistributedGridAI

@@ -1,3 +1,6 @@
+# This module defines catalog attic item and its supporting behavior for catalog items, purchasing,
+# delivery, and catalog interfaces.
+
 from . import CatalogItem
 from toontown.toonbase import TTLocalizer
 from direct.showbase import PythonUtil

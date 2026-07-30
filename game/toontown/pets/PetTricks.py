@@ -1,3 +1,6 @@
+# This module provides pet tricks helpers for Doodle appearance, behavior, training, AI, and
+# interfaces.
+
 from direct.showbase.PythonUtil import invertDictLossless
 from direct.interval.IntervalGlobal import *
 import random

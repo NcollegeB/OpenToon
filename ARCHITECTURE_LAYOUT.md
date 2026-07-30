@@ -289,11 +289,11 @@ ThingBase.py              common non-network behavior
 
 | Path | Data and backup significance |
 |---|---|
-| `astron\databases\accounts.json` | Maps local login tokens to Astron account object IDs. Current entry: `dev → 100000000`. |
+| `astron\databases\accounts.json` | Maps local login tokens to Astron account object IDs. |
 | `astron\databases\astrondb\info.yaml` | Next database object ID. |
-| `astron\databases\astrondb\100000000.yaml` | Current local account object and avatar slots. |
-| `astron\databases\astrondb\100000001.yaml` | Current Toon object (`Stinky`) and all saved avatar fields. |
-| `data\401000001_*_buildings.json` | Persisted building layouts/state by district and zone. |
+| `astron\databases\astrondb\<account-do-id>.yaml` | Local account objects and avatar slots. |
+| `astron\databases\astrondb\<avatar-do-id>.yaml` | Local Toon objects and saved avatar fields. |
+| `data\<district-do-id>_*_buildings.json` | Persisted building layouts/state by district and zone. |
 | `useropt.json` | Generated in `game\` after saving display/audio/window preferences. |
 | `errorCode` | Last launcher status/error code. |
 

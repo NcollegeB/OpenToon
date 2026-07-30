@@ -1,3 +1,6 @@
+# This module implements the client-side distributed chip, handling network updates, presentation,
+# and player interaction for classic-character NPC actors, paths, and dialogue.
+
 from direct.showbase.ShowBaseGlobal import *
 from . import DistributedCCharBase
 from direct.directnotify import DirectNotifyGlobal

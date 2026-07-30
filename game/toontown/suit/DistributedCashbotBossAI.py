@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of Cashbot boss, handling validated state
+# and synchronized gameplay for Cog and boss actors, behavior, and combat support.
+
 from panda3d.core import *
 from direct.directnotify import DirectNotifyGlobal
 from toontown.toonbase import ToontownGlobals

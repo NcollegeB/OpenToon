@@ -1,4 +1,5 @@
-
+# This module provides shared decor behavior and data used by related implementations in party
+# scheduling, activities, decorations, and services.
 
 class DecorBase:
 

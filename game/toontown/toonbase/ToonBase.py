@@ -1,3 +1,6 @@
+# This module runs the main Toontown client application, coordinating graphics, the Panda3D window,
+# input, screenshots, loading, and startup behavior.
+
 from otp.otpbase import OTPBase
 from otp.otpbase import OTPLauncherGlobals
 from otp.otpbase import OTPGlobals

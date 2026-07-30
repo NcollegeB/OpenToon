@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of suit planner, handling validated state
+# and synchronized gameplay for Cog and boss actors, behavior, and combat support.
+
 from panda3d.toontown import *
 from otp.ai.AIBaseGlobal import *
 from direct.distributed import DistributedObjectAI

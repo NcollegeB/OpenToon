@@ -1,3 +1,6 @@
+# This module loads and unloads scenes, assets, and place transitions for gz safe zone within
+# playgrounds, treasures, and safe-zone activities.
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.gui import DirectGui
 from direct.fsm import ClassicFSM, State

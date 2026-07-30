@@ -1,3 +1,7 @@
+# This module implements the client-side distributed party tug of war activity, handling network
+# updates, presentation, and player interaction for party scheduling, activities, decorations, and
+# services.
+
 import math
 from panda3d.core import CollisionTube
 from panda3d.core import CollisionNode

@@ -1,3 +1,6 @@
+# This module defines diving treasure and its supporting behavior for trolley minigame rules,
+# presentation, and synchronization.
+
 from direct.showbase.DirectObject import DirectObject
 from toontown.toonbase.ToontownGlobals import *
 from direct.directnotify import DirectNotifyGlobal

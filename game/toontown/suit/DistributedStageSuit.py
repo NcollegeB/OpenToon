@@ -1,3 +1,6 @@
+# This module implements the client-side distributed stage suit, handling network updates,
+# presentation, and player interaction for Cog and boss actors, behavior, and combat support.
+
 from toontown.suit import DistributedFactorySuit
 from toontown.suit.Suit import *
 from direct.directnotify import DirectNotifyGlobal

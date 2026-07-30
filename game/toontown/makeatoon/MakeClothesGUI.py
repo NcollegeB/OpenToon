@@ -1,3 +1,6 @@
+# This module implements the make clothes interface, presenting and updating player controls and
+# information for Toon creation, appearance, clothing, and naming.
+
 from . import ClothesGUI
 from toontown.toon import ToonDNA
 

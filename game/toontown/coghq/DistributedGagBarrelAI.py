@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of gag barrel, handling validated state
+# and synchronized gameplay for Cog HQ facilities, bosses, rooms, and level entities.
+
 from toontown.toonbase.ToontownBattleGlobals import *
 from . import DistributedBarrelBaseAI
 from direct.directnotify import DirectNotifyGlobal

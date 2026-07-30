@@ -1,4 +1,5 @@
-
+# This module defines ring track group and its supporting behavior for trolley minigame rules,
+# presentation, and synchronization.
 
 class RingTrackGroup:
 

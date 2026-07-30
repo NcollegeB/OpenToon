@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of leader board, handling validated state
+# and synchronized gameplay for kart races, tracks, pads, projectiles, scores, and leaderboards.
+
 import pickle
 
 from direct.directnotify import DirectNotifyGlobal

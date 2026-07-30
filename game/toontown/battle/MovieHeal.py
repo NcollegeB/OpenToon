@@ -1,3 +1,6 @@
+# This module builds the coordinated animation and camera sequences for movie heal within Cog battle
+# rules, presentation, calculations, and rewards.
+
 from direct.interval.IntervalGlobal import *
 from .BattleProps import *
 from .BattleSounds import *

@@ -1,3 +1,6 @@
+# This module defines catalog animated furniture item and its supporting behavior for catalog items,
+# purchasing, delivery, and catalog interfaces.
+
 from .CatalogFurnitureItem import *
 FTAnimRate = 6
 AnimatedFurnitureItemKeys = (10020, 270, 990, 460, 470, 480, 490, 491, 492)

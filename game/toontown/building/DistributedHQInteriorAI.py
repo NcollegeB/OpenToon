@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of HQ interior, handling validated state
+# and synchronized gameplay for buildings, interiors, doors, elevators, and boarding.
+
 from direct.distributed import DistributedObjectAI
 from direct.directnotify import DirectNotifyGlobal
 import pickle

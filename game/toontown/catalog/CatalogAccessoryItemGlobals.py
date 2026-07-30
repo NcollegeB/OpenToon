@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for catalog
+# accessory item within catalog items, purchasing, delivery, and catalog interfaces.
+
 ATArticle = 0
 ATString = 1
 ATBasePrice = 2

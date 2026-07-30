@@ -1,3 +1,6 @@
+# This module defines dist Cogdo crane game and its supporting behavior for Cogdo rooms, activities,
+# entities, and rewards.
+
 from panda3d.core import *
 from panda3d.physics import *
 from direct.directnotify.DirectNotifyGlobal import directNotify

@@ -1,3 +1,6 @@
+# This module loads and unloads scenes, assets, and place transitions for Minnie's Melodyland town
+# within streets, town loading, place state, and street battles.
+
 from . import TownLoader
 from . import MMStreet
 from toontown.suit import Suit

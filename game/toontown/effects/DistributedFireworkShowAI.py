@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of firework show, handling validated state
+# and synchronized gameplay for visual, particle, and firework effects.
+
 from otp.ai.AIBaseGlobal import *
 from direct.distributed import DistributedObjectAI
 from direct.directnotify import DirectNotifyGlobal

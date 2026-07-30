@@ -1,3 +1,6 @@
+# This module provides factory util helper functions for Cog HQ facilities, bosses, rooms, and level
+# entities.
+
 from panda3d.core import *
 from direct.showbase import DirectObject
 from direct.interval.IntervalGlobal import *

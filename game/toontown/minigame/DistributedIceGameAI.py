@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of ice game, handling validated state and
+# synchronized gameplay for trolley minigame rules, presentation, and synchronization.
+
 from panda3d.core import Point3
 from direct.distributed.ClockDelta import globalClockDelta
 from direct.fsm import ClassicFSM, State

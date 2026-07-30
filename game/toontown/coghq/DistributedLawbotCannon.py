@@ -1,3 +1,6 @@
+# This module implements the client-side distributed Lawbot cannon, handling network updates,
+# presentation, and player interaction for Cog HQ facilities, bosses, rooms, and level entities.
+
 from direct.interval.IntervalGlobal import *
 from direct.distributed.ClockDelta import *
 from direct.task.Task import Task

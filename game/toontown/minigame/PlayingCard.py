@@ -1,3 +1,6 @@
+# This module defines playing card base and its supporting behavior for trolley minigame rules,
+# presentation, and synchronization.
+
 from direct.gui.DirectGui import *
 from panda3d.core import *
 from direct.task import Task

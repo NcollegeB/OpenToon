@@ -1,3 +1,6 @@
+# This module implements the team activity interface, presenting and updating player controls and
+# information for party scheduling, activities, decorations, and services.
+
 from panda3d.core import TextNode
 from direct.gui.DirectButton import DirectButton
 from direct.gui.OnscreenText import OnscreenText

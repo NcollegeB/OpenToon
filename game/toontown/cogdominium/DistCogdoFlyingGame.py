@@ -1,3 +1,6 @@
+# This module defines dist Cogdo flying game and its supporting behavior for Cogdo rooms,
+# activities, entities, and rewards.
+
 from direct.distributed.ClockDelta import globalClockDelta
 from toontown.toonbase import TTLocalizer
 from .CogdoFlyingGame import CogdoFlyingGame

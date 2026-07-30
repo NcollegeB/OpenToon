@@ -1,3 +1,6 @@
+# This module implements the top-level Shticker Book, managing open and close states, pages, tabs,
+# navigation, button visibility, and news routing.
+
 from panda3d.core import *
 from panda3d.otp import *
 from toontown.toonbase import ToontownGlobals

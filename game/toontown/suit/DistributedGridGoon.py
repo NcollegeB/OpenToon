@@ -1,3 +1,6 @@
+# This module implements the client-side distributed grid goon, handling network updates,
+# presentation, and player interaction for Cog and boss actors, behavior, and combat support.
+
 from panda3d.core import *
 from direct.interval.IntervalGlobal import *
 from toontown.battle.BattleProps import *

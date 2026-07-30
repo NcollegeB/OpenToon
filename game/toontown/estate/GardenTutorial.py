@@ -1,3 +1,6 @@
+# This module defines garden tutorial and its supporting behavior for estates, houses, gardens,
+# mailboxes, closets, and banks.
+
 from direct.gui.DirectGui import *
 from direct.fsm import FSM
 from direct.directnotify import DirectNotifyGlobal

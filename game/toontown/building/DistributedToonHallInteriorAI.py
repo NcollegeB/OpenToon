@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of Toon hall interior, handling validated
+# state and synchronized gameplay for buildings, interiors, doors, elevators, and boarding.
+
 from .DistributedToonInteriorAI import *
 from toontown.toonbase import ToontownGlobals
 

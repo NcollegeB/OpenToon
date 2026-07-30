@@ -1,3 +1,6 @@
+# This module provides AI-server logic for purchase, coordinating authoritative simulation and state
+# for Shticker Book pages, settings, and dialogs.
+
 from otp.ai.AIBaseGlobal import *
 from panda3d.core import *
 from direct.distributed.ClockDelta import *

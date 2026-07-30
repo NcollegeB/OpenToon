@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of Bossbot boss, handling validated state
+# and synchronized gameplay for Cog and boss actors, behavior, and combat support.
+
 import random, math
 from panda3d.core import Point3
 from direct.directnotify import DirectNotifyGlobal

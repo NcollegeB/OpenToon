@@ -1,3 +1,6 @@
+# This module implements the client-side distributed trunk, handling network updates, presentation,
+# and player interaction for estates, houses, gardens, mailboxes, closets, and banks.
+
 from panda3d.core import *
 from direct.gui.DirectGui import *
 from direct.task.Task import Task

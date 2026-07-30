@@ -1,3 +1,6 @@
+# This module provides shared avatar panel behavior and data used by related implementations in
+# player Toon avatars, NPCs, inventory, and presentation.
+
 from panda3d.core import *
 from direct.gui.DirectGui import *
 from direct.showbase import DirectObject

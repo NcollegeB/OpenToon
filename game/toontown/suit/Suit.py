@@ -1,3 +1,6 @@
+# This module defines the base visual Cog avatar, assembling body and head models, clothing,
+# collisions, animations, dialogue, disguises, and shared caches.
+
 from direct.actor import Actor
 from otp.avatar import Avatar
 from . import SuitDNA

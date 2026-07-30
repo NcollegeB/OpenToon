@@ -1,3 +1,6 @@
+# This module implements the client-side distributed elevator ext, handling network updates,
+# presentation, and player interaction for buildings, interiors, doors, elevators, and boarding.
+
 from panda3d.core import *
 from panda3d.otp import *
 from direct.distributed.ClockDelta import *

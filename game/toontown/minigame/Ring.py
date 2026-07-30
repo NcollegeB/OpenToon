@@ -1,3 +1,6 @@
+# This module defines ring and its supporting behavior for trolley minigame rules, presentation, and
+# synchronization.
+
 from panda3d.core import *
 from toontown.toonbase.ToonBaseGlobal import *
 from panda3d.core import NodePath

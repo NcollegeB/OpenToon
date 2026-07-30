@@ -1,3 +1,6 @@
+# This module defines party and its supporting behavior for party scheduling, activities,
+# decorations, and services.
+
 from panda3d.core import *
 from toontown.toonbase.ToonBaseGlobal import *
 from toontown.toonbase.ToontownGlobals import *

@@ -1,3 +1,6 @@
+# This module defines walk and its supporting behavior for playgrounds, treasures, and safe-zone
+# activities.
+
 from panda3d.core import *
 from direct.task.Task import Task
 from direct.directnotify import DirectNotifyGlobal

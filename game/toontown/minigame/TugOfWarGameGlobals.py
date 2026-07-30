@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for tug of war game
+# within trolley minigame rules, presentation, and synchronization.
+
 GAME_DURATION = 40.0
 TIME_BONUS_MIN = 2
 TIME_BONUS_MAX = 5

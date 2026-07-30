@@ -1,3 +1,6 @@
+# This module builds the client tutorial interior, including its furnishings, tutorial NPC and Cog,
+# zone setup, and scripted introductory movie.
+
 from toontown.toonbase.ToonBaseGlobal import *
 from panda3d.core import *
 from panda3d.toontown import *

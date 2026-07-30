@@ -1,3 +1,6 @@
+# This module implements the client-side distributed Toon statuary, handling network updates,
+# presentation, and player interaction for estates, houses, gardens, mailboxes, closets, and banks.
+
 from toontown.estate import DistributedStatuary
 from toontown.estate import DistributedLawnDecor
 from direct.directnotify import DirectNotifyGlobal

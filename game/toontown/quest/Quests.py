@@ -1,3 +1,6 @@
+# This module defines the quest hierarchy, objectives, rewards, dialogue, progression tables,
+# completion checks, and ToonTask selection algorithms.
+
 from otp.otpbase import OTPGlobals
 from toontown.toonbase import ToontownBattleGlobals
 from toontown.toonbase import ToontownGlobals

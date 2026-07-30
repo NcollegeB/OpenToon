@@ -1,3 +1,6 @@
+# This module defines Cog HQ boss battle and its supporting behavior for Cog HQ facilities, bosses,
+# rooms, and level entities.
+
 from panda3d.core import *
 from panda3d.otp import *
 from direct.interval.IntervalGlobal import *

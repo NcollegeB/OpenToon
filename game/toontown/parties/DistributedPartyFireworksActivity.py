@@ -1,3 +1,7 @@
+# This module implements the client-side distributed party fireworks activity, handling network
+# updates, presentation, and player interaction for party scheduling, activities, decorations, and
+# services.
+
 from panda3d.core import Vec3
 from panda3d.core import OmniBoundingVolume
 from panda3d.core import AlphaTestAttrib

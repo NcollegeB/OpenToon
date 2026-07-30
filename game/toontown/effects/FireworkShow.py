@@ -1,3 +1,6 @@
+# This module constructs and sequences fireworks displays from predefined or randomized show data,
+# coordinating sections, timing, colors, and individual fireworks.
+
 from panda3d.core import *
 from direct.interval.IntervalGlobal import *
 from toontown.effects.FireworkGlobals import *

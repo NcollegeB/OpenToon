@@ -1,3 +1,6 @@
+# This module implements the public party interface, presenting and updating player controls and
+# information for party scheduling, activities, decorations, and services.
+
 from panda3d.core import Vec3, Vec4, Point3, TextNode, VBase4
 from direct.gui.DirectGui import DGG, DirectFrame, DirectButton, DirectLabel, DirectScrolledList, DirectCheckButton
 from direct.gui import DirectGuiGlobals

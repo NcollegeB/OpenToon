@@ -1,3 +1,6 @@
+# This module defines pet observe and its supporting behavior for Doodle appearance, behavior,
+# training, AI, and interfaces.
+
 from direct.directnotify import DirectNotifyGlobal
 from enum import IntEnum
 from toontown.pets import PetTricks

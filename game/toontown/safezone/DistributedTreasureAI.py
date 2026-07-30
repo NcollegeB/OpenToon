@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of treasure, handling validated state and
+# synchronized gameplay for playgrounds, treasures, and safe-zone activities.
+
 from otp.ai.AIBase import *
 from direct.distributed.ClockDelta import *
 from direct.distributed import DistributedObjectAI

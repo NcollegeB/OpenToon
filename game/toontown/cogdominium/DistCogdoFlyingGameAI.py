@@ -1,3 +1,6 @@
+# This module provides AI-server logic for dist Cogdo flying game, coordinating authoritative
+# simulation and state for Cogdo rooms, activities, entities, and rewards.
+
 import random
 from direct.distributed.ClockDelta import globalClockDelta
 from .DistCogdoGameAI import DistCogdoGameAI

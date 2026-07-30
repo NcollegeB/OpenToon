@@ -1,3 +1,6 @@
+# This module declares the entity classes and editable attributes used to construct barrels,
+# switches, hazards, platforms, and other objects in Cog facility levels.
+
 from otp.level.EntityTypes import *
 
 class FactoryLevelMgr(LevelMgr):

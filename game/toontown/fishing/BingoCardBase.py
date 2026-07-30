@@ -1,3 +1,6 @@
+# This module provides shared Bingo card behavior and data used by related implementations in ponds,
+# fish, targets, rewards, and Bingo.
+
 from direct.directnotify import DirectNotifyGlobal
 from toontown.fishing import FishGlobals
 from toontown.fishing import BingoGlobals

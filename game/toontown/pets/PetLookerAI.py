@@ -1,3 +1,6 @@
+# This module provides AI-server logic for pet looker, coordinating authoritative simulation and
+# state for Doodle appearance, behavior, training, AI, and interfaces.
+
 from panda3d.core import *
 from direct.directnotify import DirectNotifyGlobal
 from direct.showbase import DirectObject

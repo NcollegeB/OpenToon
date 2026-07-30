@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for door within
+# buildings, interiors, doors, elevators, and boarding.
+
 EXT_STANDARD = 1
 INT_STANDARD = 2
 EXT_HQ = 3

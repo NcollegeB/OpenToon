@@ -1,3 +1,6 @@
+# This module defines boarding group show and its supporting behavior for buildings, interiors,
+# doors, elevators, and boarding.
+
 from panda3d.core import *
 from direct.directnotify import DirectNotifyGlobal
 from toontown.toonbase import ToontownGlobals

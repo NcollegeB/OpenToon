@@ -1,3 +1,6 @@
+# This module defines name generator and its supporting behavior for Toon creation, appearance,
+# clothing, and naming.
+
 from panda3d.core import *
 import random
 import string

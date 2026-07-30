@@ -1,3 +1,6 @@
+# This module defines Cog population and encounter placement for Bossbot country club maze room
+# battle 03 Cogs in the Cog facility level system.
+
 from .SpecImports import *
 from toontown.toonbase import ToontownGlobals
 CogParent = 110000

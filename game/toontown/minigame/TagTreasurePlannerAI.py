@@ -1,3 +1,6 @@
+# This module plans and spawns authoritative tag treasure entities or activities for trolley
+# minigame rules, presentation, and synchronization.
+
 from direct.directnotify import DirectNotifyGlobal
 from toontown.toonbase.ToontownGlobals import *
 from toontown.safezone import RegenTreasurePlannerAI

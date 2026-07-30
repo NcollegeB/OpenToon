@@ -1,3 +1,6 @@
+# This module renders fish specimens in an isolated display region, loading their models and
+# animations for fishing collection-interface photos.
+
 from direct.directnotify import DirectNotifyGlobal
 from panda3d.core import *
 from direct.interval.IntervalGlobal import *

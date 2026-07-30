@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for playing card
+# within trolley minigame rules, presentation, and synchronization.
+
 from toontown.toonbase import TTLocalizer
 from toontown.toonbase import ToontownBattleGlobals
 from panda3d.core import Vec4

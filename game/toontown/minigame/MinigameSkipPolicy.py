@@ -1,3 +1,6 @@
+# This module provides minigame skip policy helpers for trolley minigame rules, presentation, and
+# synchronization.
+
 """Pure policy helpers for safe, unanimous trolley-minigame skipping."""
 
 

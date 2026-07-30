@@ -1,3 +1,6 @@
+# This module implements the news interface, presenting and updating player controls and information
+# for Shticker Book pages, settings, and dialogs.
+
 from direct.fsm import StateData
 from direct.gui.DirectGui import DirectFrame
 from direct.gui.DirectGui import DGG

@@ -1,3 +1,6 @@
+# This module defines active cell and its supporting behavior for Cog HQ facilities, bosses, rooms,
+# and level entities.
+
 from panda3d.core import *
 from otp.level import BasicEntities
 from direct.directnotify import DirectNotifyGlobal

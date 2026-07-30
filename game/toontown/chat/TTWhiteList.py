@@ -1,3 +1,6 @@
+# This module defines Toontown white list and its supporting behavior for player chat, whitelist
+# filtering, and SpeedChat integration.
+
 import datetime
 from panda3d.core import *
 from direct.directnotify import DirectNotifyGlobal

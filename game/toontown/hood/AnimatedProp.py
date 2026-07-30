@@ -1,3 +1,6 @@
+# This module defines animated prop and its supporting behavior for neighborhoods, zone data, and
+# neighborhood lifecycle.
+
 from direct.showbase import DirectObject
 from direct.directnotify import DirectNotifyGlobal
 

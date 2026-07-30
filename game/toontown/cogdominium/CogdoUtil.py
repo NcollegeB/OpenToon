@@ -1,3 +1,6 @@
+# This module provides Cogdo util helper functions for Cogdo rooms, activities, entities, and
+# rewards.
+
 from panda3d.core import ColorBlendAttrib
 ModelPhase = 5
 ModelTypes = {'animation': 'a',

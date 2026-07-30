@@ -1,3 +1,6 @@
+# This module defines character and its supporting behavior for non-Toon character avatars and
+# appearance data.
+
 from otp.avatar import Avatar
 from panda3d.core import *
 from panda3d.otp import *

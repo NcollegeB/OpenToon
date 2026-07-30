@@ -1,3 +1,6 @@
+# This module defines Toontown chat input normal and its supporting behavior for player chat,
+# whitelist filtering, and SpeedChat integration.
+
 from direct.gui.DirectGui import *
 from panda3d.core import *
 from otp.chat import ChatInputNormal

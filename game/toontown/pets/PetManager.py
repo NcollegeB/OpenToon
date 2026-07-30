@@ -1,3 +1,6 @@
+# This module coordinates pet lifecycle, state, and services for Doodle appearance, behavior,
+# training, AI, and interfaces.
+
 from panda3d.core import *
 from toontown.toonbase import ToontownGlobals
 from direct.task import Task

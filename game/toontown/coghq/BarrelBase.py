@@ -1,3 +1,6 @@
+# This module provides shared barrel behavior and data used by related implementations in Cog HQ
+# facilities, bosses, rooms, and level entities.
+
 import random
 
 class BarrelBase:
