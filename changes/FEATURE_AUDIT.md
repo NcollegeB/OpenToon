@@ -159,13 +159,14 @@ Still unverified:
 - Absence of leaked tasks, intervals, distributed objects, and barriers across
   that full live matrix.
 
-Confirmed minigame defects found by the audit:
+Minigame defects found by the audit and their current status:
 
-- Photo Fun discards the last photograph because it increments the film count
-  and returns before recording that final score.
-- Toon Escape checks and sets two differently spelled initialization guards.
-- Dormant Trolley Tracks result branches retain an unqualified symbol and
-  `TODO NAME` text.
+- Resolved 2026-07-29: Photo Fun now processes every score from a final
+  shutter before its ordered film-out notification ends the game.
+- Resolved 2026-07-29: Toon Escape checks and sets the same AI initialization
+  guard.
+- Resolved 2026-07-29: the unreachable Trolley Tracks place-decider result
+  branches containing an unqualified symbol and `TODO NAME` were removed.
 - Early cleanup outside the games covered by the focused cleanup suites remains
   unverified.
 
@@ -176,16 +177,15 @@ Confirmed minigame defects found by the audit:
 2. Live-test four-player unanimous minigame skipping and complete the full
    one-, two-, and four-player cleanup matrix.
 3. Implement estate-pond fishing and then authoritative Fish Bingo.
-4. Repair Photo Fun's final-film score ordering and Toon Escape's guard typo.
-5. Add a forced-minigame test harness for IDs 1 through 16 at one, two, and
+4. Add a forced-minigame test harness for IDs 1 through 16 at one, two, and
    four players, including skip timing and cleanup assertions.
-6. Add separate, lifecycle-aware skip or exit policies for Cogdo, party,
+5. Add separate, lifecycle-aware skip or exit policies for Cogdo, party,
    racing, golf, picnic-table, and estate activities if universal skipping is
    desired.
-7. Localize the remaining hardcoded minigame result text.
-8. Add a server-GUI force-next-minigame selector and a per-game validation
+6. Localize the remaining hardcoded minigame result text.
+7. Add a server-GUI force-next-minigame selector and a per-game validation
     checklist.
-9. Build and test native macOS and Linux Panda3D/Astron stacks; the supplied
-    launch scripts alone do not make the Windows native game runtime portable.
-10. Replace or separately source every retained upstream asset before any
-    claim that a public release is independently rights-cleared.
+8. Make the local macOS Panda3D/Astron stack reproducible and relocatable, and
+   build/test the corresponding native Linux stack.
+9. Replace or separately source every retained upstream asset before any claim
+   that a public release is independently rights-cleared.

@@ -143,8 +143,10 @@ SHA-256: E8123D351F79D02358755C44F1118617ABBFEEDDB3641C229A8F51BA5B553931
 The executable packages only the small launcher UI. It still requires the
 adjacent `game\` and `runtime\` directories. macOS and Linux launcher/build
 scripts are supplied as source, but a working game client on either platform
-also requires target-native custom Panda3D modules and Astron. Those native
-game stacks were not built or tested on this Windows machine.
+also requires target-native custom Panda3D modules and Astron. A local Apple
+Silicon development stack has now passed a full smoke test, but it is
+Homebrew-linked and is not a signed, relocatable release. Linux remains
+unbuilt and untested.
 
 ## Logs and data
 

@@ -70,11 +70,16 @@ Set `OPEN_TOONTOWN_PYTHON` to the target-native game Python when running from
 source. Those environment-variable names are retained internal compatibility
 interfaces; the user-facing product name is Open Town.
 
-This bundle has no macOS game Python/runtime. Its retained macOS Astron files
-are x86_64 and were not tested in this Windows handoff. An x86_64 game stack
-requires Rosetta 2 on Apple Silicon; a native Apple Silicon release requires
-arm64 builds of both the custom Panda3D fork and Astron. A distributable `.app`
-must also be built, signed, notarized, and tested on macOS.
+The current local Apple Silicon development environment has smoke-tested arm64
+builds of CPython 3.9.25/Panda3D 1.11.0, the OTP/Toontown extensions, and
+Astron. These ignored native artifacts are not distributed by this repository
+and are not yet portable: the Python executable and Astron retain absolute
+Homebrew dynamic-library paths. Reproduce and relocate those builds before
+testing them on a clean Mac.
+
+The source launcher runtime check and a full local server/client smoke test
+passed. A distributable launcher `.app` has not been produced; it must still be
+built, signed, notarized, and tested through a clean first-run installation.
 
 ## Linux
 
@@ -103,8 +108,9 @@ On Windows, the equivalent bundled-runtime command is:
 runtime\Panda3D-1.11.0-x64\python\ppython.exe launcher\src\open_toontown_launcher.py --check
 ```
 
-For releases, build and test each target on its own native CI runner. The
-macOS/Linux scripts currently establish launch/build layout only; no working
-macOS or Linux client/server bundle is claimed. Windows cannot create, sign,
-or test a genuine macOS application, and it cannot validate Linux
-graphics/library compatibility.
+For releases, build and test each target on its own native CI runner. The local
+macOS arm64 development stack is working but is not a reproducible,
+relocatable, or signed release. The Linux scripts currently establish
+launch/build layout only; no working Linux client/server bundle is claimed.
+Windows cannot create, sign, or test a genuine macOS application, and neither
+Windows nor macOS can validate Linux graphics/library compatibility.

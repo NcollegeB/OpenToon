@@ -5,8 +5,10 @@ data, source packages, runtime, resources, logs, and local modifications.
 
 Open Town is the user-facing name for this locally modified upstream Open
 Toontown development stack. It is not a Corporate Clash codebase. Target-aware
-`darwin\` and `linux\` scripts and launcher build sources are present, but this
-assembled and tested bundle contains a working Windows game runtime only.
+`darwin\` and `linux\` scripts and launcher build sources are present. The
+published source contains no native runtime; the current local development
+environment has working Windows and Apple Silicon stacks, while Linux remains
+unbuilt.
 
 ## 1. The shortest useful mental model
 
@@ -226,7 +228,7 @@ game\
 ├─ .git\                    Upstream source metadata; not needed at runtime
 ├─ astron\                  Astron executable/config/database/event logs
 ├─ config\                  Game-specific JSON configuration
-├─ darwin\                  Target-aware macOS scripts; native stack not built/tested here
+├─ darwin\                  Target-aware macOS scripts; local arm64 stack smoke-tested
 ├─ data\                    AI-persisted building-state JSON
 ├─ etc\                     Panda PRC and distributed-class schemas
 ├─ linux\                   Target-aware Linux scripts; native stack not built/tested here
@@ -518,10 +520,12 @@ Do not replace this runtime with an ordinary Panda3D install unless it also
 provides the custom `panda3d.otp` and `panda3d.toontown` modules.
 
 These bundled native extensions are `cp39-win_amd64` binaries. The launcher
-source/build scripts are portable, but this runtime is not. macOS and Linux
-need their own ABI-matched custom Panda3D builds; Linux additionally needs a
-native `game\astron\linux\astrond`. No working macOS/Linux game stack is
-claimed by this Windows handoff.
+source/build scripts are portable, but this runtime is not. The current local
+Apple Silicon environment has a separate ignored `runtime/macos-arm64`
+CPython/Panda3D build and native `game/astron/darwin/astrond`; both passed a
+development smoke test but retain absolute Homebrew dependencies and are not
+release artifacts. Linux still needs its own ABI-matched custom Panda3D build
+and native `game\astron\linux\astrond`.
 
 ## 15. Local modifications
 

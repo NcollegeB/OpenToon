@@ -126,6 +126,18 @@ class DivingCleanupTests(unittest.TestCase):
 
 class TwoDCleanupTests(unittest.TestCase):
 
+    def test_server_initialization_guard_sets_the_checked_attribute(self):
+        methodText = _method_text(
+            'DistributedTwoDGameAI.py',
+            'DistributedTwoDGameAI',
+            '__init__')
+        self.assertIn(
+            'self.DistributedTwoDGameAI_initialized = 1',
+            methodText)
+        self.assertNotIn(
+            'self.DistributedTwoDGame_initialized = 1',
+            methodText)
+
     def test_exit_play_stops_update_task_and_enemy_event(self):
         methodText = _method_text(
             'DistributedTwoDGame.py',
@@ -185,6 +197,20 @@ class RingCleanupTests(unittest.TestCase):
             'DistributedRingGame',
             'END_GAME_WAIT_TASK')
         self.assertNotEqual(collisionTask, endWaitTask)
+
+
+class TrolleyTracksSourceTests(unittest.TestCase):
+
+    def test_dormant_place_decider_result_branches_are_removed(self):
+        for fileName in (
+                'DistributedTravelGame.py',
+                'VoteResultsPanel.py',
+                'VoteResultsTrolleyPanel.py'):
+            unusedPath, source, unusedClass = _load_class(
+                fileName,
+                Path(fileName).stem)
+            self.assertNotIn('TODO NAME', source)
+            self.assertNotIn('TravelGameReasonPlace', source)
 
 
 if __name__ == '__main__':

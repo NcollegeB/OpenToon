@@ -312,7 +312,37 @@ one-, two-, and four-player lifecycle matrix remain open.
 ## Platform boundary
 
 The Windows runtime, server lifecycle, launcher checks, and headless game
-checks passed. The macOS/Linux launcher and native start/build scripts were not
-executed on their target operating systems. A working non-Windows game stack
-still requires an ABI-matched custom Panda3D build with the OTP/Toontown
-extensions and a target-native Astron build; Linux Astron is not included.
+checks passed.
+
+On 2026-07-29, the local Apple Silicon development stack also passed:
+
+- arm64 CPython 3.9.25 and Panda3D 1.11.0 loaded `panda3d.core`,
+  `panda3d.otp`, `panda3d.toontown`, and `pytz`;
+- the source launcher's `--check` resolved that runtime successfully;
+- native arm64 Astron started with its YAML database components;
+- the Astron, UberDOG, AI, and client path reached login, avatar/world entry,
+  and a normal client exit in the recorded macOS smoke test; and
+- setup detected the runtime/Astron pair and verified all 63 generated neutral
+  overlay files.
+
+This is local development evidence, not a macOS release claim. Python and
+Astron retain absolute Homebrew dynamic-library paths, no reproducible native
+build recipe is recorded, and no signed/notarized launcher `.app` or
+clean-machine test exists. Linux still has no native runtime or Astron artifact
+and remains untested.
+
+## 2026-07-29 backlog and minigame regression verification
+
+- Re-audited the living TODO against source, tests, runtime artifacts, and the
+  existing live evidence. Broad partially completed items were split so local
+  smoke-test success is not confused with release acceptance.
+- Photo Fun now accepts every score update from the final shutter before the
+  ordered `filmOut` message can complete the game. Later updates are rejected.
+- Toon Escape sets the same AI initialization guard it checks.
+- Removed the three unreachable Trolley Tracks result branches containing
+  `TODO NAME` and an unqualified symbol.
+- `game/tools/test_target_photo_cleanup.py`: 14 tests passed.
+- `game/tools/test_diving_twod_cleanup.py`: 10 tests passed.
+- The complete focused P0/P1 group passed 75 tests on the local macOS custom
+  runtime.
+- All 1,860 Python files under `game/` parsed successfully.

@@ -51,15 +51,21 @@ after its acceptance criteria have passed and the result is recorded in
 
 ## P1 - Minigame correctness and testing
 
-- [ ] Repair Photo Fun so the final photograph is scored before film runs out.
-- [ ] Correct Toon Escape's mismatched initialization-guard spelling.
-- [ ] Remove the dormant Trolley Tracks `TODO NAME` and unqualified-symbol
-  branches.
+- [x] Preserve every Photo Fun score from the final shutter before processing
+  the client's film-out notification.
+- [x] Correct Toon Escape AI's mismatched initialization-guard attribute.
+- [x] Remove unreachable Trolley Tracks place-decider branches containing
+  `TODO NAME` and unqualified localizer symbols.
 - [ ] Build a server-GUI **Force Next Minigame** selector.
-- [ ] Add a repeatable test harness for minigame IDs 1 through 16.
-  - Exercise one-, two-, and four-player configurations.
-  - Test normal completion, gameplay skip, disconnect, and early-exit cleanup.
-  - Record jellybean rewards and ToonTask credit.
+- [ ] Complete the repeatable test harness for minigame IDs 1 through 16.
+  - [x] Launch fresh one-, two-, three-, or four-player client groups with
+    distinct accounts, windows, and persistent logs.
+  - [x] Select an arbitrary minigame ID/name from the first client and board
+    every client on the same trolley.
+  - [ ] Automate normal completion, gameplay skip, disconnect, and early-exit
+    cleanup scenarios.
+  - [ ] Record and assert jellybean rewards, ToonTask credit, and leaked
+    tasks, intervals, distributed objects, or barriers.
   - Investigate the PandaNode assertion seen when the developer-only `~mg`
     teleport was reused in an already-running client before relying on it for
     batch live sweeps.
@@ -72,11 +78,14 @@ after its acceptance criteria have passed and the result is recorded in
 - [ ] Implement estate-pond fishing generation and its estate-specific flow.
 - [ ] Implement authoritative Fish Bingo only after ordinary fishing passes
   live persistence and multiplayer validation.
-- [ ] Design separate, lifecycle-aware exit or skip behavior for Cogdo
-  activities.
-- [ ] Design exit or skip behavior for picnic-table games.
-- [ ] Design exit or skip behavior for kart racing and golf.
-- [ ] Design exit or skip behavior for party activities and estate cannons.
+- [ ] Add and validate a separate voluntary exit/skip policy for Cogdo
+  activities; retain their existing disconnect/barrier cleanup.
+- [ ] Define active-game exit policy and live-validate the existing
+  picnic-table request-exit cleanup.
+- [ ] Define active-game exit policy and live-validate the existing kart
+  racing and golf leave/disconnect paths.
+- [ ] Define consistent exit policy and live-validate the existing party
+  activity and estate-cannon cleanup paths.
 - [ ] Live-validate ordinary fishing pier exit and disconnect cleanup.
 
 ## P2 - Quest-view polish
@@ -91,25 +100,50 @@ after its acceptance criteria have passed and the result is recorded in
 
 ## P2 - Platform and release engineering
 
-- [ ] Build ABI-matched custom Panda3D OTP/Toontown runtimes for macOS.
-- [ ] Build a native macOS Astron server and test the complete launcher flow.
+- [ ] Finish a reproducible, distributable macOS custom Panda3D runtime.
+  - [x] Build and smoke-test a local Apple Silicon CPython 3.9.25/Panda3D
+    1.11.0 runtime with `panda3d.otp` and `panda3d.toontown`.
+  - [ ] Document the exact custom-Panda source revision and build recipe.
+  - [ ] Remove absolute Homebrew linkage and verify on a clean Mac.
+- [ ] Finish the native macOS Astron and launcher distribution.
+  - [x] Build and run a local arm64 Astron server with the complete
+    Astron/UberDOG/AI/client stack.
+  - [x] Pass source-launcher runtime validation and a live client
+    login/world-entry/normal-exit smoke test.
+  - [ ] Remove absolute Homebrew `yaml-cpp`/`libuv` linkage.
+  - [ ] Build, sign, notarize, and clean-machine test the launcher `.app`.
 - [ ] Build ABI-matched custom Panda3D and Astron stacks for Linux.
 - [ ] Add Windows, macOS, and Linux CI jobs for parsing, focused tests, and
   launcher validation.
 - [ ] Package versioned releases without logs, caches, live databases, player
   backups, or the development runtime.
+  - [x] Exclude those paths from the source archive through tracked ignore and
+    publication rules.
+  - [ ] Add version tags, a release workflow, manifests, checksums, and
+    reproducible package validation.
 - [ ] Add first-run configuration, runtime validation, and actionable launcher
   error messages for every supported platform.
+  - [x] Download/validate pinned resources, validate custom Panda imports,
+    detect native Astron, and build/verify the neutral overlay during setup.
+  - [ ] Persist Unix runtime selection and validate CPU architecture plus
+    dynamic-library dependencies.
+  - [ ] Validate Astron readiness and resource completeness from the launcher.
+  - [ ] Run clean-machine first-launch tests on all three platforms.
 
 ## P2 - Public-release readiness
 
 - [ ] Choose the final project name and perform a deliberate repo-wide rename.
 - [ ] Replace or separately source every retained upstream asset before
   describing a public release as independently rights-cleared.
-- [ ] Add license, contributor, code-of-conduct, security, and attribution
-  files.
+- [ ] Complete governance and attribution documentation.
+  - [x] Add Open Town/upstream licenses, third-party notices, and contribution
+    guidance.
+  - [ ] Add standalone `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`,
+    `SECURITY.md`, and asset-attribution/provenance files.
 - [ ] Document clean-room asset provenance and redistribution permissions.
 - [ ] Remove development authentication defaults from production builds.
+- [ ] Add server-side rate limits and per-action budgets for client-authored
+  gameplay RPCs before public deployment.
 - [ ] Add account security, moderation, backup, restore, and database-migration
   plans before accepting public players.
 
@@ -148,4 +182,6 @@ When an item changes:
 2. Record the exact files and behavior in the dated Markdown change log.
 3. Add or update an automated verification where practical.
 4. Update `VERIFICATION.md` with the observed result.
-5. Regenerate `FULL_FILE_INDEX.txt` if files were added or removed.
+5. Regenerate the local-only `FULL_FILE_INDEX.txt` if it is present and files
+   were added or removed. It is intentionally excluded from the public
+   repository because it inventories private runtime and database paths.

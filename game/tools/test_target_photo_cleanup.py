@@ -136,6 +136,29 @@ class _Sound:
         self.stopCount += 1
 
 
+class _Notify:
+
+    def debug(self, unusedMessage):
+        pass
+
+
+class _Air:
+
+    def __init__(self, avatarId):
+        self.avatarId = avatarId
+        self.events = []
+
+    def getAvatarIdFromSender(self):
+        return self.avatarId
+
+    def writeServerEvent(self, *event):
+        self.events.append(event)
+
+
+class _PhotoGameGlobals:
+    NUMSTARS = 5
+
+
 class _Task:
     done = 'done'
 
@@ -403,6 +426,71 @@ class PhotoCleanupTests(unittest.TestCase):
             'DistributedPhotoGame',
             'enterCleanup')
         self.assertIn('_cleanupRuntime', calls)
+
+
+class PhotoScoreOrderingTests(unittest.TestCase):
+
+    def setUp(self):
+        self.photoClass = _load_methods(
+            'toontown/minigame/DistributedPhotoGameAI.py',
+            'DistributedPhotoGameAI',
+            {'filmOut', 'newClientPhotoScore'},
+            {'PhotoGameGlobals': _PhotoGameGlobals},
+        )
+
+    def _newPhotoGame(self, filmCount):
+        game = self.photoClass()
+        game.air = _Air(1001)
+        game.gameFSM = _Fsm('play')
+        game.avIdList = [1001]
+        game.filmCountList = [filmCount]
+        game.data = {'FILMCOUNT': 20}
+        game.assignmentData = [
+            [7, 3, [0, 0, 0, 0], None],
+            [8, 4, [0, 0, 0, 0], None],
+        ]
+        game.notify = _Notify()
+        game.updates = []
+        game.sendUpdate = (
+            lambda name, args: game.updates.append((name, args)))
+        game.scoreAtFilmCheck = []
+        game.checkForFilmOut = lambda: game.scoreAtFilmCheck.append(
+            tuple(assignment[2][0] for assignment in game.assignmentData))
+        return game
+
+    def test_all_final_shutter_scores_arrive_before_film_out_check(self):
+        game = self._newPhotoGame(0)
+
+        game.newClientPhotoScore(7, 3, 5)
+        game.newClientPhotoScore(8, 4, 4)
+
+        self.assertEqual(game.assignmentData[0][2][0], 5)
+        self.assertEqual(game.assignmentData[1][2][0], 4)
+        self.assertEqual(game.assignmentData[0][3], 0)
+        self.assertEqual(game.assignmentData[1][3], 0)
+        self.assertEqual(game.filmCountList, [0])
+        self.assertEqual(game.scoreAtFilmCheck, [])
+        self.assertEqual(
+            game.updates,
+            [
+                ('newAIPhotoScore', [1001, 0, 5]),
+                ('newAIPhotoScore', [1001, 1, 4]),
+            ])
+
+        game.filmOut()
+
+        self.assertEqual(game.filmCountList, [20])
+        self.assertEqual(game.scoreAtFilmCheck, [(5, 4)])
+
+    def test_photo_after_film_limit_is_rejected(self):
+        game = self._newPhotoGame(20)
+
+        game.newClientPhotoScore(7, 3, 5)
+
+        self.assertEqual(game.assignmentData[0][2][0], 0)
+        self.assertEqual(game.filmCountList, [20])
+        self.assertEqual(game.scoreAtFilmCheck, [])
+        self.assertEqual(game.updates, [])
 
 
 if __name__ == '__main__':

@@ -15,6 +15,9 @@ upstream Open Toontown source and resources.
 - [`2026-07-28.md`](2026-07-28.md) records the cross-platform generated neutral
   resource overlay and the repository-boundary fix that keeps those
   presentation changes reproducible.
+- [`2026-07-29.md`](2026-07-29.md) records the backlog audit, three P1
+  minigame-correctness fixes, focused regressions, and the precise local versus
+  distributable macOS evidence boundary.
 - [`FILE_INVENTORY.md`](FILE_INVENTORY.md) lists every modified or newly added
   source/resource path, plus the authored bundle files outside the nested Git
   repositories.

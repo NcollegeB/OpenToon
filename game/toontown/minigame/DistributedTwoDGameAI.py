@@ -12,7 +12,7 @@ class DistributedTwoDGameAI(DistributedMinigameAI):
         try:
             self.DistributedTwoDGameAI_initialized
         except:
-            self.DistributedTwoDGame_initialized = 1
+            self.DistributedTwoDGameAI_initialized = 1
             DistributedMinigameAI.__init__(self, air, minigameId)
             self.gameFSM = ClassicFSM.ClassicFSM('DistributedTwoDGameAI', [State.State('inactive', self.enterInactive, self.exitInactive, ['play']), State.State('play', self.enterPlay, self.exitPlay, ['cleanup']), State.State('cleanup', self.enterCleanup, self.exitCleanup, ['inactive'])], 'inactive', 'inactive')
             self.addChildGameFSM(self.gameFSM)

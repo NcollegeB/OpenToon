@@ -128,8 +128,6 @@ class DistributedPhotoGameAI(DistributedMinigameAI, PhotoGameBase.PhotoGameBase)
             self.air.writeServerEvent('suspicious', avId, 'PhotoGameAI.newClientPhotoScore: non-player avatar')
             return
         playerIndex = self.avIdList.index(avId)
-        self.filmCountList[playerIndex] += 1
-        self.checkForFilmOut()
         if self.filmCountList[playerIndex] >= self.data['FILMCOUNT']:
             self.notify.debug('player used more film than possible')
             return
