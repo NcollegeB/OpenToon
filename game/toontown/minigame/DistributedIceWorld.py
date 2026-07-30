@@ -1,3 +1,7 @@
+# This module implements the client-side distributed ice world, handling network updates,
+# presentation, and player interaction for trolley minigame rules, presentation, and
+# synchronization.
+
 from panda3d.core import Vec4, BitMask32, Quat, NodePath
 from panda3d.ode import OdePlaneGeom, OdeBody, OdeSphereGeom, OdeMass, OdeUtil, OdeBoxGeom
 from direct.directnotify import DirectNotifyGlobal

@@ -1,3 +1,6 @@
+# This module defines race gag and its supporting behavior for kart races, tracks, pads,
+# projectiles, scores, and leaderboards.
+
 from panda3d.core import *
 from direct.interval.IntervalGlobal import *
 from direct.showbase import DirectObject

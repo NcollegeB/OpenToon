@@ -1,3 +1,6 @@
+# This module provides AI-server logic for race, coordinating authoritative simulation and state for
+# kart races, tracks, pads, projectiles, scores, and leaderboards.
+
 from direct.directnotify import DirectNotifyGlobal
 from toontown.racing import DistributedRaceAI
 from toontown.toonbase import ToontownGlobals, TTLocalizer

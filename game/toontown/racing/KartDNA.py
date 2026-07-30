@@ -1,3 +1,6 @@
+# This module defines kart appearance or configuration fields together with their construction and
+# serialization helpers for kart races, tracks, pads, projectiles, scores, and leaderboards.
+
 from direct.directnotify import DirectNotifyGlobal
 from toontown.toonbase import TTLocalizer
 from panda3d.core import *

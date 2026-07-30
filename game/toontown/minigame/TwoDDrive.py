@@ -1,3 +1,6 @@
+# This module defines two d drive and its supporting behavior for trolley minigame rules,
+# presentation, and synchronization.
+
 from panda3d.core import Point3, Vec3
 
 from direct.directnotify.DirectNotifyGlobal import directNotify

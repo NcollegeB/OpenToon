@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for award manager
+# within distributed award and administrative service endpoints.
+
 GiveAwardErrors = Enum('Success, WrongGender, NotGiftable, FullMailbox, FullAwardMailbox, AlreadyInMailbox, AlreadyInGiftQueue, AlreadyInOrderedQueue, AlreadyInCloset, AlreadyBeingWorn, AlreadyInAwardMailbox, AlreadyInThirtyMinuteQueue, AlreadyInMyPhrases, AlreadyKnowDoodleTraining, AlreadyRented, GenericAlreadyHaveError, UnknownError, UnknownToon, NonToon,')
 GiveAwardErrorStrings = {GiveAwardErrors.Success: 'success',
  GiveAwardErrors.WrongGender: 'wrong gender',

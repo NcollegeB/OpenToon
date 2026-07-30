@@ -1,3 +1,6 @@
+# This module provides shared minigame physics world behavior and data used by related
+# implementations in trolley minigame rules, presentation, and synchronization.
+
 from panda3d.core import Quat
 from panda3d.ode import OdeWorld, OdeSimpleSpace, OdeJointGroup, OdeUtil
 from direct.directnotify import DirectNotifyGlobal

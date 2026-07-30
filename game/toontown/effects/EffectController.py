@@ -1,3 +1,6 @@
+# This module provides shared lifecycle behavior for interval- and particle-driven effects,
+# including playback, looping, stopping, and cleanup.
+
 from panda3d.core import *
 
 class EffectController:

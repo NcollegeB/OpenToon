@@ -1,3 +1,6 @@
+# This module implements the game interface, presenting and updating player controls and information
+# for playgrounds, treasures, and safe-zone activities.
+
 from panda3d.core import *
 from direct.distributed.ClockDelta import *
 from direct.task.Task import Task

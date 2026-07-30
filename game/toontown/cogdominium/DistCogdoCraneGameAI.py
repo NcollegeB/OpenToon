@@ -1,3 +1,6 @@
+# This module provides AI-server logic for dist Cogdo crane game, coordinating authoritative
+# simulation and state for Cogdo rooms, activities, entities, and rewards.
+
 from panda3d.core import *
 from panda3d.physics import *
 from direct.directnotify.DirectNotifyGlobal import directNotify

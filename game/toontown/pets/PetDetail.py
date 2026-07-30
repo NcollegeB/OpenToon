@@ -1,3 +1,6 @@
+# This module defines pet detail and its supporting behavior for Doodle appearance, behavior,
+# training, AI, and interfaces.
+
 from direct.directnotify import DirectNotifyGlobal
 from otp.avatar import AvatarDetail
 from toontown.pets import DistributedPet

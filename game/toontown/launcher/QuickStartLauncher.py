@@ -1,3 +1,6 @@
+# This module serves as the quick-start client entry point, ensuring neutral resources exist,
+# loading development configuration, and starting the launcher.
+
 from otp.otpbase.NeutralResources import ensure_neutral_resources
 
 ensure_neutral_resources()

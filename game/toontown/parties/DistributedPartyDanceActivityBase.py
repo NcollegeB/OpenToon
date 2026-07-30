@@ -1,3 +1,6 @@
+# This module implements the client-side distributed party dance activity, handling network updates,
+# presentation, and player interaction for party scheduling, activities, decorations, and services.
+
 import random
 from panda3d.core import *
 from direct.interval.FunctionInterval import Wait, Func

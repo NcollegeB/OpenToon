@@ -1,3 +1,6 @@
+# This module enforces server-side content-access rules, checks avatar permissions for zones,
+# handles unauthorized entry attempts, and decides where Cog disguises may be worn.
+
 from otp.otpbase import OTPGlobals
 from otp.ai import BanManagerAI
 from toontown.toonbase import ToontownGlobals

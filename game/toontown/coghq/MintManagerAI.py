@@ -1,3 +1,6 @@
+# This module provides AI-server logic for mint, coordinating authoritative simulation and state for
+# Cog HQ facilities, bosses, rooms, and level entities.
+
 from direct.directnotify import DirectNotifyGlobal
 from . import DistributedMintAI
 from toontown.toonbase import ToontownGlobals

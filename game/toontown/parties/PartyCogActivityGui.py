@@ -1,3 +1,6 @@
+# This module implements the party Cog activity interface, presenting and updating player controls
+# and information for party scheduling, activities, decorations, and services.
+
 from direct.gui.DirectGui import DirectWaitBar, DGG
 from direct.gui.OnscreenText import OnscreenText
 from direct.showbase.DirectObject import DirectObject

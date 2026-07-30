@@ -1,3 +1,6 @@
+# This module implements the treasure score interface, presenting and updating player controls and
+# information for trolley minigame rules, presentation, and synchronization.
+
 from direct.showbase.ShowBaseGlobal import *
 from toontown.toonbase.ToontownGlobals import *
 from direct.gui.DirectGui import *

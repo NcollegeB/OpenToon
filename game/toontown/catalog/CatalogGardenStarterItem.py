@@ -1,3 +1,6 @@
+# This module defines catalog garden starter item and its supporting behavior for catalog items,
+# purchasing, delivery, and catalog interfaces.
+
 from . import CatalogItem
 import time
 from toontown.toonbase import ToontownGlobals

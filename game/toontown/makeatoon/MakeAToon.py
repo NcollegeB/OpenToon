@@ -1,3 +1,6 @@
+# This module coordinates character creation across body, clothing, color, and name choices and
+# returns the completed Toon appearance data.
+
 from panda3d.core import *
 from toontown.distributed.ToontownMsgTypes import *
 from toontown.char import Char

@@ -1,3 +1,7 @@
+# This module implements the client-side distributed cannon game, handling network updates,
+# presentation, and player interaction for trolley minigame rules, presentation, and
+# synchronization.
+
 from panda3d.core import Point3, Quat, rad2Deg, Vec3
 from panda3d.otp import Nametag, NametagFloat3d
 

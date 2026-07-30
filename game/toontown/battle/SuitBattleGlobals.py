@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for suit battle
+# within Cog battle rules, presentation, calculations, and rewards.
+
 from .BattleBase import *
 import random
 from direct.directnotify import DirectNotifyGlobal

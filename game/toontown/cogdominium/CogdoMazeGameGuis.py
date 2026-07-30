@@ -1,3 +1,6 @@
+# This module defines Cogdo maze map GUI and its supporting behavior for Cogdo rooms, activities,
+# entities, and rewards.
+
 from direct.gui.DirectLabel import DirectLabel
 from direct.gui.DirectGui import DirectFrame, DGG
 from direct.task.Task import Task

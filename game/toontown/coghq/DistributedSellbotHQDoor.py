@@ -1,3 +1,6 @@
+# This module implements the client-side distributed Sellbot HQ door, handling network updates,
+# presentation, and player interaction for Cog HQ facilities, bosses, rooms, and level entities.
+
 from direct.directnotify import DirectNotifyGlobal
 from toontown.coghq import DistributedCogHQDoor
 from toontown.toonbase import TTLocalizer

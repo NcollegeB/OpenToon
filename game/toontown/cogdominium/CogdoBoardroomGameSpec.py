@@ -1,3 +1,6 @@
+# This module supplies the Cogdo boardroom game spec data and definitions used by Cogdo rooms,
+# activities, entities, and rewards.
+
 from toontown.coghq.SpecImports import *
 GlobalEntities = {1000: {'type': 'levelMgr',
         'name': 'LevelMgr',

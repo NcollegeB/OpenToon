@@ -1,3 +1,6 @@
+# This module implements the client-side distributed character, handling network updates,
+# presentation, and player interaction for non-Toon character avatars and appearance data.
+
 from otp.avatar import DistributedAvatar
 from . import Char
 

@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of Cashbot boss safe, handling validated
+# state and synchronized gameplay for Cog HQ facilities, bosses, rooms, and level entities.
+
 from panda3d.core import *
 from toontown.toonbase import ToontownGlobals
 from otp.otpbase import OTPGlobals

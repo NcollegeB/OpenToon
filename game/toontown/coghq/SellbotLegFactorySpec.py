@@ -1,3 +1,6 @@
+# This module defines declarative room, rule, and entity specifications for Sellbot leg factory spec
+# in the Cog facility level system.
+
 from toontown.toonbase import TTLocalizer
 from toontown.coghq.SpecImports import *
 GlobalEntities = {1000: {'type': 'levelMgr',

@@ -1,3 +1,6 @@
+# This module implements the networked client race, including participants, tracks, controls,
+# checkpoints, laps, gags, positions, and results.
+
 from panda3d.core import *
 from panda3d.toontown import *
 from direct.distributed.ClockDelta import *

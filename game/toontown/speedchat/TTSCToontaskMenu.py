@@ -1,3 +1,6 @@
+# This module implements the SpeedChat toontask interface, presenting and updating player controls
+# and information for SpeedChat menus, terminals, phrases, and decoding.
+
 from otp.speedchat.SCMenu import SCMenu
 from .TTSCToontaskTerminal import TTSCToontaskTerminal
 from otp.speedchat.SCStaticTextTerminal import SCStaticTextTerminal

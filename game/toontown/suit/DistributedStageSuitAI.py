@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of stage suit, handling validated state
+# and synchronized gameplay for Cog and boss actors, behavior, and combat support.
+
 from toontown.suit import DistributedFactorySuitAI
 from direct.directnotify import DirectNotifyGlobal
 

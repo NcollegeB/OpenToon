@@ -1,3 +1,6 @@
+# This module implements the Shticker interface, presenting and updating player controls and
+# information for Shticker Book pages, settings, and dialogs.
+
 from . import ShtikerBook
 from direct.fsm import StateData
 from direct.gui.DirectGui import *

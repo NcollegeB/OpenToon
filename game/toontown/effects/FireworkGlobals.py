@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for firework within
+# visual, particle, and firework effects.
+
 FW_T = 0
 FW_STYLE = 1
 FW_COLOR1 = 2

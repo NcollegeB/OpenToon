@@ -1,3 +1,6 @@
+# This module implements the fireworks interface, presenting and updating player controls and
+# information for estates, houses, gardens, mailboxes, closets, and banks.
+
 from direct.gui.DirectGui import *
 from panda3d.core import *
 from direct.gui.DirectScrolledList import *

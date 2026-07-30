@@ -1,3 +1,6 @@
+# This module provides sky util helper functions for neighborhoods, zone data, and neighborhood
+# lifecycle.
+
 from panda3d.core import *
 from toontown.toonbase.ToontownGlobals import *
 from direct.task.Task import Task

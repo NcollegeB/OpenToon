@@ -1,3 +1,6 @@
+# This module implements the Toon head interface, presenting and updating player controls and
+# information for shared game dialogs, loading screens, and interface widgets.
+
 from panda3d.core import *
 from toontown.toonbase.ToontownGlobals import *
 from direct.directnotify import DirectNotifyGlobal

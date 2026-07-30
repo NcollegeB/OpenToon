@@ -1,3 +1,6 @@
+# This module implements the client-side distributed Toontown treasure, handling network updates,
+# presentation, and player interaction for playgrounds, treasures, and safe-zone activities.
+
 from . import DistributedSZTreasure
 
 class DistributedTTTreasure(DistributedSZTreasure.DistributedSZTreasure):

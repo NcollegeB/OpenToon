@@ -1,3 +1,7 @@
+# This module implements the client-side distributed NPC special quest giver, handling network
+# updates, presentation, and player interaction for player Toon avatars, NPCs, inventory, and
+# presentation.
+
 from panda3d.core import *
 from .DistributedNPCToonBase import *
 from toontown.quest import QuestParser

@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of in game editor, handling validated
+# state and synchronized gameplay for Cog HQ facilities, bosses, rooms, and level entities.
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed import DistributedObjectAI
 from direct.directutil import DistributedLargeBlobSenderAI

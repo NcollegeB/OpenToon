@@ -1,3 +1,6 @@
+# This module implements the client-side distributed e flying treasure, handling network updates,
+# presentation, and player interaction for playgrounds, treasures, and safe-zone activities.
+
 from panda3d.core import *
 from toontown.toonbase.ToonBaseGlobal import *
 from . import DistributedSZTreasure

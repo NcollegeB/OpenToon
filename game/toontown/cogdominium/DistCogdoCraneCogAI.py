@@ -1,3 +1,6 @@
+# This module provides AI-server logic for dist Cogdo crane Cog, coordinating authoritative
+# simulation and state for Cogdo rooms, activities, entities, and rewards.
+
 from direct.distributed.ClockDelta import globalClockDelta
 from direct.distributed.DistributedObjectAI import DistributedObjectAI
 

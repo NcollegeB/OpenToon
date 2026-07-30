@@ -1,3 +1,6 @@
+# This module implements the genus interface, presenting and updating player controls and
+# information for ponds, fish, targets, rewards, and Bingo.
+
 from toontown.toonbase import ToontownGlobals
 from direct.directnotify import DirectNotifyGlobal
 from direct.gui.DirectGui import *

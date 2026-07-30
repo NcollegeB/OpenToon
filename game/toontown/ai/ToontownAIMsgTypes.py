@@ -1,3 +1,6 @@
+# This module defines numeric protocol message identifiers for Toontown AI within district startup,
+# holidays, events, and shared AI managers.
+
 from otp.ai.AIMsgTypes import *
 TTAIMsgName2Id = {'DBSERVER_GET_ESTATE': 1040,
  'DBSERVER_GET_ESTATE_RESP': 1041,

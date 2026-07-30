@@ -1,3 +1,6 @@
+# This module defines gear entity and its supporting behavior for Cog HQ facilities, bosses, rooms,
+# and level entities.
+
 from direct.interval.IntervalGlobal import *
 from otp.level import BasicEntities
 from . import MovingPlatform

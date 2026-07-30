@@ -1,3 +1,6 @@
+# This module defines racer and its supporting behavior for kart races, tracks, pads, projectiles,
+# scores, and leaderboards.
+
 from direct.distributed.ClockDelta import globalClockDelta
 
 

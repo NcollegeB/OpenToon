@@ -1,3 +1,6 @@
+# This module manages party catch activity Toon states, transitions, animation, and cleanup for
+# party scheduling, activities, decorations, and services.
+
 from panda3d.core import Vec3
 from direct.interval.IntervalGlobal import Sequence, Parallel, Wait, Func
 from direct.interval.IntervalGlobal import LerpScaleInterval

@@ -1,3 +1,6 @@
+# This module defines Cogdo layout and its supporting behavior for Cogdo rooms, activities,
+# entities, and rewards.
+
 from direct.directnotify import DirectNotifyGlobal
 
 class CogdoLayout:

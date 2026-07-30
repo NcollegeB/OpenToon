@@ -1,3 +1,7 @@
+# This module implements the client-side distributed battle waiters, handling network updates,
+# presentation, and player interaction for Cog battle rules, presentation, calculations, and
+# rewards.
+
 import random
 from panda3d.core import VBase3, Point3
 from direct.interval.IntervalGlobal import Sequence, Wait, Func, Parallel, Track

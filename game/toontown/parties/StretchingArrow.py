@@ -1,3 +1,6 @@
+# This module defines stretching arrow and its supporting behavior for party scheduling, activities,
+# decorations, and services.
+
 import math
 from direct.gui.DirectGui import DirectFrame
 from panda3d.core import Point3

@@ -1,3 +1,6 @@
+# This module implements the legacy full client launcher, logging console output, reading launch
+# credentials and account flags, managing platform settings, and starting Toontown.
+
 import os
 import sys
 import time

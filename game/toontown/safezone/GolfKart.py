@@ -1,3 +1,6 @@
+# This module defines golf kart and its supporting behavior for playgrounds, treasures, and
+# safe-zone activities.
+
 from panda3d.core import *
 from toontown.toonbase.ToonBaseGlobal import *
 from direct.gui.DirectGui import *

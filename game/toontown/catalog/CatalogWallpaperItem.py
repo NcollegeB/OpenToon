@@ -1,3 +1,6 @@
+# This module defines catalog wallpaper item and its supporting behavior for catalog items,
+# purchasing, delivery, and catalog interfaces.
+
 from .CatalogSurfaceItem import *
 WTTextureName = 0
 WTColor = 1

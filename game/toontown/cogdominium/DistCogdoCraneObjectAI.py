@@ -1,3 +1,6 @@
+# This module provides AI-server logic for dist Cogdo crane object, coordinating authoritative
+# simulation and state for Cogdo rooms, activities, entities, and rewards.
+
 from panda3d.core import *
 from direct.distributed import DistributedSmoothNodeAI
 from toontown.toonbase import ToontownGlobals

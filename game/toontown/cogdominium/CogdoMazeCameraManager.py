@@ -1,3 +1,6 @@
+# This module coordinates Cogdo maze camera lifecycle, state, and services for Cogdo rooms,
+# activities, entities, and rewards.
+
 from direct.showbase.PythonUtil import bound as clamp
 from . import CogdoMazeGameGlobals as Globals
 import math

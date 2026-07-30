@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of CJ elevator, handling validated state
+# and synchronized gameplay for buildings, interiors, doors, elevators, and boarding.
+
 from .ElevatorConstants import *
 from . import DistributedBossElevatorAI
 

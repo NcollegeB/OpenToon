@@ -1,3 +1,6 @@
+# This module defines factory entity creator and its supporting behavior for Cog HQ facilities,
+# bosses, rooms, and level entities.
+
 from otp.level import EntityCreator
 from . import FactoryLevelMgr
 from . import PlatformEntity

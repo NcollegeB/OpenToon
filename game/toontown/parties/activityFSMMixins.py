@@ -1,3 +1,6 @@
+# This module defines reusable party-activity FSM state mixins for idle, active, disabled, rules,
+# readiness, server waiting, and conclusion behavior.
+
 from .BaseActivityFSM import BaseActivityFSM
 
 class IdleMixin:

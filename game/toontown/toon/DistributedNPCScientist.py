@@ -1,3 +1,6 @@
+# This module implements the client-side distributed NPC scientist, handling network updates,
+# presentation, and player interaction for player Toon avatars, NPCs, inventory, and presentation.
+
 from panda3d.core import *
 from toontown.toonbase import TTLocalizer, ToontownGlobals
 from . import DistributedNPCToonBase

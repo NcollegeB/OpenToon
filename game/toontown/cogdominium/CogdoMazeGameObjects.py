@@ -1,3 +1,6 @@
+# This module defines Cogdo maze splattable and its supporting behavior for Cogdo rooms, activities,
+# entities, and rewards.
+
 from panda3d.core import CollisionSphere, CollisionTube, CollisionNode
 from panda3d.core import NodePath, BitMask32
 from panda3d.core import Point3, Point4, Vec3, Vec4

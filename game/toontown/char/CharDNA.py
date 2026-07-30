@@ -1,3 +1,6 @@
+# This module defines character appearance or configuration fields together with their construction
+# and serialization helpers for non-Toon character avatars and appearance data.
+
 import random
 from panda3d.core import *
 from direct.directnotify.DirectNotifyGlobal import *

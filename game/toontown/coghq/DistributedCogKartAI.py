@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of Cog kart, handling validated state and
+# synchronized gameplay for Cog HQ facilities, bosses, rooms, and level entities.
+
 from direct.directnotify import DirectNotifyGlobal
 from toontown.safezone import DistributedGolfKartAI
 from toontown.building import DistributedElevatorExtAI

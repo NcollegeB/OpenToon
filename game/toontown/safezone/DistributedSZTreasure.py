@@ -1,3 +1,6 @@
+# This module implements the client-side distributed sz treasure, handling network updates,
+# presentation, and player interaction for playgrounds, treasures, and safe-zone activities.
+
 from . import DistributedTreasure
 from panda3d.core import VBase3, VBase4
 from direct.interval.IntervalGlobal import Sequence, Wait, Func, LerpColorScaleInterval, LerpScaleInterval

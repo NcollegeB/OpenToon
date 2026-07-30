@@ -1,3 +1,7 @@
+# This module implements the client-side distributed party trampoline activity, handling network
+# updates, presentation, and player interaction for party scheduling, activities, decorations, and
+# services.
+
 import math
 import time
 import random

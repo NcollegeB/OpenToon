@@ -162,10 +162,10 @@ SHA-256: E8123D351F79D02358755C44F1118617ABBFEEDDB3641C229A8F51BA5B553931
   unregistration, dialog priority, and Space/Escape routing.
 - The offscreen quest-overlay verifier constructed all four quest slots, opened
   and closed the overlay with Caps Lock, closed it with Escape, and completed
-  teardown without an exception. It used Stinky's real completed quest
-  descriptor and asserted that every poster belongs to the overlay and renders
-  above its backdrop.
-- A live client test as Stinky in Moonlight Meadows confirmed that the normal
+  teardown without an exception. It used a completed tutorial quest descriptor
+  and asserted that every poster belongs to the overlay and renders above its
+  backdrop.
+- A live client test in Moonlight Meadows confirmed that the normal
   hidden/background SpeedChat focus does not consume Caps Lock, the completed
   ToonTask card is readable, Caps Lock toggles the view closed, and Escape
   closes it without opening a lower-priority menu.
@@ -173,26 +173,17 @@ SHA-256: E8123D351F79D02358755C44F1118617ABBFEEDDB3641C229A8F51BA5B553931
   and More-XP, 13× for a three-story building, 52× for that building with both
   global bonuses, and 80× for the tested third Cogdo floor with both bonuses.
   Its wiring audit confirmed each multiplier is applied once.
-- The complete Astron database was backed up before changing Stinky. The
-  avatar was then verified at 137/137 Laff with every gag track maxed, an
-  80-capacity max inventory, and all 13 supported hood visits and teleports.
-- The first live Stinky login exposed missing two-byte Astron length prefixes
-  on the edited experience and inventory blobs. With all services stopped,
-  both fields were repaired; the game's `Experience` and `InventoryBase`
-  decoders then passed, Astron accepted the object, and a live login completed.
-- Astron, UberDOG, and the AI district restarted successfully after the save
-  change, and TCP ports 7198 and 7199 returned to listening on loopback.
 - Live at 1920x1080, the chooser showed a centered background, neutral side
-  fill, the Stinky card, and Exit. From Options, Escape safely canceled both
+  fill, the test-avatar card, and Exit. From Options, Escape safely canceled both
   Main Menu and Exit confirmations, dismissed the Shticker Book and Advanced
   Settings, and acknowledged a one-button quest notice.
 - Confirming Main Menu returned from Central Commons to the chooser. Selecting
-  Stinky again returned to a playable Central Commons at 137/137 Laff.
+  the test avatar again returned to a playable Central Commons.
 - The live Advanced Settings page showed the 60 FPS cap plus FPS meter, VSync,
   MSAA, texture filtering, independent volume, particles, and FOV controls.
 - The running client's log contained no targeted traceback, fatal, short-read,
-  eject, assertion, or exception pattern after the repaired login, Main Menu
-  round-trip, and final Caps Lock overlay test.
+  eject, assertion, or exception pattern after login, the Main Menu round-trip,
+  and the final Caps Lock overlay test.
 - The final regression pass reparsed all 1,849 Python files, passed all 11
   keyboard tests, passed the quest-overlay and gag-XP verifiers, passed both
   launcher `--check` paths, and found no whitespace errors in either nested Git
@@ -294,8 +285,8 @@ below avoids it by starting fresh client processes.
 
 ### Live two-player Maze skip
 
-- Two fresh clients selected Stinky (`100000001`) and Deputy Moe Crumblehoffer
-  (`100000003`); both joined Maze Game `6` in zone `2000`.
+- Two fresh clients selected separate test avatars; both joined Maze Game `6`
+  in zone `2000`.
 - Both clients displayed `Skip votes: 1/2` after the first vote, and the game
   remained active.
 - Astron then recorded the second vote as `2/2`, followed by

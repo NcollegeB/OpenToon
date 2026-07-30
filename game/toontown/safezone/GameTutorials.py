@@ -1,3 +1,6 @@
+# This module implements the instructional overlays and guided move demonstrations for Chinese
+# Checkers and Checkers.
+
 from direct.gui.DirectGui import *
 from direct.fsm import FSM
 from direct.directnotify import DirectNotifyGlobal

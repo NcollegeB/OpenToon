@@ -1,3 +1,6 @@
+# This module manages the client location lifecycle, state transitions, and interactions for place
+# within neighborhoods, zone data, and neighborhood lifecycle.
+
 from panda3d.core import NodePath
 from panda3d.otp import NametagGlobals
 

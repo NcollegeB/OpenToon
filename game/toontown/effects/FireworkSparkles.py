@@ -1,3 +1,6 @@
+# This module builds and controls firework sparkles visual, interval, or particle effects for
+# visual, particle, and firework effects.
+
 from panda3d.core import *
 from panda3d.physics import *
 from direct.interval.IntervalGlobal import *

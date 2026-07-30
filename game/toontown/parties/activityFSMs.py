@@ -1,3 +1,6 @@
+# This module composes party-activity state machines for fireworks, catch, trampoline, dance, and
+# team activities from shared FSM mixins.
+
 from direct.directnotify import DirectNotifyGlobal
 from .BaseActivityFSM import BaseActivityFSM
 from .activityFSMMixins import IdleMixin

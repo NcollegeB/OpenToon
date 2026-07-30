@@ -1,3 +1,6 @@
+# This module provides shared suit behavior and data used by related implementations in Cog and boss
+# actors, behavior, and combat support.
+
 from panda3d.core import *
 from panda3d.toontown import *
 from direct.distributed.ClockDelta import *

@@ -1,3 +1,6 @@
+# This module implements the mailbox interface, presenting and updating player controls and
+# information for catalog items, purchasing, delivery, and catalog interfaces.
+
 from direct.directnotify.DirectNotifyGlobal import *
 from direct.gui.DirectGui import *
 from direct.showbase import DirectObject, PythonUtil

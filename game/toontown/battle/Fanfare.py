@@ -1,3 +1,6 @@
+# This module provides fanfare helpers for Cog battle rules, presentation, calculations, and
+# rewards.
+
 from direct.interval.IntervalGlobal import *
 from .BattleBase import *
 from .BattleProps import *

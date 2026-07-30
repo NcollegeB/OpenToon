@@ -1,3 +1,6 @@
+# This module defines declarative room, rule, and entity specifications for stage room specs in the
+# Cog facility level system.
+
 from direct.showbase.PythonUtil import invertDict
 from toontown.toonbase import ToontownGlobals
 from toontown.coghq import NullCogs

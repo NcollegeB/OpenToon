@@ -1,3 +1,6 @@
+# This module provides AI-server logic for fish, coordinating authoritative simulation and state for
+# district startup, holidays, events, and shared AI managers.
+
 import random
 
 from direct.directnotify import DirectNotifyGlobal

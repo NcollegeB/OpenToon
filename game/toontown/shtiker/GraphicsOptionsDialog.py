@@ -1,3 +1,6 @@
+# This module implements the graphics options interface, presenting and updating player controls and
+# information for Shticker Book pages, settings, and dialogs.
+
 from direct.fsm import StateData
 from direct.gui import DirectGuiGlobals as DGG
 from direct.gui.DirectGui import (

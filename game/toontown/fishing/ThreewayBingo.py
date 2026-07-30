@@ -1,3 +1,6 @@
+# This module defines threeway Bingo and its supporting behavior for ponds, fish, targets, rewards,
+# and Bingo.
+
 from direct.directnotify import DirectNotifyGlobal
 from toontown.fishing import BingoGlobals
 from toontown.fishing import BingoCardBase

@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for cannon game
+# within trolley minigame rules, presentation, and synchronization.
+
 TowerYRange = 200
 GameTime = 90
 MAX_SCORE = 23

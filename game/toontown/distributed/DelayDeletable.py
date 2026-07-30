@@ -1,3 +1,6 @@
+# This module defines delay deletable and its supporting behavior for core repositories, districts,
+# timers, and world lifecycle.
+
 from direct.distributed.DistributedObject import ESGenerating, ESGenerated, ESNum2Str
 
 class DelayDeletable:

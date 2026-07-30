@@ -1,3 +1,6 @@
+# This module loads, constructs, caches, textures, and unloads the reusable particle effects shown
+# during battle attacks and reactions.
+
 from direct.particles.ParticleEffect import *
 import os
 from direct.directnotify import DirectNotifyGlobal

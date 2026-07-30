@@ -1,3 +1,6 @@
+# This module coordinates Toontown code redemption lifecycle, state, and services for
+# code-redemption validation and service flow.
+
 from direct.distributed.DistributedObject import DistributedObject
 from direct.directnotify.DirectNotifyGlobal import directNotify
 

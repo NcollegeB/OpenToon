@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for race within kart
+# races, tracks, pads, projectiles, scores, and leaderboards.
+
 TrackSignDuration = 15
 RaceCountdown = 3
 MaxRacers = 4

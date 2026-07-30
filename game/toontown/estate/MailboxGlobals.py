@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for mailbox within
+# estates, houses, gardens, mailboxes, closets, and banks.
+
 MAILBOX_MOVIE_CLEAR = 2
 MAILBOX_MOVIE_EMPTY = 3
 MAILBOX_MOVIE_WAITING = 4

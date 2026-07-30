@@ -7,6 +7,8 @@
 # License: MIT
 # Version: 1.0.0
 ##################################################
+# This module coordinates Toontown magic word lifecycle, state, and services for privileged
+# magic-word commands and execution.
 
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed import DistributedObject

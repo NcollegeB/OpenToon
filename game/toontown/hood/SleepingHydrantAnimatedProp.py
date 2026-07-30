@@ -1,3 +1,6 @@
+# This module defines sleeping hydrant animated prop and its supporting behavior for neighborhoods,
+# zone data, and neighborhood lifecycle.
+
 from . import AnimatedProp
 from direct.interval.IntervalGlobal import *
 from direct.task import Task

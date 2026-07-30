@@ -1,3 +1,6 @@
+# This module defines declarative room, rule, and entity specifications for Lawbot leg factory spec
+# in the Cog facility level system.
+
 from toontown.coghq.SpecImports import *
 GlobalEntities = {1000: {'type': 'levelMgr',
         'name': 'LevelMgr',

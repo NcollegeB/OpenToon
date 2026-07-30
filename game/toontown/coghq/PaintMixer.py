@@ -1,3 +1,6 @@
+# This module defines paint mixer and its supporting behavior for Cog HQ facilities, bosses, rooms,
+# and level entities.
+
 from . import PlatformEntity
 
 class PaintMixer(PlatformEntity.PlatformEntity):

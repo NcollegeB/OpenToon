@@ -1,3 +1,6 @@
+# This module coordinates Cogdo game audio lifecycle, state, and services for Cogdo rooms,
+# activities, entities, and rewards.
+
 from panda3d.core import AudioSound
 from direct.interval.SoundInterval import SoundInterval
 

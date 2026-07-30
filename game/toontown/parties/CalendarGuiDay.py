@@ -1,3 +1,6 @@
+# This module defines calendar GUI day and its supporting behavior for party scheduling, activities,
+# decorations, and services.
+
 import datetime
 import functools
 import time

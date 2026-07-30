@@ -1,3 +1,6 @@
+# This module defines path master entity and its supporting behavior for Cog HQ facilities, bosses,
+# rooms, and level entities.
+
 from toontown.toonbase.ToontownGlobals import *
 from direct.interval.IntervalGlobal import *
 from direct.directnotify import DirectNotifyGlobal

@@ -1,3 +1,6 @@
+# This module implements the map interface, presenting and updating player controls and information
+# for Shticker Book pages, settings, and dialogs.
+
 from . import ShtikerPage
 from toontown.toonbase import ToontownGlobals
 from direct.showbase import PythonUtil

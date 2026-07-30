@@ -1,3 +1,7 @@
+# This module implements the client-side distributed NPC flippy in Toon hall, handling network
+# updates, presentation, and player interaction for player Toon avatars, NPCs, inventory, and
+# presentation.
+
 from panda3d.core import *
 from .DistributedNPCToon import *
 

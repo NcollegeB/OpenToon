@@ -1,3 +1,6 @@
+# This module implements the client-side distributed NPC kart clerk, handling network updates,
+# presentation, and player interaction for player Toon avatars, NPCs, inventory, and presentation.
+
 from .DistributedNPCToonBase import *
 from direct.gui.DirectGui import *
 from panda3d.core import *

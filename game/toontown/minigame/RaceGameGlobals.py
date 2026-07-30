@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for race game within
+# trolley minigame rules, presentation, and synchronization.
+
 from toontown.toonbase import TTLocalizer
 ValidChoices = [0,
  1,

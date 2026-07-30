@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of physics world, handling validated state
+# and synchronized gameplay for courses, holes, physics, scores, and rewards.
+
 from direct.distributed import DistributedObjectAI
 from direct.directnotify import DirectNotifyGlobal
 from toontown.toonbase import ToontownGlobals

@@ -1,3 +1,6 @@
+# This module defines Bingo card cell and its supporting behavior for ponds, fish, targets, rewards,
+# and Bingo.
+
 from direct.fsm import FSM
 from direct.gui.DirectGui import *
 from panda3d.core import *

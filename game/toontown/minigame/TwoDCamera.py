@@ -1,3 +1,6 @@
+# This module defines two d camera and its supporting behavior for trolley minigame rules,
+# presentation, and synchronization.
+
 from panda3d.core import *
 from direct.interval.IntervalGlobal import *
 from direct.task.Task import Task

@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of pet, handling validated state and
+# synchronized gameplay for Doodle appearance, behavior, training, AI, and interfaces.
+
 from panda3d.core import *
 from direct.showbase.PythonUtil import weightedChoice, randFloat, lerp
 from direct.showbase.PythonUtil import contains, list2dict, clampScalar

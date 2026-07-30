@@ -1,3 +1,6 @@
+# This module defines catalog Toon statue item and its supporting behavior for catalog items,
+# purchasing, delivery, and catalog interfaces.
+
 from . import CatalogGardenItem
 from toontown.toonbase import ToontownGlobals
 from toontown.toonbase import TTLocalizer

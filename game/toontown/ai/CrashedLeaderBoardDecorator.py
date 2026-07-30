@@ -1,3 +1,6 @@
+# This module defines crashed leader board decorator and its supporting behavior for district
+# startup, holidays, events, and shared AI managers.
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed.ClockDelta import *
 from direct.interval.IntervalGlobal import *

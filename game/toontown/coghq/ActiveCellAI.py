@@ -1,3 +1,6 @@
+# This module provides AI-server logic for active cell, coordinating authoritative simulation and
+# state for Cog HQ facilities, bosses, rooms, and level entities.
+
 from otp.level import DistributedEntityAI
 from direct.directnotify import DirectNotifyGlobal
 

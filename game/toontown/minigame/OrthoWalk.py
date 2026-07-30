@@ -1,3 +1,6 @@
+# This module defines ortho walk and its supporting behavior for trolley minigame rules,
+# presentation, and synchronization.
+
 from toontown.toonbase.ToonBaseGlobal import *
 from direct.task.Task import Task
 from direct.interval.IntervalGlobal import *

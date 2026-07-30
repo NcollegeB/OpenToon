@@ -1,3 +1,6 @@
+# This module renders gardening special rewards in an isolated display region, including statuary
+# and animated models for collection-interface photos.
+
 from direct.directnotify import DirectNotifyGlobal
 from panda3d.core import *
 from direct.interval.IntervalGlobal import *

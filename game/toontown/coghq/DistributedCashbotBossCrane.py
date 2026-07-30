@@ -1,3 +1,6 @@
+# This module implements the client-side distributed Cashbot boss crane, handling network updates,
+# presentation, and player interaction for Cog HQ facilities, bosses, rooms, and level entities.
+
 from direct.gui.DirectGui import *
 from panda3d.core import *
 from panda3d.direct import *

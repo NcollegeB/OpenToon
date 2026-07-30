@@ -1,3 +1,6 @@
+# This module defines quest reward counter and its supporting behavior for quest definitions,
+# parsing, progression, rewards, posters, and maps.
+
 from panda3d.core import *
 from direct.directnotify import DirectNotifyGlobal
 from . import Quests

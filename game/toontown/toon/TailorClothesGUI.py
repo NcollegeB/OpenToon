@@ -1,3 +1,6 @@
+# This module implements the tailor clothes interface, presenting and updating player controls and
+# information for player Toon avatars, NPCs, inventory, and presentation.
+
 from toontown.makeatoon import ClothesGUI
 from . import ToonDNA
 

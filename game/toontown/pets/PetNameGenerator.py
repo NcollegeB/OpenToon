@@ -1,3 +1,6 @@
+# This module defines pet name generator and its supporting behavior for Doodle appearance,
+# behavior, training, AI, and interfaces.
+
 import random
 from toontown.toonbase import ToontownGlobals
 from toontown.toonbase import TTLocalizer

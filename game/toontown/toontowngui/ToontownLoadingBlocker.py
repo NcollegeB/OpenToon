@@ -1,3 +1,6 @@
+# This module defines Toontown loading blocker and its supporting behavior for shared game dialogs,
+# loading screens, and interface widgets.
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.gui.DirectGui import *
 from panda3d.core import TextNode

@@ -1,3 +1,6 @@
+# This module implements the in game news interface, presenting and updating player controls and
+# information for Shticker Book pages, settings, and dialogs.
+
 import datetime
 from toontown.shtiker import HtmlView
 

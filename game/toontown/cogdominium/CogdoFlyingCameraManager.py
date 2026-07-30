@@ -1,3 +1,6 @@
+# This module coordinates Cogdo flying camera lifecycle, state, and services for Cogdo rooms,
+# activities, entities, and rewards.
+
 import math
 from panda3d.core import NodePath, Vec3
 from panda3d.core import CollisionTraverser, CollisionHandlerQueue

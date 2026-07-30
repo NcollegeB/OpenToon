@@ -1,3 +1,6 @@
+# This module provides AI-server logic for minigame creator, coordinating authoritative simulation
+# and state for trolley minigame rules, presentation, and synchronization.
+
 import copy
 import random
 import time

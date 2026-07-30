@@ -1,3 +1,6 @@
+# This module declares the Cogdo level-manager and game-settings entity classes, including editable
+# attributes used by boardroom and crane activities.
+
 from otp.level.EntityTypes import *
 
 class CogdoLevelMgr(LevelMgr):

@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for Cog disguise
+# within Cog HQ facilities, bosses, rooms, and level entities.
+
 from toontown.suit import SuitDNA
 from toontown.toonbase import TTLocalizer
 from otp.otpbase import OTPGlobals

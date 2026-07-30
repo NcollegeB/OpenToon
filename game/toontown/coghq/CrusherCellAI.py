@@ -1,3 +1,6 @@
+# This module provides AI-server logic for crusher cell, coordinating authoritative simulation and
+# state for Cog HQ facilities, bosses, rooms, and level entities.
+
 from . import ActiveCellAI
 from direct.directnotify import DirectNotifyGlobal
 

@@ -1,3 +1,6 @@
+# This module listens for Shticker Book item-deletion events and forwards updated inventory data to
+# the server.
+
 from panda3d.core import *
 from direct.distributed import DistributedObject
 from direct.directnotify import DirectNotifyGlobal

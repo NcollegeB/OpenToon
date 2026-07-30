@@ -1,3 +1,6 @@
+# This module implements the client-side distributed party catch activity, handling network updates,
+# presentation, and player interaction for party scheduling, activities, decorations, and services.
+
 from panda3d.core import Vec3, Point3, Point4, TextNode, NodePath
 from panda3d.core import CollisionHandlerEvent, CollisionNode, CollisionSphere
 from direct.distributed.ClockDelta import globalClockDelta

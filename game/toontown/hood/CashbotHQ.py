@@ -1,3 +1,6 @@
+# This module defines Cashbot HQ and its supporting behavior for neighborhoods, zone data, and
+# neighborhood lifecycle.
+
 from panda3d.core import *
 from direct.directnotify import DirectNotifyGlobal
 from . import CogHood

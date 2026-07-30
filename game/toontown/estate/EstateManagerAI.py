@@ -1,3 +1,6 @@
+# This module provides AI-server logic for estate, coordinating authoritative simulation and state
+# for estates, houses, gardens, mailboxes, closets, and banks.
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed.DistributedObjectAI import DistributedObjectAI
 

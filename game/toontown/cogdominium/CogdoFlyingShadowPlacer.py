@@ -1,3 +1,6 @@
+# This module defines Cogdo flying shadow placer and its supporting behavior for Cogdo rooms,
+# activities, entities, and rewards.
+
 from direct.controls.ControlManager import CollisionHandlerRayStart
 from direct.directnotify import DirectNotifyGlobal
 from panda3d.core import *

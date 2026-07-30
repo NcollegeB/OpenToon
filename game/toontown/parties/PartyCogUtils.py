@@ -1,3 +1,6 @@
+# This module provides party Cog utils helper functions for party scheduling, activities,
+# decorations, and services.
+
 import math
 from panda3d.core import NodePath, Point3
 from . import PartyGlobals

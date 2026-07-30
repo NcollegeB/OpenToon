@@ -1,3 +1,6 @@
+# This module provides AI-server logic for pet, coordinating authoritative simulation and state for
+# Doodle appearance, behavior, training, AI, and interfaces.
+
 from direct.directnotify import DirectNotifyGlobal
 
 class PetManagerAI:

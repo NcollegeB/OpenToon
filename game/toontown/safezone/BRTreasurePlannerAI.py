@@ -1,3 +1,6 @@
+# This module plans and spawns authoritative Brrrgh treasure entities or activities for playgrounds,
+# treasures, and safe-zone activities.
+
 from toontown.toonbase.ToontownGlobals import *
 from . import RegenTreasurePlannerAI, DistributedBRTreasureAI
 

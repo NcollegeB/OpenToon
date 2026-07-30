@@ -1,3 +1,6 @@
+# This module manages the client location lifecycle, state transitions, and interactions for Cogdo
+# interior within Cogdo rooms, activities, entities, and rewards.
+
 from panda3d.core import ModelPool, TexturePool
 from direct.task.Task import Task
 from direct.directnotify import DirectNotifyGlobal

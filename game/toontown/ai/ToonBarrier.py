@@ -1,3 +1,6 @@
+# This module defines Toon barrier and its supporting behavior for district startup, holidays,
+# events, and shared AI managers.
+
 from otp.ai.AIBase import *
 from direct.task import Task
 from direct.showbase import DirectObject

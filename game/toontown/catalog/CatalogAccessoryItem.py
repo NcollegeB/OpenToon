@@ -1,3 +1,6 @@
+# This module defines catalog accessory item and its supporting behavior for catalog items,
+# purchasing, delivery, and catalog interfaces.
+
 from . import CatalogItem
 from .CatalogAccessoryItemGlobals import *
 from toontown.toonbase import ToontownGlobals

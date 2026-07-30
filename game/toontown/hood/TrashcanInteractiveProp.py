@@ -1,3 +1,6 @@
+# This module defines trashcan interactive prop and its supporting behavior for neighborhoods, zone
+# data, and neighborhood lifecycle.
+
 from direct.actor import Actor
 from direct.directnotify import DirectNotifyGlobal
 from toontown.hood import InteractiveAnimatedProp

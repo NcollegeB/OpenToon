@@ -1,3 +1,6 @@
+# This module represents a server-side pet-shop interior by storing and exposing its zone and
+# building-block identifiers.
+
 from direct.distributed import DistributedObjectAI
 from direct.directnotify import DirectNotifyGlobal
 

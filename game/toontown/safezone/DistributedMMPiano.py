@@ -1,3 +1,7 @@
+# This module implements the client-side distributed Minnie's Melodyland piano, handling network
+# updates, presentation, and player interaction for playgrounds, treasures, and safe-zone
+# activities.
+
 from panda3d.core import *
 from direct.task.Task import Task
 from direct.distributed.ClockDelta import *

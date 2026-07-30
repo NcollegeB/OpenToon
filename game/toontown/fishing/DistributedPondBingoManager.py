@@ -1,3 +1,6 @@
+# This module implements the client-side distributed pond Bingo, handling network updates,
+# presentation, and player interaction for ponds, fish, targets, rewards, and Bingo.
+
 from direct.distributed import DistributedObject
 from direct.distributed.ClockDelta import *
 from direct.directnotify import DirectNotifyGlobal

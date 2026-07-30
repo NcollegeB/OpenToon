@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of Lawbot cannon, handling validated state
+# and synchronized gameplay for Cog HQ facilities, bosses, rooms, and level entities.
+
 from direct.distributed.ClockDelta import *
 from direct.distributed import DistributedObjectAI
 from toontown.minigame import Trajectory

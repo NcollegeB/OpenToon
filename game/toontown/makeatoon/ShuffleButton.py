@@ -1,3 +1,6 @@
+# This module implements the shuffle interface, presenting and updating player controls and
+# information for Toon creation, appearance, clothing, and naming.
+
 from panda3d.core import *
 from direct.gui.DirectGui import *
 from toontown.toonbase import TTLocalizer

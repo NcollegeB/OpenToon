@@ -1,3 +1,7 @@
+# This module implements the client-side distributed projectile, handling network updates,
+# presentation, and player interaction for kart races, tracks, pads, projectiles, scores, and
+# leaderboards.
+
 from panda3d.core import *
 from direct.distributed.ClockDelta import *
 from direct.interval.IntervalGlobal import *

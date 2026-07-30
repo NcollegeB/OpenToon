@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for accessory within
+# player Toon avatars, NPCs, inventory, and presentation.
+
 HatTransTable = {'hl': ((0.0, -0.32198, 0.406916), (180.0, 320.194427, 0.0), (0.293796, 0.284073, 0.285614)),
  'hs': ((0.0, -0.205193, 0.236684), (180.0, 311.633545, 0.0), (0.291181, 0.268914, 0.268914)),
  'pl': ((0.0, -0.175888, 0.57), (180.0, 330.0, 0.0), (0.433654, 0.377233, 0.424631)),

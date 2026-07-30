@@ -1,3 +1,6 @@
+# This module stores the server trophy leaderboard tuple and exposes trophy-score and mutation hooks
+# that are currently unimplemented.
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed.DistributedObjectAI import DistributedObjectAI
 

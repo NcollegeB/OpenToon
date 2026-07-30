@@ -1,4 +1,5 @@
-
+# This module provides shared dist Cogdo game behavior and data used by related implementations in
+# Cogdo rooms, activities, entities, and rewards.
 
 class DistCogdoGameBase:
 

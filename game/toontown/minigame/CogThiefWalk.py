@@ -1,3 +1,6 @@
+# This module defines Cog thief walk and its supporting behavior for trolley minigame rules,
+# presentation, and synchronization.
+
 from toontown.safezone import Walk
 
 class CogThiefWalk(Walk.Walk):

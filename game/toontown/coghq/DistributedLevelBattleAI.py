@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of level battle, handling validated state
+# and synchronized gameplay for Cog HQ facilities, bosses, rooms, and level entities.
+
 from toontown.battle import DistributedBattleAI
 from toontown.battle import DistributedBattleBaseAI
 from direct.directnotify import DirectNotifyGlobal

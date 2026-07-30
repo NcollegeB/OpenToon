@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for maze within
+# trolley minigame rules, presentation, and synchronization.
+
 CELL_WIDTH = 2
 mazeNames = [['phase_4/models/minigames/maze_1player'],
  ['phase_4/models/minigames/maze_2player'],

@@ -1,3 +1,6 @@
+# This module defines pet tutorial and its supporting behavior for Doodle appearance, behavior,
+# training, AI, and interfaces.
+
 from direct.gui.DirectGui import *
 from panda3d.core import *
 from direct.fsm import FSM

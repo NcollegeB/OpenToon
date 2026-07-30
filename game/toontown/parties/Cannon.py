@@ -1,3 +1,6 @@
+# This module defines cannon and its supporting behavior for party scheduling, activities,
+# decorations, and services.
+
 import math
 from panda3d.core import *
 from direct.interval.MetaInterval import Sequence, Parallel

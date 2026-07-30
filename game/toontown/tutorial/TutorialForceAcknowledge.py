@@ -1,3 +1,6 @@
+# This module defines tutorial force acknowledge and its supporting behavior for tutorial
+# progression, battles, and managers.
+
 from panda3d.core import *
 from toontown.toontowngui import TTDialog
 from toontown.toonbase import TTLocalizer

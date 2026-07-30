@@ -1,3 +1,6 @@
+# This module implements the jukebox interface, presenting and updating player controls and
+# information for party scheduling, activities, decorations, and services.
+
 from panda3d.core import *
 from direct.showbase.DirectObject import DirectObject
 from direct.gui.DirectGui import DirectFrame, DirectButton, DirectLabel

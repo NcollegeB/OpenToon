@@ -1,3 +1,6 @@
+# This module defines Toontown access and its supporting behavior for application bootstrap, global
+# configuration, localization, loading, and access.
+
 from toontown.hood import ZoneUtil
 from toontown.toonbase import ToontownGlobals
 

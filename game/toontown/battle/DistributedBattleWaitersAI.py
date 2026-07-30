@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of battle waiters, handling validated
+# state and synchronized gameplay for Cog battle rules, presentation, calculations, and rewards.
+
 from direct.directnotify import DirectNotifyGlobal
 from toontown.battle import DistributedBattleFinalAI
 

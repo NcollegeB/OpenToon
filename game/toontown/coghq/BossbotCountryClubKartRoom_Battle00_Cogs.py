@@ -1,3 +1,6 @@
+# This module defines Cog population and encounter placement for Bossbot country club kart room
+# battle 00 Cogs in the Cog facility level system.
+
 from .SpecImports import *
 from toontown.toonbase import ToontownGlobals
 CogParent = 110400

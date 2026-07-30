@@ -1,3 +1,6 @@
+# This module defines inventory new and its supporting behavior for player Toon avatars, NPCs,
+# inventory, and presentation.
+
 from direct.gui.DirectGui import *
 from panda3d.core import *
 from toontown.toonbase.ToontownBattleGlobals import *

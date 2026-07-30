@@ -1,3 +1,6 @@
+# This module builds and controls the full-screen fog overlay used by minigames, including its
+# geometry, color, opacity, and cleanup.
+
 from panda3d.core import *
 from toontown.toonbase.ToonBaseGlobal import *
 from direct.interval.IntervalGlobal import *

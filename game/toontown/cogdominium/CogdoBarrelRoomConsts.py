@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for Cogdo barrel
+# room within Cogdo rooms, activities, entities, and rewards.
+
 from panda3d.core import *
 CollectionTime = 30
 BarrelRoomIntroTimeout = 15.0

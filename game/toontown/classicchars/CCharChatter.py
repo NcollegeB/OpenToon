@@ -1,3 +1,6 @@
+# This module provides classic character chatter helpers for classic-character NPC actors, paths,
+# and dialogue.
+
 from toontown.toonbase import TTLocalizer
 from toontown.toonbase import ToontownGlobals
 GREETING = 0

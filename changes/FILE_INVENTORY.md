@@ -252,7 +252,6 @@ The two Gag Shop sign texture replacements are:
 - **B** `changes/FEATURE_AUDIT.md`
 - **B** `changes/PROJECT_NAME.md`
 - **B** `changes/README.md`
-- **B** `changes/STINKY_MAX_PROFILE.md`
 - **B** `changes/TODO.md`
 
 ## Generated build artifact
@@ -289,15 +288,11 @@ These are deliberately outside the publishable source/resource inventory.
 ### Live Astron database
 
 - Exclude the live database directory `game/astron/databases/astrondb/`.
-- Its current local files include `.gitignore`, `100000000.yaml`, `100000001.yaml`, and `info.yaml`; these are runtime/player data, not source.
+- Its generated account, avatar, and database metadata files are private
+  runtime/player data, not source.
 
-### Stinky backup
+### Local save backups
 
-Keep this recovery snapshot local and do not publish it:
-
-- `backups/stinky-max-20260725-134349/astrondb/.gitignore`
-- `backups/stinky-max-20260725-134349/astrondb/100000000.yaml`
-- `backups/stinky-max-20260725-134349/astrondb/100000001.yaml`
-- `backups/stinky-max-20260725-134349/astrondb/info.yaml`
-
-The backup contains the pre-edit Astron database state for Stinky and may contain private player/account data.
+Keep all account, avatar, and database recovery snapshots outside the
+repository. They can contain private player or account data and must not be
+published.

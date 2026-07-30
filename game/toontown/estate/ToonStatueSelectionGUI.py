@@ -1,3 +1,6 @@
+# This module implements the Toon statue selection interface, presenting and updating player
+# controls and information for estates, houses, gardens, mailboxes, closets, and banks.
+
 from toontown.estate import PlantingGUI
 from direct.gui.DirectGui import *
 from panda3d.core import *

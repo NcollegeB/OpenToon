@@ -1,3 +1,6 @@
+# This module defines rogues gallery and its supporting behavior for Cog and boss actors, behavior,
+# and combat support.
+
 from panda3d.core import *
 from direct.fsm import StateData
 from . import Suit

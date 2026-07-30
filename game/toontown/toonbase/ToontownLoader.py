@@ -1,3 +1,6 @@
+# This module extends Panda3D's loader with loading-screen progress, heartbeat updates, and
+# tick-aware model, font, texture, audio, and DNA loading.
+
 from panda3d.core import *
 from panda3d.toontown import *
 from direct.directnotify.DirectNotifyGlobal import *

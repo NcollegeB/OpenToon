@@ -1,3 +1,6 @@
+# This module implements the flower interface, presenting and updating player controls and
+# information for estates, houses, gardens, mailboxes, closets, and banks.
+
 from toontown.toonbase import ToontownGlobals
 from direct.directnotify import DirectNotifyGlobal
 from direct.gui.DirectGui import *

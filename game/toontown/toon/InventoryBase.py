@@ -1,3 +1,6 @@
+# This module provides shared inventory behavior and data used by related implementations in player
+# Toon avatars, NPCs, inventory, and presentation.
+
 from panda3d.core import *
 from toontown.toonbase import ToontownGlobals
 from toontown.toonbase.ToontownBattleGlobals import *

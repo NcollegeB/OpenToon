@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for bank within
+# estates, houses, gardens, mailboxes, closets, and banks.
+
 BANK_MOVIE_CLEAR = 1
 BANK_MOVIE_GUI = 2
 BANK_MOVIE_DEPOSIT = 3

@@ -1,3 +1,6 @@
+# This module defines Cogdo game message display and its supporting behavior for Cogdo rooms,
+# activities, entities, and rewards.
+
 from direct.interval.FunctionInterval import Func
 from direct.interval.LerpInterval import LerpFunc
 from direct.interval.MetaInterval import Sequence

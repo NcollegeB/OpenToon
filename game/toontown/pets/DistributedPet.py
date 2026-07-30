@@ -1,3 +1,6 @@
+# This module implements the client-side distributed pet, handling network updates, presentation,
+# and player interaction for Doodle appearance, behavior, training, AI, and interfaces.
+
 from panda3d.core import *
 from panda3d.core import *
 from direct.interval.IntervalGlobal import *

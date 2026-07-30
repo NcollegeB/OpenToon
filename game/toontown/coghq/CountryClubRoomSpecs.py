@@ -1,3 +1,6 @@
+# This module defines declarative room, rule, and entity specifications for country club room specs
+# in the Cog facility level system.
+
 from direct.showbase.PythonUtil import invertDict
 from toontown.toonbase import ToontownGlobals
 from toontown.coghq import BossbotCountryClubFairwayRoom_Battle00_Cogs

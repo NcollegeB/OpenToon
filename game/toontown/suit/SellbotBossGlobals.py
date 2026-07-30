@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for Sellbot boss
+# within Cog and boss actors, behavior, and combat support.
+
 from panda3d.core import *
 from toontown.coghq import DistributedHealBarrelAI
 from toontown.coghq import DistributedGagBarrelAI

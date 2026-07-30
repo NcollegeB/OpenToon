@@ -1,3 +1,6 @@
+# This module provides AI-server logic for suit planner tutorial, coordinating authoritative
+# simulation and state for tutorial progression, battles, and managers.
+
 """ SuitPlannerTutorial module: contains the SuitPlannerTutorial class
     which handles management of the suit you will fight during the
     tutorial."""

@@ -1,3 +1,6 @@
+# This module builds the coordinated animation and camera sequences for Cogdo maze game movies
+# within Cogdo rooms, activities, entities, and rewards.
+
 from panda3d.core import NodePath, Point3, Plane, PlaneNode
 from direct.showbase.RandomNumGen import RandomNumGen
 from direct.interval.MetaInterval import Sequence, Parallel

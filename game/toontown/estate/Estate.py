@@ -1,3 +1,6 @@
+# This module defines estate and its supporting behavior for estates, houses, gardens, mailboxes,
+# closets, and banks.
+
 from panda3d.core import *
 from direct.interval.IntervalGlobal import *
 from toontown.toonbase.ToonBaseGlobal import *

@@ -7,6 +7,8 @@
 # License: MIT
 # Version: 1.0.0
 ##################################################
+# This module defines shared constants, configuration values, and lookup tables for magic word
+# within privileged magic-word commands and execution.
 
 OUTGOING_CHAT_MESSAGE_NAME = 'magicWord'
 CLICKED_NAMETAG_MESSAGE_NAME = 'clickedNametag'

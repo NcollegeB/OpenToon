@@ -1,3 +1,6 @@
+# This module coordinates Toontown chat lifecycle, state, and services for player chat, whitelist
+# filtering, and SpeedChat integration.
+
 import sys
 from direct.showbase import DirectObject
 from direct.showbase.PythonUtil import traceFunctionCall

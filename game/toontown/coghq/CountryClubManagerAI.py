@@ -1,3 +1,6 @@
+# This module provides AI-server logic for country club, coordinating authoritative simulation and
+# state for Cog HQ facilities, bosses, rooms, and level entities.
+
 from direct.directnotify import DirectNotifyGlobal
 from . import DistributedCountryClubAI
 from toontown.toonbase import ToontownGlobals

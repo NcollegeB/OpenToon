@@ -1,3 +1,7 @@
+# This module implements the client-side distributed party valentine trampoline activity, handling
+# network updates, presentation, and player interaction for party scheduling, activities,
+# decorations, and services.
+
 from toontown.parties.DistributedPartyTrampolineActivity import DistributedPartyTrampolineActivity
 
 class DistributedPartyValentineTrampolineActivity(DistributedPartyTrampolineActivity):

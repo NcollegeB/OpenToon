@@ -1,3 +1,6 @@
+# This module implements estate house furnishing mode, including furniture picker panels, draggable
+# placement, collision constraints, camera controls, and object management.
+
 from direct.directtools.DirectSelection import *
 from direct.directtools.DirectUtil import ROUND_TO
 from direct.directtools.DirectGeometry import LineNodePath

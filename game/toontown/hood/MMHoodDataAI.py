@@ -1,3 +1,6 @@
+# This module creates the authoritative zones and distributed objects for the Minnie's Melodyland
+# neighborhood.
+
 from direct.directnotify import DirectNotifyGlobal
 from . import HoodDataAI
 from toontown.toonbase import ToontownGlobals

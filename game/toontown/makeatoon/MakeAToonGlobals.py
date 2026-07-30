@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for make a Toon
+# within Toon creation, appearance, clothing, and naming.
+
 GENDERSHOP = 1
 BODYSHOP = 2
 COLORSHOP = 3

@@ -1,3 +1,6 @@
+# This module manages winter party catch activity Toon states, transitions, animation, and cleanup
+# for party scheduling, activities, decorations, and services.
+
 from . import PartyCatchActivityToonSD
 from panda3d.core import Vec4
 from direct.directnotify import DirectNotifyGlobal

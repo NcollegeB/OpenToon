@@ -1,3 +1,6 @@
+# This module defines NPC identities, appearances, placement data, and construction helpers used
+# throughout quests and world interactions.
+
 from panda3d.core import *
 from panda3d.otp import *
 from toontown.toonbase import ToontownGlobals

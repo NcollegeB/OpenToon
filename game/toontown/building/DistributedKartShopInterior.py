@@ -1,3 +1,6 @@
+# This module implements the client-side distributed kart shop interior, handling network updates,
+# presentation, and player interaction for buildings, interiors, doors, elevators, and boarding.
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed.DistributedObject import DistributedObject
 from panda3d.core import *

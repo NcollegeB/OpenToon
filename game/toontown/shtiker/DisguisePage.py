@@ -1,3 +1,6 @@
+# This module implements the disguise interface, presenting and updating player controls and
+# information for Shticker Book pages, settings, and dialogs.
+
 from . import ShtikerPage
 from direct.gui.DirectGui import *
 from panda3d.core import *

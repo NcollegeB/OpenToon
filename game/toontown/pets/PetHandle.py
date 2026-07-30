@@ -1,3 +1,6 @@
+# This module defines pet handle and its supporting behavior for Doodle appearance, behavior,
+# training, AI, and interfaces.
+
 from toontown.toonbase import ToontownGlobals
 from toontown.pets import PetMood, PetTraits, PetDetail
 

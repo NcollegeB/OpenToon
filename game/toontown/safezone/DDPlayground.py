@@ -1,3 +1,6 @@
+# This module manages the client location lifecycle, state transitions, and interactions for
+# Donald's Dock playground within playgrounds, treasures, and safe-zone activities.
+
 from panda3d.core import *
 from . import Playground
 from direct.task.Task import Task

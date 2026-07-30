@@ -1,3 +1,6 @@
+# This module defines catalog wainscoting item and its supporting behavior for catalog items,
+# purchasing, delivery, and catalog interfaces.
+
 from .CatalogSurfaceItem import *
 WSTTextureName = 0
 WSTColor = 1

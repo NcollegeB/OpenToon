@@ -1,3 +1,6 @@
+# This module defines Toon detail and its supporting behavior for player Toon avatars, NPCs,
+# inventory, and presentation.
+
 from direct.directnotify.DirectNotifyGlobal import directNotify
 from otp.avatar import AvatarDetail
 from toontown.toon import DistributedToon

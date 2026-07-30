@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for goon path within
+# Cog and boss actors, behavior, and combat support.
+
 from panda3d.core import *
 from toontown.toonbase import ToontownGlobals
 taskZoneId2pathId = {ToontownGlobals.SellbotFactoryInt: 'sellbotFactory',

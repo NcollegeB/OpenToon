@@ -1,3 +1,6 @@
+# This module implements the player detail interface, presenting and updating player controls and
+# information for player Toon avatars, NPCs, inventory, and presentation.
+
 from panda3d.core import *
 from toontown.toonbase.ToontownGlobals import *
 from direct.gui.DirectGui import *

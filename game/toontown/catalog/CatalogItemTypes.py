@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for catalog item
+# within catalog items, purchasing, delivery, and catalog interfaces.
+
 from . import CatalogFurnitureItem
 from . import CatalogChatItem
 from . import CatalogClothingItem

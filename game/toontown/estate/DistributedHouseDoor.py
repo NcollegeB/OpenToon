@@ -1,3 +1,6 @@
+# This module implements the client-side distributed house door, handling network updates,
+# presentation, and player interaction for estates, houses, gardens, mailboxes, closets, and banks.
+
 from toontown.toonbase.ToonBaseGlobal import *
 from panda3d.core import *
 from direct.interval.IntervalGlobal import *

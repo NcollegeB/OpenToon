@@ -1,3 +1,6 @@
+# This module defines dist Cogdo crane object and its supporting behavior for Cogdo rooms,
+# activities, entities, and rewards.
+
 from panda3d.core import *
 from direct.interval.IntervalGlobal import *
 from direct.directnotify import DirectNotifyGlobal

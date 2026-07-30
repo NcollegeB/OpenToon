@@ -1,3 +1,6 @@
+# This module exposes localized game strings, reads the configured language, and optionally checks
+# foreign localization keys against the English definitions.
+
 from panda3d.core import *
 
 language = ConfigVariableString('language', 'english').value

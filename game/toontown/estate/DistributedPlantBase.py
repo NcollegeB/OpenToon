@@ -1,3 +1,6 @@
+# This module implements the client-side distributed plant, handling network updates, presentation,
+# and player interaction for estates, houses, gardens, mailboxes, closets, and banks.
+
 from . import DistributedLawnDecor
 from direct.interval.IntervalGlobal import *
 from direct.directnotify import DirectNotifyGlobal

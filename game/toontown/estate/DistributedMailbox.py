@@ -1,3 +1,6 @@
+# This module implements the client-side distributed mailbox, handling network updates,
+# presentation, and player interaction for estates, houses, gardens, mailboxes, closets, and banks.
+
 from direct.distributed import DistributedObject
 from toontown.toonbase import ToontownGlobals
 from . import MailboxGlobals

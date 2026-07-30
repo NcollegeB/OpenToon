@@ -1,3 +1,6 @@
+# This module provides shared stage room behavior and data used by related implementations in Cog HQ
+# facilities, bosses, rooms, and level entities.
+
 from toontown.toonbase import ToontownGlobals
 
 class StageRoomBase:

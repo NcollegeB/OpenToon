@@ -1,3 +1,6 @@
+# This module defines mint room and its supporting behavior for Cog HQ facilities, bosses, rooms,
+# and level entities.
+
 from panda3d.core import *
 from direct.showbase import DirectObject
 from direct.fsm import ClassicFSM, State

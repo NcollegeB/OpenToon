@@ -1,3 +1,6 @@
+# This module defines party info base and its supporting behavior for party scheduling, activities,
+# decorations, and services.
+
 from datetime import datetime
 from direct.directnotify import DirectNotifyGlobal
 from toontown.parties.PartyGlobals import InviteTheme

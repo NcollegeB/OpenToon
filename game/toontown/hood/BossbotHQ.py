@@ -1,3 +1,6 @@
+# This module defines Bossbot HQ and its supporting behavior for neighborhoods, zone data, and
+# neighborhood lifecycle.
+
 from . import CogHood
 from toontown.toonbase import ToontownGlobals
 from toontown.coghq import BossbotCogHQLoader

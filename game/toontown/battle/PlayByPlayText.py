@@ -1,3 +1,6 @@
+# This module defines play by play text and its supporting behavior for Cog battle rules,
+# presentation, calculations, and rewards.
+
 from panda3d.core import *
 from toontown.toonbase import TTLocalizer
 from toontown.toonbase.ToontownBattleGlobals import *

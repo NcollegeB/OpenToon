@@ -1,3 +1,6 @@
+# This module defines party editor list element and its supporting behavior for party scheduling,
+# activities, decorations, and services.
+
 from panda3d.core import Vec3
 from direct.gui.DirectGui import DirectButton, DirectLabel
 from direct.gui import DirectGuiGlobals

@@ -1,3 +1,6 @@
+# This module defines the declarative entities, scenarios, and encounter layout for Bossbot country
+# club tee off room action 02 in the Cog facility level system.
+
 from toontown.coghq.SpecImports import *
 GlobalEntities = {1000: {'type': 'levelMgr',
         'name': 'LevelMgr',

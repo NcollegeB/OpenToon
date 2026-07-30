@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for house within
+# estates, houses, gardens, mailboxes, closets, and banks.
+
 NUM_HOUSE_TYPES = 6
 HOUSE_DEFAULT = 0
 HOUSE_CRAFTSMAN = 1

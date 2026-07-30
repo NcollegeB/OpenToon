@@ -1,3 +1,6 @@
+# This module defines motion and its supporting behavior for player Toon avatars, NPCs, inventory,
+# and presentation.
+
 from direct.fsm import StateData
 from toontown.toonbase import ToontownGlobals
 from direct.directnotify import DirectNotifyGlobal

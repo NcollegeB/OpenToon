@@ -1,3 +1,6 @@
+# This module defines prop pool and its supporting behavior for Cog battle rules, presentation,
+# calculations, and rewards.
+
 from panda3d.core import *
 from direct.actor import Actor
 from direct.directnotify import DirectNotifyGlobal

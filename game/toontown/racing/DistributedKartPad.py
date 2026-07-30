@@ -1,3 +1,7 @@
+# This module implements the client-side distributed kart pad, handling network updates,
+# presentation, and player interaction for kart races, tracks, pads, projectiles, scores, and
+# leaderboards.
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed.DistributedObject import DistributedObject
 if (__debug__):

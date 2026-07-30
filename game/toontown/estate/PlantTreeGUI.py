@@ -1,3 +1,6 @@
+# This module implements the plant tree interface, presenting and updating player controls and
+# information for estates, houses, gardens, mailboxes, closets, and banks.
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.showbase.ShowBase import *
 from toontown.toonbase import TTLocalizer

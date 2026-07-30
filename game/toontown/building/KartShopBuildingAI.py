@@ -1,3 +1,6 @@
+# This module provides AI-server logic for kart shop building, coordinating authoritative simulation
+# and state for buildings, interiors, doors, elevators, and boarding.
+
 from direct.directnotify import DirectNotifyGlobal
 from panda3d.core import *
 from toontown.building import FADoorCodes, DoorTypes

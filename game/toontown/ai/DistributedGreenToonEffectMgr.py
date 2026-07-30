@@ -1,3 +1,7 @@
+# This module implements the client-side distributed green Toon effect, handling network updates,
+# presentation, and player interaction for district startup, holidays, events, and shared AI
+# managers.
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed import DistributedObject
 from direct.interval.IntervalGlobal import *

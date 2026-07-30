@@ -1,3 +1,6 @@
+# This module defines body shop and its supporting behavior for Toon creation, appearance, clothing,
+# and naming.
+
 from panda3d.core import *
 from toontown.toon import ToonDNA
 from direct.fsm import StateData

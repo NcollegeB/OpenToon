@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for suit building
+# within buildings, interiors, doors, elevators, and boarding.
+
 from .ElevatorConstants import *
 SuitBuildingInfo = (((1, 1),
   (1, 3),

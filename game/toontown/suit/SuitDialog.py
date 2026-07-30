@@ -1,3 +1,6 @@
+# This module maps Cog types to localized brush-off dialogue and randomly selects a response for an
+# encounter.
+
 import random
 from direct.directnotify import DirectNotifyGlobal
 from otp.otpbase import OTPLocalizer

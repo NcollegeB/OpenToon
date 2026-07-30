@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for minigame within
+# trolley minigame rules, presentation, and synchronization.
+
 from direct.showbase import PythonUtil
 from toontown.toonbase import ToontownGlobals
 from toontown.hood import ZoneUtil

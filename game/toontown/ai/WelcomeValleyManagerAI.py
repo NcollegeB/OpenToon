@@ -1,3 +1,6 @@
+# This module provides AI-server logic for welcome valley, coordinating authoritative simulation and
+# state for district startup, holidays, events, and shared AI managers.
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed.DistributedObjectAI import DistributedObjectAI
 

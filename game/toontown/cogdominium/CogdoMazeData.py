@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for Cogdo maze
+# within Cogdo rooms, activities, entities, and rewards.
+
 FirstQuadrant = 1
 NumQuadrants = 9
 QuadrantCellWidth = 3

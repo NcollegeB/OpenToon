@@ -1,4 +1,5 @@
-
+# This module provides retention tokens that postpone distributed-object deletion while intervals or
+# other temporary users still need an object.
 
 class DelayDelete:
 

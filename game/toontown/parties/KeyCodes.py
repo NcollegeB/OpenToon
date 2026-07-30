@@ -1,3 +1,6 @@
+# This module supplies the key codes data and definitions used by party scheduling, activities,
+# decorations, and services.
+
 from panda3d.core import *
 from direct.showbase.DirectObject import DirectObject
 ARROW_KEYCODE_MAP = {'arrow_up': 'u',

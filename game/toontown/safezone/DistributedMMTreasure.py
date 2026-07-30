@@ -1,3 +1,7 @@
+# This module implements the client-side distributed Minnie's Melodyland treasure, handling network
+# updates, presentation, and player interaction for playgrounds, treasures, and safe-zone
+# activities.
+
 from . import DistributedSZTreasure
 
 class DistributedMMTreasure(DistributedSZTreasure.DistributedSZTreasure):

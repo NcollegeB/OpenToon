@@ -1,3 +1,6 @@
+# This module provides AI-server logic for golf, coordinating authoritative simulation and state for
+# courses, holes, physics, scores, and rewards.
+
 from direct.distributed import DistributedObjectAI
 from direct.showbase import DirectObject
 from direct.directnotify import DirectNotifyGlobal

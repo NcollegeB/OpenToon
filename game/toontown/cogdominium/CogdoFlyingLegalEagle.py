@@ -1,3 +1,6 @@
+# This module defines Cogdo flying legal eagle and its supporting behavior for Cogdo rooms,
+# activities, entities, and rewards.
+
 import math
 from direct.showbase.DirectObject import DirectObject
 from direct.directnotify import DirectNotifyGlobal

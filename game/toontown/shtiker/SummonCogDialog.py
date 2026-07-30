@@ -1,3 +1,6 @@
+# This module implements the summon Cog interface, presenting and updating player controls and
+# information for Shticker Book pages, settings, and dialogs.
+
 from direct.gui.DirectGui import *
 from panda3d.core import *
 from direct.directnotify import DirectNotifyGlobal

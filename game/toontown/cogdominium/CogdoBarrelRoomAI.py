@@ -1,3 +1,6 @@
+# This module provides AI-server logic for Cogdo barrel room, coordinating authoritative simulation
+# and state for Cogdo rooms, activities, entities, and rewards.
+
 import random
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed import DistributedObjectAI

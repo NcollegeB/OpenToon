@@ -1,3 +1,6 @@
+# This module provides AI-server logic for stage, coordinating authoritative simulation and state
+# for Cog HQ facilities, bosses, rooms, and level entities.
+
 from direct.directnotify import DirectNotifyGlobal
 from . import DistributedStageAI
 from toontown.toonbase import ToontownGlobals

@@ -1,3 +1,6 @@
+# This module defines Toon head and its supporting behavior for player Toon avatars, NPCs,
+# inventory, and presentation.
+
 from direct.actor import Actor
 from direct.task import Task
 from toontown.toonbase import ToontownGlobals

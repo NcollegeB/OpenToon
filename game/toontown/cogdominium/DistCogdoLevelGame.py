@@ -1,3 +1,6 @@
+# This module defines dist Cogdo level game and its supporting behavior for Cogdo rooms, activities,
+# entities, and rewards.
+
 from direct.directnotify.DirectNotifyGlobal import directNotify
 from otp.level.DistributedLevel import DistributedLevel
 from otp.level import LevelConstants

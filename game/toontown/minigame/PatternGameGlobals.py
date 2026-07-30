@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for pattern game
+# within trolley minigame rules, presentation, and synchronization.
+
 from . import MinigameGlobals
 INITIAL_ROUND_LENGTH = 2
 ROUND_LENGTH_INCREMENT = 2

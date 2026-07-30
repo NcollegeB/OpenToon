@@ -1,3 +1,6 @@
+# This module defines pet flee and its supporting behavior for Doodle appearance, behavior,
+# training, AI, and interfaces.
+
 from panda3d.core import *
 from direct.showbase.PythonUtil import reduceAngle
 from otp.movement import Impulse

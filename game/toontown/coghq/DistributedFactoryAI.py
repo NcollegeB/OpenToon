@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of factory, handling validated state and
+# synchronized gameplay for Cog HQ facilities, bosses, rooms, and level entities.
+
 from otp.level import DistributedLevelAI
 from direct.directnotify import DirectNotifyGlobal
 from toontown.coghq import LevelSuitPlannerAI, FactoryBase

@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of banquet table, handling validated state
+# and synchronized gameplay for Cog HQ facilities, bosses, rooms, and level entities.
+
 import random
 from direct.distributed import DistributedObjectAI
 from direct.fsm import FSM

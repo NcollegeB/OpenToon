@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of Toon interior, handling validated state
+# and synchronized gameplay for buildings, interiors, doors, elevators, and boarding.
+
 from toontown.toonbase.ToontownGlobals import *
 from otp.ai.AIBaseGlobal import *
 from direct.distributed.ClockDelta import *

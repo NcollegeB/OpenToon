@@ -1,3 +1,6 @@
+# This module manages the client location lifecycle, state transitions, and interactions for gs
+# playground within playgrounds, treasures, and safe-zone activities.
+
 from panda3d.core import *
 from toontown.toonbase import ToontownGlobals
 from . import Playground

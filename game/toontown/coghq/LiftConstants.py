@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for lift within Cog
+# HQ facilities, bosses, rooms, and level entities.
+
 Down = 0
 Up = 1
 

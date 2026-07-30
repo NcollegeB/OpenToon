@@ -1,3 +1,6 @@
+# This module defines Cogdo flying gatherable factory and its supporting behavior for Cogdo rooms,
+# activities, entities, and rewards.
+
 import random
 from panda3d.core import *
 from panda3d.physics import *

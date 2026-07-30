@@ -1,3 +1,6 @@
+# This module coordinates friends-list interfaces and interaction flows, including invitations,
+# teleport requests, notifications, and queued friend requests.
+
 from panda3d.core import *
 from panda3d.otp import *
 from . import FriendsListPanel

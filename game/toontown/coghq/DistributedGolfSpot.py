@@ -1,3 +1,6 @@
+# This module implements the client-side distributed golf spot, handling network updates,
+# presentation, and player interaction for Cog HQ facilities, bosses, rooms, and level entities.
+
 import math
 from panda3d.core import Point3, CollisionSphere, CollisionNode, CollisionHandlerEvent, TextNode, VBase4, NodePath, BitMask32
 from panda3d.direct import SmoothMover

@@ -1,3 +1,6 @@
+# This module defines elevator notifier and its supporting behavior for player Toon avatars, NPCs,
+# inventory, and presentation.
+
 from direct.directnotify import DirectNotifyGlobal
 from toontown.toonbase import ToontownGlobals
 from toontown.toonbase import TTLocalizer

@@ -1,3 +1,6 @@
+# This module stores the authoritative latest in-game news issue string and synchronizes that value
+# to clients.
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed.DistributedObjectAI import DistributedObjectAI
 

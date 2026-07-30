@@ -1,3 +1,6 @@
+# This module controls the client state for factory interiors, including walking, battles,
+# elevators, teleportation, reserve encounters, and interface transitions.
+
 from direct.directnotify import DirectNotifyGlobal
 from toontown.battle import BattlePlace
 from direct.fsm import ClassicFSM, State

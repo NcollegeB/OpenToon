@@ -1,3 +1,6 @@
+# This module loads and unloads scenes, assets, and place transitions for safe zone within
+# playgrounds, treasures, and safe-zone activities.
+
 from panda3d.core import *
 from toontown.toonbase.ToonBaseGlobal import *
 from toontown.distributed.ToontownMsgTypes import *

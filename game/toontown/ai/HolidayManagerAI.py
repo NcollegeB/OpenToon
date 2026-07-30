@@ -1,3 +1,6 @@
+# This module provides AI-server logic for holiday, coordinating authoritative simulation and state
+# for district startup, holidays, events, and shared AI managers.
+
 from direct.directnotify import DirectNotifyGlobal
 from toontown.toonbase import ToontownGlobals
 

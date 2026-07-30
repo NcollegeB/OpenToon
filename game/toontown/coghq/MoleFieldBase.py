@@ -1,3 +1,6 @@
+# This module provides shared mole field behavior and data used by related implementations in Cog HQ
+# facilities, bosses, rooms, and level entities.
+
 import random
 HILL_MOLE = 0
 HILL_BOMB = 1

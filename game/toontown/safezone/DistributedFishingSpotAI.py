@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of fishing spot, handling validated state
+# and synchronized gameplay for playgrounds, treasures, and safe-zone activities.
+
 import math
 
 from direct.directnotify import DirectNotifyGlobal

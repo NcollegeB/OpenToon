@@ -1,3 +1,6 @@
+# This module defines Cog thief and its supporting behavior for trolley minigame rules,
+# presentation, and synchronization.
+
 import math
 from panda3d.core import CollisionSphere, CollisionNode, Point3, CollisionTube, Vec3, rad2Deg
 from direct.showbase.DirectObject import DirectObject

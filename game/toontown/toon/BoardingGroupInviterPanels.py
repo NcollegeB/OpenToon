@@ -1,3 +1,6 @@
+# This module defines boarding group inviter panels and its supporting behavior for player Toon
+# avatars, NPCs, inventory, and presentation.
+
 from panda3d.core import *
 from toontown.toonbase.ToontownGlobals import *
 from direct.showbase import DirectObject

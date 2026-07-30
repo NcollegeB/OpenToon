@@ -1,3 +1,7 @@
+# This module implements the client-side distributed battle final, handling network updates,
+# presentation, and player interaction for Cog battle rules, presentation, calculations, and
+# rewards.
+
 from panda3d.core import *
 from panda3d.otp import *
 from direct.interval.IntervalGlobal import *

@@ -1,3 +1,7 @@
+# This module implements the authoritative AI-server side of NPC flippy in Toon hall, handling
+# validated state and synchronized gameplay for player Toon avatars, NPCs, inventory, and
+# presentation.
+
 from .DistributedNPCToonAI import *
 
 class DistributedNPCFlippyInToonHallAI(DistributedNPCToonAI):

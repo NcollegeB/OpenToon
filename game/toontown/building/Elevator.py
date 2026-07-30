@@ -1,3 +1,6 @@
+# This module defines elevator and its supporting behavior for buildings, interiors, doors,
+# elevators, and boarding.
+
 from panda3d.core import *
 from toontown.toonbase.ToonBaseGlobal import *
 from direct.gui.DirectGui import *

@@ -1,3 +1,6 @@
+# This module provides AI-server logic for safe zone, coordinating authoritative simulation and
+# state for playgrounds, treasures, and safe-zone activities.
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed.DistributedObjectAI import DistributedObjectAI
 

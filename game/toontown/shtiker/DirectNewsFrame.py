@@ -1,3 +1,6 @@
+# This module implements the direct news interface, presenting and updating player controls and
+# information for Shticker Book pages, settings, and dialogs.
+
 import os
 import datetime
 import functools

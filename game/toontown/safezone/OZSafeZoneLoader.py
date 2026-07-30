@@ -1,3 +1,6 @@
+# This module loads and unloads scenes, assets, and place transitions for oz safe zone within
+# playgrounds, treasures, and safe-zone activities.
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.fsm import ClassicFSM, State
 from direct.fsm import State

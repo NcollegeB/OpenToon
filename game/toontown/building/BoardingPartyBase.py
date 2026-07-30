@@ -1,3 +1,6 @@
+# This module provides shared boarding party behavior and data used by related implementations in
+# buildings, interiors, doors, elevators, and boarding.
+
 from otp.otpbase import OTPGlobals
 from toontown.toonbase import ToontownGlobals
 import copy

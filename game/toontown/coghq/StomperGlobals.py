@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for stomper within
+# Cog HQ facilities, bosses, rooms, and level entities.
+
 STOMPER_START = 0
 STOMPER_PAUSE = 1
 STOMPER_RESUME = 2

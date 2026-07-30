@@ -1,3 +1,7 @@
+# This module implements the authoritative AI-server side of Cashbot boss treasure, handling
+# validated state and synchronized gameplay for Cog HQ facilities, bosses, rooms, and level
+# entities.
+
 from toontown.safezone import DistributedSZTreasureAI
 
 class DistributedCashbotBossTreasureAI(DistributedSZTreasureAI.DistributedSZTreasureAI):

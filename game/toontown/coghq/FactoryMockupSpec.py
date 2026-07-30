@@ -1,3 +1,6 @@
+# This module supplies the factory mockup spec data and definitions used by Cog HQ facilities,
+# bosses, rooms, and level entities.
+
 from .SpecImports import *
 GlobalEntities = {1000: {'type': 'levelMgr',
         'name': 'LevelMgr',

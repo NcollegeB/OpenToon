@@ -1,3 +1,6 @@
+# This module provides elevator utils helper functions for buildings, interiors, doors, elevators,
+# and boarding.
+
 from panda3d.core import *
 from direct.interval.IntervalGlobal import *
 from .ElevatorConstants import *

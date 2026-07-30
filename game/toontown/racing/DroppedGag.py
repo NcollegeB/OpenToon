@@ -1,3 +1,6 @@
+# This module defines dropped gag and its supporting behavior for kart races, tracks, pads,
+# projectiles, scores, and leaderboards.
+
 from panda3d.core import *
 from direct.gui.DirectGui import *
 from panda3d.core import *

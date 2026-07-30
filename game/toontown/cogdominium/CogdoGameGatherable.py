@@ -1,3 +1,6 @@
+# This module defines Cogdo game gatherable and its supporting behavior for Cogdo rooms, activities,
+# entities, and rewards.
+
 from panda3d.core import CollisionSphere, CollisionNode
 from panda3d.core import NodePath, BitMask32
 from direct.showbase.DirectObject import DirectObject

@@ -1,3 +1,6 @@
+# This module provides AI-server logic for level battle, coordinating authoritative simulation and
+# state for Cog HQ facilities, bosses, rooms, and level entities.
+
 from toontown.battle import BattleManagerAI
 from direct.directnotify import DirectNotifyGlobal
 from toontown.coghq import BattleExperienceAggregatorAI

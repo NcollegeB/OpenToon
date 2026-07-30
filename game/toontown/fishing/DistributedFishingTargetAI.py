@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of fishing target, handling validated
+# state and synchronized gameplay for ponds, fish, targets, rewards, and Bingo.
+
 import math
 import random
 

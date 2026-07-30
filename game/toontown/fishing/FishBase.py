@@ -1,3 +1,6 @@
+# This module provides shared fish behavior and data used by related implementations in ponds, fish,
+# targets, rewards, and Bingo.
+
 from . import FishGlobals
 from toontown.toonbase import TTLocalizer
 from direct.directnotify import DirectNotifyGlobal

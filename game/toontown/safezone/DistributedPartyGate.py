@@ -1,3 +1,6 @@
+# This module implements the client-side distributed party gate, handling network updates,
+# presentation, and player interaction for playgrounds, treasures, and safe-zone activities.
+
 from panda3d.core import Point3, CollisionSphere, CollisionNode, BitMask32, Vec3, NodePath, TextNode, Vec4
 from otp.otpbase import OTPGlobals
 from otp.otpbase import OTPLocalizer

@@ -1,3 +1,6 @@
+# This module defines html view and its supporting behavior for Shticker Book pages, settings, and
+# dialogs.
+
 import array, sys
 from direct.showbase.DirectObject import DirectObject
 from direct.task.Task import Task

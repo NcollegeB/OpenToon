@@ -1,3 +1,7 @@
+# This module implements the client-side distributed maze game, handling network updates,
+# presentation, and player interaction for trolley minigame rules, presentation, and
+# synchronization.
+
 from direct.interval.IntervalGlobal import LerpPosInterval, LerpHprInterval, LerpPosHprInterval
 from direct.interval.IntervalGlobal import SoundInterval, LerpScaleInterval, LerpFunctionInterval
 from direct.interval.IntervalGlobal import Wait, Func

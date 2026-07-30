@@ -1,3 +1,6 @@
+# This module provides AI-server logic for tutorial battle, coordinating authoritative simulation
+# and state for tutorial progression, battles, and managers.
+
 from toontown.battle import BattleManagerAI
 from direct.directnotify import DirectNotifyGlobal
 from . import DistributedBattleTutorialAI

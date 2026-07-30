@@ -1,3 +1,6 @@
+# This module defines SpeedChat resistance terminal and its supporting behavior for SpeedChat menus,
+# terminals, phrases, and decoding.
+
 from otp.speedchat.SCTerminal import SCTerminal
 from toontown.chat import ResistanceChat
 TTSCResistanceMsgEvent = 'TTSCResistanceMsg'

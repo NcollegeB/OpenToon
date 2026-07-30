@@ -1,4 +1,5 @@
-
+# This module defines drop scheduler and its supporting behavior for trolley minigame rules,
+# presentation, and synchronization.
 
 class DropScheduler:
 

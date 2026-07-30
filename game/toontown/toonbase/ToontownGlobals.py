@@ -1,3 +1,6 @@
+# This module defines shared identifiers, bitmasks, zone mappings, camera values, gameplay
+# constants, and lazy font-loading helpers.
+
 from . import TTLocalizer
 from otp.otpbase.OTPGlobals import *
 from direct.showbase.PythonUtil import invertDict

@@ -1,3 +1,6 @@
+# This module coordinates Toontown time lifecycle, state, and services for party scheduling,
+# activities, decorations, and services.
+
 import time
 from datetime import datetime, timedelta
 import pytz

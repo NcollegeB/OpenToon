@@ -1,3 +1,6 @@
+# This module defines Cogdo flying game and its supporting behavior for Cogdo rooms, activities,
+# entities, and rewards.
+
 from direct.showbase.DirectObject import DirectObject
 from direct.task.Task import Task
 from direct.showbase.RandomNumGen import RandomNumGen

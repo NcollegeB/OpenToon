@@ -1,3 +1,6 @@
+# This module classifies and translates zone identifiers and supplies neighborhood, street, branch,
+# loader, playground, and location-name lookups.
+
 from toontown.toonbase.ToontownGlobals import *
 from direct.directnotify import DirectNotifyGlobal
 zoneUtilNotify = DirectNotifyGlobal.directNotify.newCategory('ZoneUtil')

@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of maze, handling validated state and
+# synchronized gameplay for Cog HQ facilities, bosses, rooms, and level entities.
+
 from otp.level import DistributedEntityAI
 from . import DistributedBarrelBaseAI
 from direct.directnotify import DirectNotifyGlobal

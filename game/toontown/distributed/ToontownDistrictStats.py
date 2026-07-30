@@ -1,3 +1,6 @@
+# This module defines Toontown district stats and its supporting behavior for core repositories,
+# districts, timers, and world lifecycle.
+
 from direct.showbase import DirectObject
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed import DistributedObject

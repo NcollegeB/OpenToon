@@ -1,3 +1,7 @@
+# This module implements the client-side distributed diving game, handling network updates,
+# presentation, and player interaction for trolley minigame rules, presentation, and
+# synchronization.
+
 from direct.showbase.ShowBaseGlobal import *
 from toontown.toonbase.ToonBaseGlobal import *
 from direct.interval.IntervalGlobal import *

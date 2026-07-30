@@ -1,3 +1,6 @@
+# This module defines train and its supporting behavior for playgrounds, treasures, and safe-zone
+# activities.
+
 from panda3d.core import *
 from direct.showbase.DirectObject import DirectObject
 from direct.interval.IntervalGlobal import *

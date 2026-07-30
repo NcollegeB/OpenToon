@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of Cogdo barrel, handling validated state
+# and synchronized gameplay for Cogdo rooms, activities, entities, and rewards.
+
 import random
 from direct.directnotify import DirectNotifyGlobal
 from direct.distributed import DistributedObjectAI

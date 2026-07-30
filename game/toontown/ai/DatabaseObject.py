@@ -1,3 +1,6 @@
+# This module defines database object and its supporting behavior for district startup, holidays,
+# events, and shared AI managers.
+
 from panda3d.core import *
 from .ToontownAIMsgTypes import *
 from direct.directnotify.DirectNotifyGlobal import *

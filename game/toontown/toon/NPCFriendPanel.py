@@ -1,3 +1,6 @@
+# This module implements the NPC friend interface, presenting and updating player controls and
+# information for player Toon avatars, NPCs, inventory, and presentation.
+
 from direct.gui.DirectGui import *
 from direct.directnotify import DirectNotifyGlobal
 from panda3d.core import *

@@ -1,3 +1,6 @@
+# This module extends the level entity factory with Cogdominium level-manager, boardroom, and
+# crane-game setting entity types.
+
 from otp.level import EntityCreator
 from toontown.cogdominium import CogdoCraneGameConsts
 from toontown.cogdominium.CogdoLevelMgr import CogdoLevelMgr

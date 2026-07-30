@@ -1,3 +1,6 @@
+# This module defines trialer force acknowledge and its supporting behavior for neighborhoods, zone
+# data, and neighborhood lifecycle.
+
 from panda3d.core import *
 from toontown.toonbase import TTLocalizer
 from . import ZoneUtil

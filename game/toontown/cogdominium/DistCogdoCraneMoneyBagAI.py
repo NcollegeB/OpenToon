@@ -1,3 +1,6 @@
+# This module provides AI-server logic for dist Cogdo crane money bag, coordinating authoritative
+# simulation and state for Cogdo rooms, activities, entities, and rewards.
+
 from panda3d.core import *
 from toontown.toonbase import ToontownGlobals
 from otp.otpbase import OTPGlobals

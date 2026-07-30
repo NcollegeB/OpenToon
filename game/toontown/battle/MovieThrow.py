@@ -1,3 +1,6 @@
+# This module builds the coordinated animation and camera sequences for movie throw within Cog
+# battle rules, presentation, calculations, and rewards.
+
 from panda3d.core import *
 from direct.interval.IntervalGlobal import *
 from .BattleBase import *

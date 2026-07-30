@@ -1,3 +1,6 @@
+# This module defines race results panel and its supporting behavior for kart races, tracks, pads,
+# projectiles, scores, and leaderboards.
+
 from direct.gui.DirectGui import *
 from panda3d.core import *
 from direct.directnotify import DirectNotifyGlobal

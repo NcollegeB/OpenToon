@@ -1,3 +1,6 @@
+# This module builds and controls wake visual, interval, or particle effects for visual, particle,
+# and firework effects.
+
 from panda3d.core import *
 from direct.interval.IntervalGlobal import *
 from toontown.battle.BattleProps import globalPropPool

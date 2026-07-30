@@ -1,3 +1,6 @@
+# This module implements the cannon interface, presenting and updating player controls and
+# information for party scheduling, activities, decorations, and services.
+
 from direct.showbase.DirectObject import DirectObject
 from direct.gui.DirectGui import DirectFrame, DirectButton
 import direct.gui.DirectGuiGlobals as DGG

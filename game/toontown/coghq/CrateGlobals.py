@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for crate within Cog
+# HQ facilities, bosses, rooms, and level entities.
+
 from panda3d.core import *
 CRATE_CLEAR = 0
 CRATE_POWERUP = 1

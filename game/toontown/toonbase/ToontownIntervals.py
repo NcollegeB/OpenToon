@@ -1,3 +1,6 @@
+# This module provides Toontown intervals helpers for application bootstrap, global configuration,
+# localization, loading, and access.
+
 from direct.interval.MetaInterval import Sequence
 from direct.interval.FunctionInterval import Wait, Func
 PULSE_GUI_DURATION = 0.2

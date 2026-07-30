@@ -1,3 +1,6 @@
+# This module implements the client-side distributed treasure, handling network updates,
+# presentation, and player interaction for playgrounds, treasures, and safe-zone activities.
+
 from panda3d.core import *
 from panda3d.direct import ShowInterval, HideInterval
 from direct.interval.IntervalGlobal import *

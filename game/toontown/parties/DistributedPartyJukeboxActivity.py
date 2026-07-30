@@ -1,3 +1,7 @@
+# This module implements the client-side distributed party jukebox activity, handling network
+# updates, presentation, and player interaction for party scheduling, activities, decorations, and
+# services.
+
 from toontown.parties.DistributedPartyJukeboxActivityBase import DistributedPartyJukeboxActivityBase
 from toontown.parties import PartyGlobals
 

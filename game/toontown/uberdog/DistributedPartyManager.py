@@ -1,3 +1,6 @@
+# This module implements the client-side distributed party, handling network updates, presentation,
+# and player interaction for global delivery, party, mail, news, whitelist, and data services.
+
 from direct.distributed.DistributedObject import DistributedObject
 from direct.distributed.DistributedObjectGlobal import DistributedObjectGlobal
 from panda3d.otp import CFSpeech, CFTimeout

@@ -1,3 +1,6 @@
+# This module defines scrolled friend list and its supporting behavior for party scheduling,
+# activities, decorations, and services.
+
 from direct.gui.DirectGui import DirectFrame, DirectButton, DirectLabel
 from direct.gui.DirectGui import DirectScrolledList, DirectCheckButton
 from direct.gui.DirectCheckBox import DirectCheckBox

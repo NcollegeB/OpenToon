@@ -1,3 +1,6 @@
+# This module implements the catalog notify interface, presenting and updating player controls and
+# information for catalog items, purchasing, delivery, and catalog interfaces.
+
 from direct.directnotify import DirectNotifyGlobal
 from toontown.toonbase import ToontownGlobals
 from toontown.toonbase import TTLocalizer

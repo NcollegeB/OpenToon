@@ -1,3 +1,6 @@
+# This module implements the client-side distributed anim building, handling network updates,
+# presentation, and player interaction for buildings, interiors, doors, elevators, and boarding.
+
 from panda3d.core import DecalEffect, DepthWriteAttrib
 from direct.directnotify import DirectNotifyGlobal
 from toontown.building import DistributedBuilding

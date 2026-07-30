@@ -1,3 +1,6 @@
+# This module defines catalog flooring item and its supporting behavior for catalog items,
+# purchasing, delivery, and catalog interfaces.
+
 from .CatalogSurfaceItem import *
 FTTextureName = 0
 FTColor = 1

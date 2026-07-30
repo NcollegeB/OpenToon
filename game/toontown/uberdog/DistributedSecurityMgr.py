@@ -1,3 +1,7 @@
+# This module implements the client-side distributed security, handling network updates,
+# presentation, and player interaction for global delivery, party, mail, news, whitelist, and data
+# services.
+
 import socket
 import datetime
 import os

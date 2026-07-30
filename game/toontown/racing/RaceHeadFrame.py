@@ -1,3 +1,6 @@
+# This module implements the race head interface, presenting and updating player controls and
+# information for kart races, tracks, pads, projectiles, scores, and leaderboards.
+
 from direct.gui.DirectGui import *
 from panda3d.core import *
 from toontown.toonbase import ToontownGlobals

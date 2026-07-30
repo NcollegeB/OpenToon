@@ -1,3 +1,6 @@
+# This module defines goon clip plane and its supporting behavior for Cog HQ facilities, bosses,
+# rooms, and level entities.
+
 from panda3d.core import *
 from direct.interval.IntervalGlobal import *
 from otp.level import BasicEntities

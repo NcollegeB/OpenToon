@@ -1,3 +1,6 @@
+# This module provides the authoritative minigame lifecycle, coordinating players, readiness,
+# disconnects, game states, timeouts, completion, and rewards.
+
 from otp.ai.AIBase import *
 from direct.distributed.ClockDelta import *
 from toontown.ai.ToonBarrier import *

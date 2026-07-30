@@ -1,3 +1,7 @@
+# This module implements the client-side distributed race game, handling network updates,
+# presentation, and player interaction for trolley minigame rules, presentation, and
+# synchronization.
+
 from panda3d.core import *
 from toontown.toonbase.ToonBaseGlobal import *
 from direct.distributed.ClockDelta import *

@@ -1,3 +1,6 @@
+# This module provides party utils helper functions for party scheduling, activities, decorations,
+# and services.
+
 import math
 import time
 import datetime

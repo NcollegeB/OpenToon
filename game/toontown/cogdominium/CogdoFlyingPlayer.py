@@ -1,3 +1,6 @@
+# This module defines Cogdo flying player and its supporting behavior for Cogdo rooms, activities,
+# entities, and rewards.
+
 from panda3d.core import DepthOffsetAttrib, NodePath, Vec3, Vec4, TextNode
 from direct.directnotify import DirectNotifyGlobal
 from direct.fsm.FSM import FSM

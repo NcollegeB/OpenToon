@@ -1,3 +1,6 @@
+# This module implements the Toontown interface, presenting and updating player controls and
+# information for shared game dialogs, loading screens, and interface widgets.
+
 from otp.otpgui.OTPDialog import *
 
 class TTDialog(OTPDialog):

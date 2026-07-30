@@ -1,3 +1,6 @@
+# This module implements the laff interface, presenting and updating player controls and information
+# for player Toon avatars, NPCs, inventory, and presentation.
+
 from panda3d.core import Vec4
 from direct.gui.DirectGui import DirectFrame, DirectLabel
 from toontown.toonbase import ToontownGlobals

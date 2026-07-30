@@ -1,3 +1,6 @@
+# This module implements the client-side distributed battle, handling network updates, presentation,
+# and player interaction for Cog battle rules, presentation, calculations, and rewards.
+
 from panda3d.core import CollisionNode, CollisionTube, LineSegs, NodePath, Point3, VBase3
 from panda3d.otp import NametagGlobals
 

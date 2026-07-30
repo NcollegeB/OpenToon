@@ -16,13 +16,14 @@ upstream Open Toontown source and resources.
   resource overlay and the repository-boundary fix that keeps those
   presentation changes reproducible.
 - [`2026-07-29.md`](2026-07-29.md) records the backlog audit, three P1
-  minigame-correctness fixes, focused regressions, and the precise local versus
-  distributable macOS evidence boundary.
+  minigame-correctness fixes, source overview comments for every Toontown
+  Python module, focused regressions, and the precise local versus distributable
+  macOS evidence boundary.
+- [`2026-07-30.md`](2026-07-30.md) records the module-documentation rollout,
+  public-repository privacy cleanup, and consolidated documentation policy.
 - [`FILE_INVENTORY.md`](FILE_INVENTORY.md) lists every modified or newly added
   source/resource path, plus the authored bundle files outside the nested Git
   repositories.
-- [`STINKY_MAX_PROFILE.md`](STINKY_MAX_PROFILE.md) records the explicitly
-  requested local save change and its recovery backup.
 - [`PROJECT_NAME.md`](PROJECT_NAME.md) records the naming recommendation
   without prematurely renaming the codebase.
 - [`FEATURE_AUDIT.md`](FEATURE_AUDIT.md) records the Caps Lock quest view,
@@ -32,6 +33,6 @@ upstream Open Toontown source and resources.
   completion criteria and maintenance rules.
 
 Generated caches, logs, temporary build work, resources without a distributable
-license, bundled runtimes, and normal runtime database writes are not part of
-the public source release. Release binaries and intentional save backups are
-called out separately.
+license, bundled runtimes, normal runtime database writes, and all save backups
+are excluded from the public source release. Release binaries are called out
+separately.

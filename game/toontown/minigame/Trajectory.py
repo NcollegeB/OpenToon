@@ -1,3 +1,6 @@
+# This module defines trajectory and its supporting behavior for trolley minigame rules,
+# presentation, and synchronization.
+
 from direct.directnotify import DirectNotifyGlobal
 from panda3d.core import *
 from math import *

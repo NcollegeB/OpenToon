@@ -1,3 +1,6 @@
+# This module defines catalog chat item and its supporting behavior for catalog items, purchasing,
+# delivery, and catalog interfaces.
+
 from panda3d.core import *
 from . import CatalogItem
 from toontown.toonbase import ToontownGlobals

@@ -1,3 +1,6 @@
+# This module manages catch game Toon states, transitions, animation, and cleanup for trolley
+# minigame rules, presentation, and synchronization.
+
 from panda3d.core import *
 from toontown.toonbase.ToonBaseGlobal import *
 from direct.interval.IntervalGlobal import *

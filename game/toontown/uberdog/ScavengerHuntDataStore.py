@@ -1,3 +1,6 @@
+# This module defines scavenger hunt data store and its supporting behavior for global delivery,
+# party, mail, news, whitelist, and data services.
+
 from direct.directnotify import DirectNotifyGlobal
 from toontown.uberdog.DataStore import *
 

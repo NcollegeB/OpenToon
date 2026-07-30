@@ -1,3 +1,6 @@
+# This module implements the client-side distributed Cogdo battle bldg, handling network updates,
+# presentation, and player interaction for Cogdo rooms, activities, entities, and rewards.
+
 from direct.directnotify import DirectNotifyGlobal
 from toontown.toonbase import TTLocalizer
 from toontown.battle import DistributedBattleBldg

@@ -1,3 +1,6 @@
+# This module defines Cogdo maze and its supporting behavior for Cogdo rooms, activities, entities,
+# and rewards.
+
 from panda3d.core import NodePath, VBase4
 from direct.showbase.DirectObject import DirectObject
 from direct.showbase.RandomNumGen import RandomNumGen

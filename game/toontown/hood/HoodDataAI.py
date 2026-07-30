@@ -1,3 +1,5 @@
+# This module creates the authoritative zones and distributed objects for the neighborhood.
+
 from direct.directnotify import DirectNotifyGlobal
 from . import ZoneUtil
 from toontown.building import DistributedBuildingMgrAI

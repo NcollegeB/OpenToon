@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for Cogdo maze game
+# within Cogdo rooms, activities, entities, and rewards.
+
 from panda3d.core import VBase4
 from enum import IntEnum
 GameActions = IntEnum('GameActions', ('EnterDoor',

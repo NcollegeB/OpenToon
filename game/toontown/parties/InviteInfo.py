@@ -1,3 +1,6 @@
+# This module defines invite info base and its supporting behavior for party scheduling, activities,
+# decorations, and services.
+
 from direct.directnotify import DirectNotifyGlobal
 from toontown.toonbase import ToontownGlobals
 from toontown.parties.PartyGlobals import InviteStatus

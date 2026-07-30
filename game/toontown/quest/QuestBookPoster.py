@@ -1,3 +1,6 @@
+# This module implements the quest book interface, presenting and updating player controls and
+# information for quest definitions, parsing, progression, rewards, posters, and maps.
+
 from .QuestPoster import *
 IMAGE_SCALE_LARGE = 0.15
 IMAGE_SCALE_SMALL = 0.1

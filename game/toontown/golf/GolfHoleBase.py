@@ -1,3 +1,6 @@
+# This module provides shared golf hole behavior and data used by related implementations in
+# courses, holes, physics, scores, and rewards.
+
 from direct.distributed import DistributedObjectAI
 from direct.directnotify import DirectNotifyGlobal
 from toontown.toonbase import ToontownGlobals

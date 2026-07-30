@@ -1,3 +1,6 @@
+# This module defines friend inviter and its supporting behavior for friend invitations, lists,
+# secrets, and notifications.
+
 from panda3d.core import *
 from direct.task.Task import Task
 from toontown.toonbase.ToontownGlobals import *

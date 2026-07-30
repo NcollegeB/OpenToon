@@ -1,3 +1,6 @@
+# This module manages the client location lifecycle, state transitions, and interactions for Cashbot
+# HQ exterior within Cog HQ facilities, bosses, rooms, and level entities.
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.interval.IntervalGlobal import *
 from direct.fsm import State

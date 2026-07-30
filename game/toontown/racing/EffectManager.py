@@ -1,3 +1,6 @@
+# This module coordinates effect lifecycle, state, and services for kart races, tracks, pads,
+# projectiles, scores, and leaderboards.
+
 from panda3d.core import *
 from panda3d.core import *
 from direct.showbase.DirectObject import DirectObject

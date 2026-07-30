@@ -1,3 +1,6 @@
+# This module defines catalog item and its supporting behavior for catalog items, purchasing,
+# delivery, and catalog interfaces.
+
 from direct.directnotify import DirectNotifyGlobal
 from panda3d.core import *
 from toontown.toonbase import TTLocalizer

@@ -1,3 +1,7 @@
+# This module implements the authoritative AI-server side of starting block, handling validated
+# state and synchronized gameplay for kart races, tracks, pads, projectiles, scores, and
+# leaderboards.
+
 from otp.ai.AIBase import *
 from toontown.toonbase import ToontownGlobals
 from direct.distributed.ClockDelta import *

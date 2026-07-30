@@ -1,3 +1,6 @@
+# This module manages the client location lifecycle, state transitions, and interactions for gs hood
+# within neighborhoods, zone data, and neighborhood lifecycle.
+
 from panda3d.core import *
 from . import ToonHood
 from toontown.safezone import GSSafeZoneLoader

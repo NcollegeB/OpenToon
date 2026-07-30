@@ -1,3 +1,6 @@
+# This module builds and controls poly trail visual, interval, or particle effects for visual,
+# particle, and firework effects.
+
 from panda3d.core import *
 from direct.motiontrail.MotionTrail import *
 import random

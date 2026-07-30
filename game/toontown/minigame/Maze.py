@@ -1,3 +1,6 @@
+# This module defines maze and its supporting behavior for trolley minigame rules, presentation, and
+# synchronization.
+
 from .MazeBase import MazeBase
 from . import MazeData
 

@@ -1,3 +1,6 @@
+# This module provides AI-server logic for newbie purchase, coordinating authoritative simulation
+# and state for Shticker Book pages, settings, and dialogs.
+
 from . import PurchaseManagerAI
 
 class NewbiePurchaseManagerAI(PurchaseManagerAI.PurchaseManagerAI):

@@ -1,3 +1,6 @@
+# This module bootstraps Toontown start runtime configuration, services, and event processing for
+# application bootstrap, global configuration, localization, loading, and access.
+
 import builtins
 
 class game:

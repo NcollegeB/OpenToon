@@ -1,3 +1,6 @@
+# This module implements the fire Cog interface, presenting and updating player controls and
+# information for Cog battle rules, presentation, calculations, and rewards.
+
 from toontown.toonbase.ToontownBattleGlobals import *
 from toontown.toonbase import ToontownGlobals
 from direct.fsm import StateData

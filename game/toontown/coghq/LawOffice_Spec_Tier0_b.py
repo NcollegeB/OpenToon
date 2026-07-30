@@ -1,3 +1,6 @@
+# This module defines declarative room, rule, and entity specifications for law office spec tier 0 b
+# in the Cog facility level system.
+
 from toontown.coghq.SpecImports import *
 GlobalEntities = {
     1000: {

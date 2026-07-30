@@ -1,3 +1,6 @@
+# This module defines the declarative entities, scenarios, and encounter layout for Cashbot mint
+# pipe room battle 01 in the Cog facility level system.
+
 from toontown.coghq.SpecImports import *
 GlobalEntities = {1000: {'type': 'levelMgr',
         'name': 'LevelMgr',

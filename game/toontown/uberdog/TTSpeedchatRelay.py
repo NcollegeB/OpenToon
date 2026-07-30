@@ -1,3 +1,6 @@
+# This module defines Toontown SpeedChat relay and its supporting behavior for global delivery,
+# party, mail, news, whitelist, and data services.
+
 from direct.distributed.DistributedObjectGlobal import DistributedObjectGlobal
 from direct.directnotify.DirectNotifyGlobal import directNotify
 from otp.otpbase import OTPGlobals

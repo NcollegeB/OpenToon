@@ -1,3 +1,5 @@
+# This module creates the authoritative zones and distributed objects for the cs neighborhood.
+
 from direct.directnotify import DirectNotifyGlobal
 from . import HoodDataAI
 from toontown.toonbase import ToontownGlobals

@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for pet within
+# Doodle appearance, behavior, training, AI, and interfaces.
+
 from panda3d.core import *
 from toontown.toonbase import ToontownGlobals
 from enum import IntEnum

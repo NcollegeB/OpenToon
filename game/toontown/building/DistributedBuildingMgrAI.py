@@ -1,3 +1,6 @@
+# This module manages a district branch's server-side building inventory, creates buildings from
+# DNA, tracks Toon, Cog, and Cogdominium state, and saves or restores that state as JSON.
+
 import os
 from direct.task.Task import Task
 import json

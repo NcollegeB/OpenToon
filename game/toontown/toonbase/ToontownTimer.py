@@ -1,3 +1,6 @@
+# This module defines Toontown timer and its supporting behavior for application bootstrap, global
+# configuration, localization, loading, and access.
+
 from otp.otpbase.OTPTimer import OTPTimer
 from panda3d.core import *
 

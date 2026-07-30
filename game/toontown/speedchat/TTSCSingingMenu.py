@@ -1,3 +1,6 @@
+# This module implements the SpeedChat singing interface, presenting and updating player controls
+# and information for SpeedChat menus, terminals, phrases, and decoding.
+
 from direct.showbase import PythonUtil
 from otp.speedchat.SCMenu import SCMenu
 from otp.speedchat.SCMenuHolder import SCMenuHolder

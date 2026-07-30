@@ -1,3 +1,6 @@
+# This module defines decoration and its supporting behavior for party scheduling, activities,
+# decorations, and services.
+
 from panda3d.core import *
 from direct.interval.IntervalGlobal import *
 from direct.actor import Actor

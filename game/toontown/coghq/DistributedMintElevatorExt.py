@@ -1,3 +1,6 @@
+# This module implements the client-side distributed mint elevator ext, handling network updates,
+# presentation, and player interaction for Cog HQ facilities, bosses, rooms, and level entities.
+
 from direct.distributed.ClockDelta import *
 from direct.interval.IntervalGlobal import *
 from toontown.building.ElevatorConstants import *

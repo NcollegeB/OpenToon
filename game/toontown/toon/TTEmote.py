@@ -1,3 +1,6 @@
+# This module defines Toontown emote and its supporting behavior for player Toon avatars, NPCs,
+# inventory, and presentation.
+
 from . import Toon, ToonDNA
 from direct.interval.IntervalGlobal import *
 from otp.otpbase import OTPLocalizer

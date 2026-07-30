@@ -1,3 +1,6 @@
+# This module provides AI-server logic for Cashbot HQ data, coordinating authoritative simulation
+# and state for neighborhoods, zone data, and neighborhood lifecycle.
+
 from direct.directnotify import DirectNotifyGlobal
 from . import HoodDataAI
 from toontown.toonbase import ToontownGlobals

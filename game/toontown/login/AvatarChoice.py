@@ -1,3 +1,6 @@
+# This module defines avatar choice and its supporting behavior for avatar selection and login-side
+# state.
+
 from panda3d.core import *
 from toontown.toonbase import ToontownGlobals
 from direct.showbase import DirectObject

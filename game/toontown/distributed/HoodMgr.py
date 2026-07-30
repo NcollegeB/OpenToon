@@ -1,3 +1,6 @@
+# This module coordinates hood lifecycle, state, and services for core repositories, districts,
+# timers, and world lifecycle.
+
 from panda3d.core import *
 from direct.showbase import DirectObject
 from direct.directnotify import DirectNotifyGlobal

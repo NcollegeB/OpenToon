@@ -1,3 +1,6 @@
+# This module defines invite visual and its supporting behavior for party scheduling, activities,
+# decorations, and services.
+
 from datetime import datetime
 import calendar
 from direct.gui.DirectGui import DirectFrame, DirectLabel

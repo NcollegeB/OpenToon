@@ -27,9 +27,9 @@ because it was already the name of a clown-themed scare zone at
 
 `ToonForge` was rejected because [ToonForge is already an active
 product](https://toonforge.app/). `OpenTown` remains the current local build
-name, but [OpenTown is also used by an existing AI metaverse
-product](https://partechpartners.com/companies/mindlogic) and is less
-distinctive.
+name, but
+[OpenTown is also used by an existing metaverse product](https://partechpartners.com/companies/mindlogic)
+and is less distinctive.
 
 No executable, Python package, protocol identifier, database field, or
 resource path has been renamed to Quipborough yet. A repo-wide rename should

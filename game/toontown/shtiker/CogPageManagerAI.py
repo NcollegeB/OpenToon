@@ -1,3 +1,6 @@
+# This module provides AI-server logic for Cog page, coordinating authoritative simulation and state
+# for Shticker Book pages, settings, and dialogs.
+
 from direct.directnotify import DirectNotifyGlobal
 
 

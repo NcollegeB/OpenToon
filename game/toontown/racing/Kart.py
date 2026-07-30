@@ -1,3 +1,6 @@
+# This module defines kart and its supporting behavior for kart races, tracks, pads, projectiles,
+# scores, and leaderboards.
+
 from direct.directnotify import DirectNotifyGlobal
 from panda3d.core import *
 from panda3d.physics import *

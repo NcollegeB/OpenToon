@@ -1,3 +1,6 @@
+# This module defines SpeedChat indexed terminal and its supporting behavior for SpeedChat menus,
+# terminals, phrases, and decoding.
+
 from otp.speedchat.SCTerminal import *
 from otp.otpbase.OTPLocalizer import SpeedChatStaticText
 TTSCIndexedMsgEvent = 'SCIndexedMsg'

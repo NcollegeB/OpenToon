@@ -1,3 +1,6 @@
+# This module builds the coordinated animation and camera sequences for movie within Cog battle
+# rules, presentation, calculations, and rewards.
+
 from toontown.toonbase.ToontownBattleGlobals import *
 from .BattleBase import *
 from direct.interval.IntervalGlobal import *

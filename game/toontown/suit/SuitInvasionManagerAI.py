@@ -1,3 +1,6 @@
+# This module provides AI-server logic for suit invasion, coordinating authoritative simulation and
+# state for Cog and boss actors, behavior, and combat support.
+
 from direct.directnotify import DirectNotifyGlobal
 
 class SuitInvasionManagerAI:

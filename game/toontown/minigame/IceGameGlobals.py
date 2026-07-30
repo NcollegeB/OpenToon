@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for ice game within
+# trolley minigame rules, presentation, and synchronization.
+
 import math
 from panda3d.core import Point3
 from toontown.toonbase import ToontownGlobals

@@ -1,3 +1,6 @@
+# This module coordinates news lifecycle, state, and services for district startup, holidays,
+# events, and shared AI managers.
+
 from panda3d.core import *
 from direct.distributed import DistributedObject
 from direct.directnotify import DirectNotifyGlobal

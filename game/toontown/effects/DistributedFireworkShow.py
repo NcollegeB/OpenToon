@@ -1,3 +1,6 @@
+# This module implements the client-side distributed firework show, handling network updates,
+# presentation, and player interaction for visual, particle, and firework effects.
+
 from direct.distributed import DistributedObject
 from toontown.effects.FireworkShowMixin import FireworkShowMixin
 

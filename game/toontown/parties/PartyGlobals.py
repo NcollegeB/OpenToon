@@ -1,3 +1,6 @@
+# This module defines party limits, activities, decorations, schedules, costs, grid settings, and
+# helper calculations shared by clients and servers.
+
 from panda3d.core import BitMask32
 from panda3d.core import Point3, VBase4
 from toontown.toonbase import TTLocalizer

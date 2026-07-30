@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of pet proxy, handling validated state and
+# synchronized gameplay for Doodle appearance, behavior, training, AI, and interfaces.
+
 from direct.showbase.PythonUtil import contains, lerp, clampScalar
 from direct.distributed import DistributedObjectAI
 from direct.directnotify import DirectNotifyGlobal

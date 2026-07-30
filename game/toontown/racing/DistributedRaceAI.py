@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of race, handling validated state and
+# synchronized gameplay for kart races, tracks, pads, projectiles, scores, and leaderboards.
+
 from direct.distributed import DistributedObjectAI
 from direct.directnotify import DirectNotifyGlobal
 from toontown.toonbase import ToontownGlobals

@@ -1,3 +1,6 @@
+# This module defines in game editor element and its supporting behavior for Cog HQ facilities,
+# bosses, rooms, and level entities.
+
 from direct.showbase import DirectObject
 
 class InGameEditorElement(DirectObject.DirectObject):

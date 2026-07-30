@@ -1,3 +1,6 @@
+# This module defines Toon appearance or configuration fields together with their construction and
+# serialization helpers for player Toon avatars, NPCs, inventory, and presentation.
+
 import random
 from panda3d.core import *
 from direct.directnotify.DirectNotifyGlobal import *

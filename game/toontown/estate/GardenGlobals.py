@@ -1,3 +1,6 @@
+# This module defines gardening constants, data tables, and helpers for flowers, recipes, tools,
+# skills, gag trees, statuary, and garden validation.
+
 from toontown.toonbase import TTLocalizer
 from direct.directnotify import DirectNotifyGlobal
 import random

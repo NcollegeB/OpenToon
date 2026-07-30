@@ -1,3 +1,6 @@
+# This module implements the suit avatar interface, presenting and updating player controls and
+# information for Cog and boss actors, behavior, and combat support.
+
 from panda3d.core import *
 from direct.gui.DirectGui import *
 from panda3d.core import *

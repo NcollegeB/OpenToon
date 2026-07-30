@@ -1,3 +1,6 @@
+# This module implements the Cogdo barrel room reward interface, presenting and updating player
+# controls and information for Cogdo rooms, activities, entities, and rewards.
+
 from panda3d.core import *
 from direct.gui.DirectGui import *
 from toontown.toonbase import ToontownGlobals, TTLocalizer

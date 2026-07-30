@@ -1,3 +1,6 @@
+# This module implements the garden interface, presenting and updating player controls and
+# information for Shticker Book pages, settings, and dialogs.
+
 from direct.directnotify import DirectNotifyGlobal
 from . import ShtikerPage
 from direct.gui.DirectGui import *

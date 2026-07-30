@@ -1,3 +1,6 @@
+# This module implements the client-side distributed mole field, handling network updates,
+# presentation, and player interaction for Cog HQ facilities, bosses, rooms, and level entities.
+
 from panda3d.core import *
 from otp.level.BasicEntities import DistributedNodePathEntity
 from direct.directnotify import DirectNotifyGlobal

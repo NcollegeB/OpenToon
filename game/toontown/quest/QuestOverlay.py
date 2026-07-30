@@ -1,3 +1,6 @@
+# This module implements the quest interface, presenting and updating player controls and
+# information for quest definitions, parsing, progression, rewards, posters, and maps.
+
 """Global, non-destructive quest-card overlay.
 
 The Shticker Book quest page already knows how to render every supported quest

@@ -1,3 +1,7 @@
+# This module implements the client-side distributed Cashbot boss treasure, handling network
+# updates, presentation, and player interaction for Cog HQ facilities, bosses, rooms, and level
+# entities.
+
 from toontown.safezone import DistributedSZTreasure
 from toontown.toonbase import ToontownGlobals
 from direct.interval.IntervalGlobal import *

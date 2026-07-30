@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of sz treasure, handling validated state
+# and synchronized gameplay for playgrounds, treasures, and safe-zone activities.
+
 from . import DistributedTreasureAI
 from toontown.toonbase import ToontownGlobals
 

@@ -1,3 +1,5 @@
+# This module provides build geometry helpers for courses, holes, physics, scores, and rewards.
+
 from direct.distributed import DistributedObject
 from direct.directnotify import DirectNotifyGlobal
 from toontown.toonbase import ToontownGlobals

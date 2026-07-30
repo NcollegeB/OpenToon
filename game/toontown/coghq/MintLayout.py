@@ -1,3 +1,6 @@
+# This module defines mint layout and its supporting behavior for Cog HQ facilities, bosses, rooms,
+# and level entities.
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.showbase.PythonUtil import invertDictLossless
 from toontown.coghq import MintRoomSpecs

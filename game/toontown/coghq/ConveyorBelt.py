@@ -1,3 +1,6 @@
+# This module defines conveyor belt and its supporting behavior for Cog HQ facilities, bosses,
+# rooms, and level entities.
+
 from panda3d.core import *
 from direct.interval.IntervalGlobal import *
 from . import MovingPlatform

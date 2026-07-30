@@ -1,3 +1,6 @@
+# This module provides battle experience helpers for Cog battle rules, presentation, calculations,
+# and rewards.
+
 from toontown.toonbase import ToontownBattleGlobals
 
 def genRewardDicts(entries):

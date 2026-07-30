@@ -1,3 +1,6 @@
+# This module implements the trunk interface, presenting and updating player controls and
+# information for estates, houses, gardens, mailboxes, closets, and banks.
+
 from direct.showbase.PythonUtil import Functor
 from direct.gui.DirectGui import *
 from panda3d.core import *

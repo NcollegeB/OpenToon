@@ -1,3 +1,6 @@
+# This module defines generic animated building and its supporting behavior for neighborhoods, zone
+# data, and neighborhood lifecycle.
+
 from toontown.hood import GenericAnimatedProp
 
 class GenericAnimatedBuilding(GenericAnimatedProp.GenericAnimatedProp):

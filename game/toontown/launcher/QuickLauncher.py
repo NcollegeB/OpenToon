@@ -1,3 +1,6 @@
+# This module defines quick launcher and its supporting behavior for client startup, downloading,
+# and launch monitoring.
+
 import os
 from direct.showbase.EventManagerGlobal import *
 from panda3d.core import *

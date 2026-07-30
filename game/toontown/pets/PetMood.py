@@ -1,3 +1,6 @@
+# This module defines pet mood and its supporting behavior for Doodle appearance, behavior,
+# training, AI, and interfaces.
+
 from direct.directnotify import DirectNotifyGlobal
 from direct.task import Task
 from direct.showbase.PythonUtil import lerp, average, clampScalar

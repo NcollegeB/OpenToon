@@ -1,3 +1,6 @@
+# This module defines Cogdo flying local player and its supporting behavior for Cogdo rooms,
+# activities, entities, and rewards.
+
 import math
 import random
 from panda3d.core import Vec3

@@ -1,3 +1,6 @@
+# This module implements the client-side distributed golf hole, handling network updates,
+# presentation, and player interaction for courses, holes, physics, scores, and rewards.
+
 import math
 import random
 import time

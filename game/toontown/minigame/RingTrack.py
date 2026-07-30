@@ -1,3 +1,6 @@
+# This module defines ring track and its supporting behavior for trolley minigame rules,
+# presentation, and synchronization.
+
 from direct.directnotify import DirectNotifyGlobal
 from . import RingAction
 

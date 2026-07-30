@@ -1,3 +1,6 @@
+# This module loads and unloads scenes, assets, and place transitions for Daisy Gardens town within
+# streets, town loading, place state, and street battles.
+
 from . import TownLoader
 from . import DGStreet
 from toontown.suit import Suit

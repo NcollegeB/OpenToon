@@ -1,3 +1,6 @@
+# This module implements the client-side distributed Cogdo interior, handling network updates,
+# presentation, and player interaction for Cogdo rooms, activities, entities, and rewards.
+
 import random
 from direct.interval.IntervalGlobal import *
 from direct.distributed.ClockDelta import *

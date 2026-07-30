@@ -1,3 +1,6 @@
+# This module defines game sprite and its supporting behavior for estates, houses, gardens,
+# mailboxes, closets, and banks.
+
 import math
 
 class GameSprite:

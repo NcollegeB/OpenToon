@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of photo game, handling validated state
+# and synchronized gameplay for trolley minigame rules, presentation, and synchronization.
+
 from .DistributedMinigameAI import *
 from direct.distributed.ClockDelta import *
 from direct.fsm import ClassicFSM, State

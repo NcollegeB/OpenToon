@@ -1,3 +1,6 @@
+# This module implements the reward interface, presenting and updating player controls and
+# information for Cog battle rules, presentation, calculations, and rewards.
+
 from panda3d.core import *
 from direct.gui.DirectGui import *
 from panda3d.core import *

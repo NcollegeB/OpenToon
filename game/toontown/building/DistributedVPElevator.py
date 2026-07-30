@@ -1,3 +1,6 @@
+# This module implements the client-side distributed VP elevator, handling network updates,
+# presentation, and player interaction for buildings, interiors, doors, elevators, and boarding.
+
 from . import DistributedElevator
 from . import DistributedBossElevator
 from .ElevatorConstants import *

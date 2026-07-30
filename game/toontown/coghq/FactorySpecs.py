@@ -1,3 +1,6 @@
+# This module defines declarative room, rule, and entity specifications for factory specs in the Cog
+# facility level system.
+
 from toontown.toonbase import ToontownGlobals
 from . import SellbotLegFactorySpec
 from . import SellbotLegFactoryCogs

@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of battle final, handling validated state
+# and synchronized gameplay for Cog battle rules, presentation, calculations, and rewards.
+
 from otp.ai.AIBase import *
 from .BattleBase import *
 from .BattleCalculatorAI import *

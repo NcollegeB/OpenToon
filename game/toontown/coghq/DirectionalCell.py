@@ -1,3 +1,6 @@
+# This module defines directional cell and its supporting behavior for Cog HQ facilities, bosses,
+# rooms, and level entities.
+
 from . import ActiveCell
 from direct.directnotify import DirectNotifyGlobal
 

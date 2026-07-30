@@ -1,3 +1,6 @@
+# This module coordinates news page button lifecycle, state, and services for shared game dialogs,
+# loading screens, and interface widgets.
+
 from panda3d.core import VBase4, VBase3
 from direct.fsm import FSM
 from direct.directnotify import DirectNotifyGlobal

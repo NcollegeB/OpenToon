@@ -1,3 +1,6 @@
+# This module provides AI-server logic for tutorial HQ building, coordinating authoritative
+# simulation and state for buildings, interiors, doors, elevators, and boarding.
+
 from panda3d.core import *
 from direct.directnotify import DirectNotifyGlobal
 from . import DistributedDoorAI

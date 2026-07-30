@@ -1,3 +1,7 @@
+# This module implements the client-side distributed race pad, handling network updates,
+# presentation, and player interaction for kart races, tracks, pads, projectiles, scores, and
+# leaderboards.
+
 from panda3d.core import *
 from direct.directnotify import DirectNotifyGlobal
 from direct.task.Task import Task

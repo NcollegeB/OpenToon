@@ -1,3 +1,6 @@
+# This module provides Cogdo flying util helper functions for Cogdo rooms, activities, entities, and
+# rewards.
+
 from otp.otpbase import OTPGlobals
 from .CogdoFlyingShadowPlacer import CogdoFlyingShadowPlacer
 

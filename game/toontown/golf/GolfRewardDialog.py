@@ -1,3 +1,6 @@
+# This module implements the golf reward interface, presenting and updating player controls and
+# information for courses, holes, physics, scores, and rewards.
+
 from panda3d.core import *
 from direct.gui.DirectGui import *
 from toontown.toonbase import TTLocalizer, ToontownGlobals

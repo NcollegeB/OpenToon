@@ -1,3 +1,6 @@
+# This module implements the issue interface, presenting and updating player controls and
+# information for Shticker Book pages, settings, and dialogs.
+
 import os
 from panda3d.core import VirtualFileSystem, Filename, DSearchPath
 from panda3d.core import Texture, CardMaker, PNMImage, TextureStage

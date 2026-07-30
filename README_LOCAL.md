@@ -17,8 +17,8 @@ complete point-in-time path listing (excluding `.git` internals).
 
 See `CUSTOM_FEATURES.md` for the branding, display, skip, and gag-XP changes.
 See `BUILDING.md` for launcher builds and the macOS/Linux runtime requirements.
-The GitHub-ready cumulative history, exact changed-file inventory, Stinky
-profile record, and project-name recommendation are under `changes\`.
+The GitHub-ready cumulative history, exact changed-file inventory, and
+project-name recommendation are under `changes\`.
 
 ## Start playing
 

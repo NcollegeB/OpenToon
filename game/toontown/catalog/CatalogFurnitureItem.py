@@ -1,3 +1,6 @@
+# This module defines catalog furniture item and its supporting behavior for catalog items,
+# purchasing, delivery, and catalog interfaces.
+
 from . import CatalogAtticItem
 from . import CatalogItem
 import random

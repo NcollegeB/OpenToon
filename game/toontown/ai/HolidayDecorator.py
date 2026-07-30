@@ -1,3 +1,6 @@
+# This module defines holiday decorator and its supporting behavior for district startup, holidays,
+# events, and shared AI managers.
+
 from toontown.toonbase import ToontownGlobals
 from direct.interval.IntervalGlobal import Parallel, Sequence, Func, Wait
 from panda3d.core import Vec4, CSDefault, TransformState, NodePath, TransparencyAttrib

@@ -1,3 +1,6 @@
+# This module implements the authoritative AI-server side of suit, handling validated state and
+# synchronized gameplay for Cog and boss actors, behavior, and combat support.
+
 from otp.ai.AIBaseGlobal import *
 from panda3d.core import *
 from panda3d.toontown import *

@@ -1,3 +1,6 @@
+# This module defines party planner and its supporting behavior for party scheduling, activities,
+# decorations, and services.
+
 import calendar
 from datetime import datetime
 from datetime import timedelta

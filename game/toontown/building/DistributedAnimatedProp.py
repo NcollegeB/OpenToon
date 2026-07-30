@@ -1,3 +1,6 @@
+# This module implements the client-side distributed animated prop, handling network updates,
+# presentation, and player interaction for buildings, interiors, doors, elevators, and boarding.
+
 from panda3d.core import *
 from direct.distributed.ClockDelta import *
 from direct.directnotify import DirectNotifyGlobal

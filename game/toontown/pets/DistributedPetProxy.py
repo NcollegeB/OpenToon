@@ -1,3 +1,7 @@
+# This module implements the client-side distributed pet proxy, handling network updates,
+# presentation, and player interaction for Doodle appearance, behavior, training, AI, and
+# interfaces.
+
 from direct.distributed import DistributedObject
 from direct.directnotify import DirectNotifyGlobal
 from toontown.pets import PetTraits

@@ -1,3 +1,6 @@
+# This module implements the client-side distributed flower, handling network updates, presentation,
+# and player interaction for estates, houses, gardens, mailboxes, closets, and banks.
+
 from toontown.estate import DistributedPlantBase
 from direct.directnotify import DirectNotifyGlobal
 from toontown.estate import FlowerBase

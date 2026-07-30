@@ -1,3 +1,6 @@
+# This module defines shared constants, configuration values, and lookup tables for quest map within
+# quest definitions, parsing, progression, rewards, posters, and maps.
+
 from panda3d.core import Point3
 CogInfoPosTable = {'toontown_central_2100_english': Point3(-0.3, 0, -0.2),
  'toontown_central_2200_english': Point3(0.2, 0, -0.2),

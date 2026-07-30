@@ -1,3 +1,6 @@
+# This module provides AI-server logic for Cogdo entity creator, coordinating authoritative
+# simulation and state for Cogdo rooms, activities, entities, and rewards.
+
 from direct.showbase.PythonUtil import Functor
 from otp.level import EntityCreatorAI
 from toontown.cogdominium.CogdoLevelMgrAI import CogdoLevelMgrAI

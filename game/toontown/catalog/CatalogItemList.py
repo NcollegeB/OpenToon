@@ -1,3 +1,6 @@
+# This module defines catalog item list and its supporting behavior for catalog items, purchasing,
+# delivery, and catalog interfaces.
+
 from . import CatalogItem
 from panda3d.core import *
 from direct.distributed.PyDatagram import PyDatagram
