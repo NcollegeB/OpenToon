@@ -1,4 +1,4 @@
-# OpenToon - CLOSED
+# OpenToon - Under Construction :)
 
 OpenToon is a free community modification of
 [Open Toontown](https://github.com/open-toontown/open-toontown). Allowing anyone the opportunity to host their own toontown server,
