@@ -32,7 +32,7 @@ so the presentation changes work the same way on Windows, macOS, and Linux.
 - [Windows quick start](#windows-quick-start)
 - [macOS setup](#macos-setup)
 - [Linux setup](#linux-setup)
-- 
+- [Toontown Dev Discord](https://discord.gg/fmEFCU93wH) — a project-neutral community for anyone interested in developing with Toontown, across all projects and experience levels.
 
 
 ## Project status
